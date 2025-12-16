@@ -1,0 +1,211 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "slideshow_Wk9Ega": {
+      "type": "slideshow",
+      "blocks": {
+        "image_UaEynU": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Test a wallpaper sample",
+            "title_size": 60,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/header_sample.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_UaEynU"
+      ],
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "rich_text_H6etMK": {
+      "type": "rich-text",
+      "blocks": {
+        "text_DDiGFw": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Sample wallpaper piece is the best way to test out a design and material before committing to a full roll. While devices like phones and computers can give an idea of a color's appearance, they may not always accurately reflect how the color will look in real life. To ensure color consistency and avoid any surprises, it's a good idea to order samples of all the wallpaper designs you're considering. Our samples are made to order so you can receive them quickly.<\/p><p>Before applying a sample to your wall, it's important to make sure the surface is clean and prepared. Dust on the wall can impact the adhesion of the wallpaper, so use a lint-free dry cloth to dust off the wall. <a href=\"https:\/\/costacover.com\/blogs\/how-it-works\/wall-requirements\"><strong>Wall requirements<\/strong><\/a><\/p><h4>How it looks? <\/h4><p>A Sample includes the actual pattern size and a mini version of what the entire mural or full sheet of wallpaper will look like.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_DDiGFw"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "text_columns_yyWdGB": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_gcKqDq": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/20240903_103142_copy2.jpg",
+            "image_width": 320,
+            "title": "Regular Sample",
+            "text": "<p>Size 16x11 inches<\/p><p> <\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_67jThd": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/20240903_103142_copy.jpg",
+            "image_width": 320,
+            "title": "Large sample",
+            "text": "<p>Size 25x24 inches<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_gcKqDq",
+        "text_block_67jThd"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false
+      }
+    },
+    "rich_text_mMNyY9": {
+      "type": "rich-text",
+      "blocks": {
+        "text_AmPYL3": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<h4>How it works?<\/h4><p>To apply the sample, simply peel off the backing paper and press it firmly onto the wall, smoothing out any bubbles. Leave the sample in place for at least 2 days to ensure proper adhesion.<\/p><p>During this time, observe the sample for any issues, such as bubbles or edges coming loose. The sample should remain bubble-free, and the edges should stay securely adhered to the wall.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_AmPYL3"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "text_columns_WGddcQ": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_B9UpN9": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/sample1.jpg",
+            "image_width": 320,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_yf4tqA": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/sample2_f1e2e6ee-d595-4ecb-a90d-3b05cd3010d1.jpg",
+            "image_width": 320,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_tgd8fL": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/sample3_c5567853-0246-4030-a43f-dfa823305d00.jpg",
+            "image_width": 320,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_B9UpN9",
+        "text_block_yf4tqA",
+        "text_block_tgd8fL"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false
+      }
+    },
+    "rich_text_7TGqn6": {
+      "type": "rich-text",
+      "blocks": {
+        "text_gFJkUY": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Try to remove the sample. It should offer a bit of resistance but should peel off without leaving any residue.<\/p><p>If the sample removes too easily, you may need to prepare your wall or use wallpaper glue for better adhesion.<strong> <\/strong><a href=\"https:\/\/costacover.com\/blogs\/news\/peel-and-stick-wallpaper-and-different-wall-paint-issues\" target=\"_blank\" title=\"https:\/\/costacover.com\/blogs\/news\/peel-and-stick-wallpaper-and-different-wall-paint-issues\"><strong>Wall paint issues<\/strong><\/a><\/p><p>However, if the sample looks good after a couple of days, you can confidently proceed with your wallpaper project.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_gFJkUY"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_Wk9Ega",
+    "rich_text_H6etMK",
+    "text_columns_yyWdGB",
+    "rich_text_mMNyY9",
+    "text_columns_WGddcQ",
+    "rich_text_7TGqn6"
+  ]
+}

@@ -1,0 +1,193 @@
+{%- doc -%}
+  id is required
+  usage: {% render 'smart-search', id: {string} %}
+{%- enddoc -%}
+
+{{ 'component-product-search-item.css' | asset_url | stylesheet_tag }}
+
+{%- unless id == blank -%}
+  <smart-search class="smart-search-wrapper" id="{{ id }}" data-shop-url="{{ shop.url }}">
+    {%- if predictive_search.performed and predictive_search.terms != '-1' -%}
+      {%- liquid
+        assign resultsRequests = predictive_search.resources.queries
+        assign resultsCollections = predictive_search.resources.collections
+        assign resultsProducts = predictive_search.resources.products
+        assign resultsArticles = predictive_search.resources.articles
+      -%}
+      <div class="smart-search">
+        {%- if resultsRequests.size > 0
+          or resultsCollections.size > 0
+          or resultsProducts.size > 0
+          or resultsArticles.size > 0
+        -%}
+          {%- capture sideInfoSliderSettings -%}
+            {
+              "slidesPerView": "auto",
+              "direction": "vertical",
+              "freeMode": true,
+              "mousewheel": {
+                "enabled": true,
+                "releaseOnEdges": true
+              },
+              "scrollbar": {
+                "el": ".smart-search__side-scrollbar"
+              }
+            }
+          {%- endcapture -%}
+          <div
+            class="smart-search__side-info-wrapper swiper"
+            {%- render 'slider-attribute', config: sideInfoSliderSettings, is_desktop_only: true -%}
+          >
+            <div class="smart-search__side-scrollbar"></div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide smart-search__side-info">
+                {%- if resultsRequests.size > 0 -%}
+                  <div class="smart-search__requests smart-search__results-block">
+                    <p class="smart-search__requests-title">
+                      {{ 'general.search.predictive_search.popular_searches' | t }}
+                    </p>
+                    <div class="smart-search__requests-list">
+                      {%- for request in resultsRequests -%}
+                        <a
+                          href="{{shop.url}}{{ request.url }}&type=product"
+                          class="smart-search__request-item"
+                        >
+                          {{- request.text -}}
+                        </a>
+                      {%- endfor -%}
+                    </div>
+                  </div>
+                {%- endif -%}
+                {%- if resultsCollections.size > 0 -%}
+                  <div class="smart-search__collections smart-search__results-block">
+                    <p class="smart-search__collections-title">
+                      {{ 'general.search.predictive_search.collections' | t }}
+                    </p>
+                    <div class="smart-search__collections-list">
+                      {%- for collection in resultsCollections -%}
+                        <a href="{{ collection.url }}" class="smart-search__collection-item">
+                          {{- collection.title | highlight: predictive_search.terms -}}
+                        </a>
+                      {%- endfor -%}
+                    </div>
+                  </div>
+                {%- endif -%}
+                {%- if resultsArticles.size > 0 -%}
+                  <div class="smart-search__articles smart-search__results-block smart-search__articles--desktop">
+                    <div class="smart-search__articles-title">
+                      <p class="articles-title__title">{{ 'general.search.predictive_search.blog' | t }}</p>
+                      <a href="{{ shop.url }}/blogs/news">{{ 'general.search.predictive_search.view_all' | t }}</a>
+                    </div>
+                    <div class="smart-search__articles-list">
+                      {%- for article in resultsArticles -%}
+                        <a href="{{ article.url }}" class="smart-search__article-item">
+                          {{- article.title | highlight: predictive_search.terms -}}
+                        </a>
+                      {%- endfor -%}
+                    </div>
+                  </div>
+                {%- endif -%}
+              </div>
+            </div>
+          </div>
+          {%- if resultsProducts.size > 0 -%}
+            {%- capture productsSliderSettings -%}
+              {
+                "slidesPerView": "auto",
+                "direction": "vertical",
+                "freeMode": true,
+                "mousewheel": {
+                  "enabled": true,
+                  "releaseOnEdges": true,
+                  "forceToAxis": true
+                },
+                "scrollbar": {
+                  "el": ".smart-search__product-scrollbar"
+                }
+              }
+            {%- endcapture -%}
+            <div class="smart-search__products">
+              <div class="smart-search__products-title">
+                <p class="products-title__title">
+                  {{ 'general.search.predictive_search.products' | t }}
+                </p>
+                <a
+                  href="{{shop.url}}{{ routes.search_url }}?q={{ predictive_search.terms }}&type=product"
+                >
+                  {{ 'general.search.predictive_search.view_all_products' | t }}
+                </a>
+              </div>
+              <div
+                class="swiper smart-search__products-list-wrapper"
+                {%- render 'slider-attribute', config: productsSliderSettings, is_desktop_only: true -%}
+              >
+                <div class="smart-search__product-scrollbar"></div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide smart-search__products-list">
+                    {%- for product in resultsProducts -%}
+                      {%- if forloop.index == 7 or forloop.index == 8 -%}
+                        {%- assign productClass = 'product-search-item--desktop' -%}
+                      {%- endif -%}
+                      {%- render 'product-search-item',
+                        product: product,
+                        terms: predictive_search.terms,
+                        class: productClass
+                      -%}
+                    {%- endfor -%}
+                  </div>
+                </div>
+              </div>
+              <div class="smart-search__all-results smart-search__all-results--desktop">
+                <a href="{{shop.url}}{{ routes.search_url }}?q={{ predictive_search.terms }}&type=product">
+                  {{ 'general.search.predictive_search.view_all_products_arrow' | t }}
+                </a>
+              </div>
+            </div>
+          {%- else -%}
+            <div class="smart-search__no-products">
+              <p>
+                {{
+                  'general.search.predictive_search.no_produts'
+                  | t: terms: predictive_search.terms
+                  | highlight: predictive_search.terms
+                }}
+              </p>
+            </div>
+          {%- endif -%}
+          {%- if resultsArticles.size > 0 -%}
+            <div class="smart-search__articles smart-search__results-block smart-search__articles--mobile">
+              <div class="smart-search__articles-title">
+                <p class="articles-title__title">{{ 'general.search.predictive_search.blog' | t }}</p>
+                <a href="{{ shop.url }}/blogs/news">{{ 'general.search.predictive_search.view_all' | t }}</a>
+              </div>
+              <div class="smart-search__articles-list">
+                {%- for article in resultsArticles -%}
+                  <a href="{{ article.url }}" class="smart-search__article-item">
+                    {{- article.title | highlight: predictive_search.terms -}}
+                  </a>
+                {%- endfor -%}
+              </div>
+            </div>
+          {%- endif -%}
+          {%- if resultsProducts.size > 0 -%}
+            <div class="smart-search__all-results smart-search__all-results--mobile">
+              <a href="{{shop.url}}{{routes.search_url}}?q={{ predictive_search.terms }}&type=product">
+                {{ 'general.search.predictive_search.view_all_products_arrow' | t }}
+              </a>
+            </div>
+          {%- endif -%}
+        {%- else -%}
+          <div class="smart-search__no-results">
+            <p>
+              {{
+                'general.search.predictive_search.no_results'
+                | t: terms: predictive_search.terms
+                | highlight: predictive_search.terms
+              }}
+            </p>
+          </div>
+        {% endif %}
+      </div>
+    {%- endif -%}
+  </smart-search>
+{%- endunless -%}

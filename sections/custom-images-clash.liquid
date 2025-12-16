@@ -1,0 +1,202 @@
+<section class="imgs_clash imgs_clash-{{section.id}}">
+    <div class="imgs_clash_wr">
+        {% for block in section.blocks %}
+            <a 
+            href="{{ block.settings.btn-url }}"
+            class="icw_block">
+                 <img src="{{ block.settings.img | img_url: 'master' }}" alt="{{ block.settings.img.alt }}">
+                 <div class="icw_absolute_block hero__text-shadow">
+                     <h2 
+                     class="icw_block_title"
+                     style="color:{{section.settings.main-color}};"
+                     >
+                     {{ block.settings.title }}</h2>
+                     <div
+                     class="icw_block_btn btn btn--secondary btn--small section-header__link"
+                     style="background-color: {{section.settings.main-color}};">
+                     {{ block.settings.btn-text }}</div>
+                 </div>
+            </a>
+        {% endfor %}
+    </div>
+</section>
+
+<style>
+    .imgs_clash-{{section.id}} {
+        margin-top: {{section.settings.margin-top}}px;
+        margin-bottom: {{section.settings.margin-bottom}}px;
+    }
+    .icw_block_btn {
+        text-decoration: unset;
+        font-weight: 600 !important;
+        border: 2px solid;
+        transition: all .8s ease-in-out;
+        border-color: {{section.settings.main-color}} !important;
+    }
+    .icw_block_btn:hover {
+        transition: all .8s ease-in-out;
+        background-color: unset !important;
+        color: {{section.settings.main-color}};
+    }
+    .icw_block_title {
+        text-align: center;
+    }
+    .imgs_clash_wr {
+        display: flex;
+    }
+    .icw_block {
+        display: flex;
+        width: 100%;
+        height: 650px;
+        position: relative;
+        overflow: hidden;
+    }
+    .icw_block img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: all .6s ease-in-out;
+    }
+    .icw_block:hover img {
+        transition: all .6s ease-in-out;
+        transform: scale(1.1);
+    }
+    .icw_absolute_block {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @media screen and (max-width: 768px) {
+        .imgs_clash-{{section.id}} {
+            margin-top: {{section.settings.margin-top-mob}}px;
+            margin-bottom: {{section.settings.margin-bottom-mob}}px;
+        }
+        .imgs_clash_wr {
+            flex-direction: column;
+        }
+        .icw_block {
+            width: 100%;
+            height: 500px;
+        }    
+    }
+</style>
+
+{% schema %}
+{
+    "name": "Images clash",
+    "limit": 2,
+    "settings": [
+        {
+            "type": "color",
+            "id": "main-color",
+            "label": "Section main color",
+            "default": "#FFF"
+        },
+        {
+            "type": "header",
+            "content": "Desktop"
+        },
+        {
+            "type": "range",
+            "id": "margin-top",
+            "label": "Margin-top",
+            "unit": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 75
+        },
+        {
+            "type": "range",
+            "id": "margin-bottom",
+            "label": "Margin-bottom",
+            "unit": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 75
+        },
+        {
+            "type": "header",
+            "content": "Mobile"
+        },
+        {
+            "type": "range",
+            "id": "margin-top-mob",
+            "label": "Margin-top",
+            "unit": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 40
+        },
+        {
+            "type": "range",
+            "id": "margin-bottom-mob",
+            "label": "Margin-bottom",
+            "unit": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 40
+        }
+    ],
+    "blocks": [
+        {
+            "name": "Clashed iamge",
+            "type": "image",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "img",
+                    "label": "Image"
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title",
+                    "default": "Wallpaper"
+                },
+                {
+                    "type": "header",
+                    "content": "Button"
+                },
+                {
+                    "type": "text",
+                    "id": "btn-text",
+                    "label": "Button text",
+                    "default": "Shop all"
+                },
+                {
+                    "type": "url",
+                    "id": "btn-url",
+                    "label": "Button url"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "category": "select",
+            "name": "Clash the Images",
+            "blocks": [
+                {
+                    "type": "image"
+                },
+                {
+                    "type": "image"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,29 @@
+{{ 'wizart-visualizer.css' | asset_url | stylesheet_tag }}
+
+{% assign token = section.settings.token %}
+
+<div class="wizart-visualizer text-center page-width page-width--narrow">
+  <button type="button" class="wizart-visually-button visually-hidden btn" style="margin-bottom: 20px;paddng-bottom: 100px;">Try it now</button>
+</div>
+
+<script src="{{ 'component-wizart-visualizer.js' |  asset_url }}" defer="defer"></script>
+{% if token != blank %}
+  <script class="wizart__entry-point" data-token="{{ token }}" src="https://d35so7k19vd0fx.cloudfront.net/production/integration/entry-point.min.js"></script>
+{% endif %}
+{% schema %}
+{
+  "name": "Wizart Visualizer",
+  "settings": [
+    {
+      "type": "text",
+      "id": "token",
+      "label": "Wizart Token"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Wizart Visualizer"
+    }
+  ]
+}
+{% endschema %}

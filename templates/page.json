@@ -1,0 +1,62 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "e14ee3aa-a97a-4125-9c93-ab87b23923b9": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14815470485571__e14ee3aa-a97a-4125-9c93-ab87b23923b9-16730325381b8cf575-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/our_photo_c773fc2d-3288-4162-b0ab-b594d04a8aa7.jpg",
+            "link": "",
+            "width": "25%",
+            "alignment": "center"
+          }
+        },
+        "template--14815470485571__e14ee3aa-a97a-4125-9c93-ab87b23923b9-16730325381b8cf575-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>about us<\/h2><p>We are a family-owned business that specializes in designing and creating stick-and-peel wallpaper. That's right - it's a high quality wallpaper that you stick on the wall just like a sticker, remove any time you want! No glue, no hassle so this is a super easy and convenient way to remodel or just add a pop of color to your walls. You can do it all on your own, it's that easy! We are always happy to help with custom orders - you can choose any design you like and we will adjust it to your specified size, color and scale. Please let us know if you have any questions or inquiries - we are always happy to help!<\/p> <p>CostaCover - we got you covered.<\/p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "f9bd7871-b92a-4c1c-b549-00d75d9ef7d4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/about_b19abef3-d62d-49e1-9004-f72a9c9e5478.jpg",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815470485571__e14ee3aa-a97a-4125-9c93-ab87b23923b9-16730325381b8cf575-0",
+        "template--14815470485571__e14ee3aa-a97a-4125-9c93-ab87b23923b9-16730325381b8cf575-1",
+        "f9bd7871-b92a-4c1c-b549-00d75d9ef7d4"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "e14ee3aa-a97a-4125-9c93-ab87b23923b9",
+    "main"
+  ]
+}

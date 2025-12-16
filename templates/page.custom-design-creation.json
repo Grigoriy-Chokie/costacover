@@ -1,0 +1,94 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "text_and_image_A7bbeJ": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/shopifyletscreatedesign_5058d6ae-a26b-408a-863f-f8eb2e34a0c3.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<h3><strong>CUSTOM WALLPAPER \/ WALL MURAL DESIGN OFFER<\/strong><\/h3><p>Have a vision for the perfect wallpaper for your space? Request a quote today!<\/p><p>Transform your home or office into a reflection of your unique style with our custom wallpaper service. Whether it’s for residential or commercial spaces, we’ll help you create a backdrop that inspires, comforts, and feels truly personal!<\/p><p>In addition to our hundreds of ready-made designs, we can create a unique custom wallpaper tailored to your specific needs, using your provided references.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "rich_text_YL43nW": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Kyw8rw": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "tag": false,
+            "title": "Rich text"
+          }
+        },
+        "text_wtDFTp": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p><\/p><h3><strong>How It Works<\/strong><\/h3><p><br\/>1. Share Your Design: Send us your idea, photo, or design reference. If you need inspiration, our team is here to help refine your concept.<br\/>2. Customize Your Order: Select the material and the exact size (width and height of the wall you want to cover) to perfectly fit your wall. We can print your custom design in any custom size and material we use in our production. <br\/>3. Preview & Approve: Before sending your order to the production, we’ll send you a detailed 1 to 3 preview variations (mockup) to ensure the design meets your expectations. 2 edits from the customer can be made and included into the order.  <br\/>4. Print & Deliver: Before placing the mail order you can request us to print the large sample and ship directly to you to check the colors and the material. Once approved, you'll place the separate custom order for the wallpaper size\/material you'd like and we’ll print your custom design wallpaper and ship it directly to you, ready for installation.<\/p><h3><strong>Pricing<\/strong><\/h3><p>A standard custom design services are priced at $100, which includes the creation of a medium-complexity design and two preliminary mockups for your approval.<\/p><p>Some creative designs require substantial time and effort to execute effectively. This process often involves multiple iterations to ensure the final design aligns with your vision—especially when no reference examples are provided to guide the work.<\/p><p>We deeply value the expertise and creativity of our designers, and it is important to ensure their contributions are fairly compensated. Therefore, for projects that require extensive custom work beyond the typical scope, additional design fees may apply.<br\/>The design creation timeframes are at the company's discretion, depending on the designers' workload. Usually it takes 3-5 business days but can be longer depending on the complexity.<\/p><p>Please note, we reserve the right to decline providing services and issue a full refund at our discretion.<\/p><h3><strong>Copyright Disclaimer<\/strong><\/h3><p>Please note that while we design and print the wallpaper for you, all rights to the custom design, its elements, and any related digital files remain with us.<\/p><p>We retain the right to use the created design in any way and for any purposes we choose. The design is exclusively for use on the wallpaper customer purchases and cannot be reproduced or used by the customer for any other purposes.<\/p><p>By purchasing, the customer agrees that the product is a physical item—wallpaper printed with a custom design—rather than ownership of the design itself.<\/p><h3><strong>No returns or refunds are offered for this service<\/strong><br\/><\/h3><p>Once the preliminary sketch or idea\/style, based on the client’s reference images, is approved, the design moves into development. At that point, changes to the approved idea or style are no longer possible.<br\/><br\/>If you’d like us to create additional versions with new styles or ideas, we’d be happy to assist. However, this would require a separate custom design order and a new invoice. <\/p><p><\/p><p><\/p><p><\/p><p><\/p><p><\/p>"
+          }
+        },
+        "button_cXFMzH": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/products\/custom-design-creation",
+            "link_text": "Let's create"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Kyw8rw",
+        "text_wtDFTp",
+        "button_cXFMzH"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "background_image_text_md6kTM": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "Your Vision, Your Wall: Custom Mural Designs",
+        "text": "<p>We are always excited to bring the most inspiring projects to life<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/Untitled-63_72e95410-8b68-4b0c-8638-a187a9684a6e.jpg",
+        "focal_point": "80% 100%",
+        "layout": "left",
+        "height": 750,
+        "framed": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "text_and_image_A7bbeJ",
+    "rich_text_YL43nW",
+    "background_image_text_md6kTM"
+  ]
+}

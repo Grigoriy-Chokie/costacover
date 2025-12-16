@@ -1,0 +1,146 @@
+{% style %}
+  #shopify-section-{{ section.id }} {
+    --content-with-media-button-background: {{ section.settings.button_background }};
+    --content-with-media-button-color: {{ section.settings.button_color }};
+  }
+
+  {%- for block in section.blocks -%}
+    .content-with-media__media--{{ block.id }} {
+      --content-with-media-background-image: url("{{ block.settings.media | image_url }}");
+    }
+  {%- endfor -%}
+{% endstyle %}
+
+{% capture slider_settings %}
+	{
+		"slidesPerView": 1.20,
+		"disableOnInteraction": true,
+    "spaceBetween": 10,
+		"speed": 500
+	}
+{% endcapture  %}
+
+<div class="content-with-media__wrapper page-width">
+  <div class="content-with-media__content">
+    <div class="content__heading-wrapper">
+      {%- unless section.settings.heading == blank -%}
+        <h2 class="content__heading">{{ section.settings.heading }}</h2>
+      {%- endunless -%}
+
+      {%- if section.settings.link_text != blank or section.settings.link_url != blank -%}
+        <a href="{{ section.settings.link_url }}" class="button btn button--primary button--md content-with-media--desktop">
+          {{ section.settings.link_text }}
+        </a>
+      {%- endif -%}
+    </div>
+
+    {%- unless section.settings.description == blank -%}
+      <div class="content__description-wrapper">{{ section.settings.description }}</div>
+    {%- endunless -%}
+
+    {%- if section.settings.link_text != blank or section.settings.link_url != blank -%}
+      <a href="{{ section.settings.link_url }}" class="button btn button--primary button--md content-with-media--mobile">
+        {{ section.settings.link_text }}
+      </a>
+    {%- endif -%}
+  </div>
+
+  <div class="swiper content-with-media__swiper" {% render 'slider-attribute', config: slider_settings, is_mobile_only: true %}>
+    <div class="swiper-wrapper content-with-media__media-list">
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign media_tag = 'div'
+
+          unless block.settings.media_url == blank
+            assign media_tag = 'a'
+          endunless
+        -%}
+
+        <{{ media_tag }}
+          {%- unless block.settings.media_url == blank -%}
+            href="{{ block.settings.media_url }}"
+          {%- endunless -%}
+          class="swiper-slide content-with-media__media content-with-media__media--{{ block.id }}">
+          {%- unless block.settings.media_text == blank -%}
+            <h4 class="content-with-media__media-text">{{ block.settings.media_text }}</h4>
+          {%- endunless -%}
+        </{{ media_tag }}>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Content with media",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Button text",
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Button url"
+    },
+    {
+      "type": "header",
+      "content": "Color"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Button background color"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button text color"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "media",
+      "name": "Media",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "media",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "media_text",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "media_url",
+          "label": "Url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Content with media"
+    }
+  ]
+}
+{% endschema %}

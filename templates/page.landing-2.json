@@ -1,0 +1,1085 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "image_with_text_overlay_JmCmfG": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_UtRnDG": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p>Want a custom Wall Mural <br\/>that makes your Business Stand Out?<\/p>",
+            "subheading_size": "subtitle-lg",
+            "font_size_mobile": 13,
+            "secondary_color": true
+          }
+        },
+        "heading_HkAj4Q": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image with text overlay",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "image_rttJBa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo_PNG_1.png",
+            "image_width": "full_width",
+            "image_max_width": 1000,
+            "image_max_width_mobile": 50
+          }
+        },
+        "text_riRdr7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We know how to help business owners transform the space<\/p>",
+            "text_size": "subtext-custom",
+            "text_max_size": 22,
+            "font_size_mobile": 11,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_yUcxCe": {
+          "type": "button",
+          "settings": {
+            "button_label": "GET QUOTE",
+            "button_link": "https:\/\/costacover.com\/pages\/contact-us",
+            "button_size": "md",
+            "button_secondary_style": false
+          }
+        },
+        "button_7h9Yaf": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "https:\/\/costacover.com\/collections",
+            "button_size": "md",
+            "button_secondary_style": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_UtRnDG",
+        "heading_HkAj4Q",
+        "image_rttJBa",
+        "text_riRdr7",
+        "button_yUcxCe",
+        "button_7h9Yaf"
+      ],
+      "settings": {
+        "transparent_header": false,
+        "are_buttons_aligned": true,
+        "image": "shopify:\/\/shop_images\/salon_bar_stools_copy.jpg",
+        "image_height": "650px",
+        "content_width": "small",
+        "content_position": "md:items-center md:justify-center",
+        "text_alignment": "center",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-center justify-center",
+        "text_alignment_mobile": "center",
+        "color_text": "#000000",
+        "color_highlight": "#000000",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#d7d7d7",
+        "overlay_opacity": 82,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "logo_list_v2_7xXp9a": {
+      "type": "logo-list-v2",
+      "blocks": {
+        "logo_ycpcTL": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot2025-01-17at12.54.57PM.png",
+            "heading": "Logo list",
+            "height": 140,
+            "link": ""
+          }
+        },
+        "logo_aDLMaV": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot2025-01-17at12.54.57PM.png",
+            "heading": "Logo list",
+            "height": 140,
+            "link": ""
+          }
+        },
+        "logo_A9wE9Y": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot2025-01-17at12.54.57PM.png",
+            "heading": "Logo list",
+            "height": 140,
+            "link": ""
+          }
+        },
+        "logo_8kRKd4": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot2025-01-17at12.54.57PM.png",
+            "heading": "Logo list",
+            "height": 140,
+            "link": ""
+          }
+        },
+        "logo_CPcKck": {
+          "type": "logo",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/FullSizeRender_2c905e77-1d13-4af2-84ca-02ecdc73b504.jpg",
+            "heading": "Logo list",
+            "height": 140,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_ycpcTL",
+        "logo_aDLMaV",
+        "logo_A9wE9Y",
+        "logo_8kRKd4",
+        "logo_CPcKck"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "grid_horizontal": 60,
+        "direction": "left",
+        "speed": 5,
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "rich_text_v2_NC3LtE": {
+      "type": "rich-text-v2",
+      "blocks": {
+        "heading_Ag8PWU": {
+          "type": "heading",
+          "settings": {
+            "heading": "WHO WE ARE?",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_md6cyq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>- A team of dedicated specialists and designers with 10 years of experience<br\/>- Florida-based manufacturing with fast turnaround times and high-end printing equipment<br\/>- In-house installation and design team for seamless service<\/p>",
+            "text_size": "subtext-custom",
+            "text_max_size": 22,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_6ar7Vr": {
+          "type": "button",
+          "settings": {
+            "button_label": "GET QUOTE",
+            "button_link": "https:\/\/costacover.com\/pages\/contact-us",
+            "button_size": "md",
+            "button_secondary_style": false,
+            "button_landing_style": false
+          }
+        },
+        "button_nxwbE8": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "https:\/\/costacover.com\/collections",
+            "button_size": "md",
+            "button_secondary_style": false,
+            "button_landing_style": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ag8PWU",
+        "text_md6cyq",
+        "button_6ar7Vr",
+        "button_nxwbE8"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "are_buttons_aligned": true,
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "#8b6c41",
+        "color_button_gradient": "",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "content_grid_dj469z": {
+      "type": "content-grid",
+      "blocks": {
+        "column_VbaaMk": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link": "",
+            "image_desktop": "shopify:\/\/shop_images\/Screenshot2025-01-17at12.54.57PM.png"
+          }
+        },
+        "column_69VATb": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link": "",
+            "image_desktop": "shopify:\/\/shop_images\/Screenshot2025-01-17at12.44.26PM.png"
+          }
+        },
+        "column_KHWPhc": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link": "",
+            "image_desktop": "shopify:\/\/shop_images\/Screenshot2025-01-17at12.54.57PM.png"
+          }
+        },
+        "column_Rz6brY": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link": "",
+            "image_desktop": "shopify:\/\/shop_images\/Screenshot2025-01-17at12.44.26PM.png"
+          }
+        },
+        "column_izYLjp": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link": "",
+            "image_desktop": "shopify:\/\/shop_images\/Screenshot2025-01-17at12.54.57PM.png"
+          }
+        },
+        "column_D33U6D": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link": "",
+            "image_desktop": "shopify:\/\/shop_images\/Screenshot2025-01-17at12.44.26PM.png"
+          }
+        },
+        "column_UmrNPg": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link": "",
+            "image_desktop": "shopify:\/\/shop_images\/Screenshot2025-01-17at12.54.57PM.png"
+          }
+        },
+        "column_7f9m6Y": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link": "",
+            "image_desktop": "shopify:\/\/shop_images\/Screenshot2025-01-17at12.44.26PM.png"
+          }
+        }
+      },
+      "block_order": [
+        "column_VbaaMk",
+        "column_69VATb",
+        "column_KHWPhc",
+        "column_Rz6brY",
+        "column_izYLjp",
+        "column_D33U6D",
+        "column_UmrNPg",
+        "column_7f9m6Y"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "OUR PROJECTS",
+        "heading_alignment": "right",
+        "heading_size": "title-lg tracking-heading",
+        "heading_tag": "h3",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "image_width": "full",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "columns_mobile": "1",
+        "background_color": "",
+        "button_color": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mobile": 36,
+        "padding_bottom_mobile": 36
+      }
+    },
+    "images_slider_QjjjG9": {
+      "type": "images-slider",
+      "blocks": {
+        "image_f3H6KG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_6d6e0f2f-d649-4a6f-8a38-3c22169e24a5.jpg"
+          }
+        },
+        "image_ky4fnc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_4f0b29bf-9c68-42dd-9b96-81cb823433a3.jpg"
+          }
+        },
+        "image_BtJn9y": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_52838c7c-f043-4d7c-a64f-bc3d09486665.jpg"
+          }
+        },
+        "image_Hwr8Bz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_9dc76e8f-5358-4ebc-82de-f7da5d390ad2.jpg"
+          }
+        },
+        "image_zLeqY8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5_a5086adf-339e-49bd-88b1-e9a4cbd70c89.jpg"
+          }
+        },
+        "image_GFcx4z": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6_4b676ded-280d-43a8-833f-4ab457ccb5fc.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_f3H6KG",
+        "image_ky4fnc",
+        "image_BtJn9y",
+        "image_Hwr8Bz",
+        "image_zLeqY8",
+        "image_GFcx4z"
+      ],
+      "settings": {
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0,
+        "heading": "OUR PROJECTS"
+      }
+    },
+    "logo_grid_Y3EzKz": {
+      "type": "logo-grid",
+      "blocks": {
+        "block_QwwaPb": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo1.jpg"
+          }
+        },
+        "block_QwwaPb3": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo3.jpg"
+          }
+        },
+        "block_QwwaPb2": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo2_31673507-851f-4481-8ad2-00f5fe4d93aa.jpg"
+          }
+        },
+        "block_QwwaPb5": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo5.jpg"
+          }
+        },
+        "block_QwwaPb4": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo_4.jpg"
+          }
+        },
+        "block_QwwaPb6": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo7.jpg"
+          }
+        },
+        "block_QwwaPb8": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo9.jpg"
+          }
+        },
+        "block_QwwaPb7": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo8.jpg"
+          }
+        },
+        "block_QwwaPb9": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo11.jpg"
+          }
+        },
+        "block_QwwaPb10": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo10.jpg"
+          }
+        },
+        "block_QwwaPb11": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo12.jpg"
+          }
+        },
+        "block_QwwaPb12": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo13.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "block_QwwaPb",
+        "block_QwwaPb3",
+        "block_QwwaPb2",
+        "block_QwwaPb5",
+        "block_QwwaPb4",
+        "block_QwwaPb6",
+        "block_QwwaPb8",
+        "block_QwwaPb7",
+        "block_QwwaPb9",
+        "block_QwwaPb10",
+        "block_QwwaPb11",
+        "block_QwwaPb12"
+      ],
+      "settings": {
+        "title": "SOME OF OUR CLIENTS",
+        "button_1_text": "GET QUOTE",
+        "button_1_url": "\/https:\/\/costacover.com\/pages\/contact-us",
+        "button_2_text": "SHOP NOW",
+        "button_2_url": "\/https:\/\/costacover.com\/collections",
+        "columns": 6,
+        "columns_mobile": 2,
+        "color_button_background": "#8b6c41",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 90
+      }
+    },
+    "multicolumn_3PTHrR": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_BpVn6P": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "heading_alignment": "center",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image_ratio": "adapt",
+            "heading": "Customization",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Graphic design service including:<br\/>• size and color customization<br\/>• adding your brand identity - logos, images, etc<br\/>• providing a render\/ mockup<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_m8khWf": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "heading_alignment": "center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "left",
+            "image_ratio": "adapt",
+            "heading": "Materials",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Large variety of materials from self-adhesive to Type Il Commercial vinyl<br\/>﻿﻿• NON-toxic inks • A-Class fire rating<br\/>• ﻿﻿GREENGUARD-certified materials<br\/>• ﻿﻿Range of textures<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_c7n3BT": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "heading_alignment": "center",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image_ratio": "adapt",
+            "heading": "Experience",
+            "heading_size": "text-lg-2xl",
+            "text": "<h3>Over 15 000<\/h3><p>custom-printed wallpaper items created in the past 5 years<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_BUjpNM": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "heading_alignment": "center",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image_ratio": "adapt",
+            "heading": "Customer service",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Dedicated, friendly professionals committed to meeting your needs and ensuring a seamless experience<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_ane8zE": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "heading_alignment": "center",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image_ratio": "adapt",
+            "heading": "Wide selection",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Exclusive designs by our designers and artists, constantly expanding collections, and personalized image selection upon request.<\/p><p><\/p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_qWi3Qt": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "heading_alignment": "center",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image_ratio": "adapt",
+            "heading": "Quality",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>First-class commercial printing and cutting equipment ensures the quality of every mural<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_BpVn6P",
+        "column_m8khWf",
+        "column_c7n3BT",
+        "column_BUjpNM",
+        "column_ane8zE",
+        "column_qWi3Qt"
+      ],
+      "settings": {
+        "columns": 3,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "WHY CHOOSE US?",
+        "padding_left": 0,
+        "heading_size": "title-lg tracking-heading",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_type": "primary",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#f3eae0",
+        "gradient_background": "",
+        "color_card_background": "#ffffff",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 52,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "gap": 40
+      }
+    },
+    "content_grid_wNHPAN": {
+      "type": "content-grid",
+      "blocks": {
+        "column_LpfF37": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link": "",
+            "image_desktop": "shopify:\/\/shop_images\/01_62ca61db-4c9d-4118-8125-538d5e3866b8.jpg"
+          }
+        },
+        "column_HUXpWm": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link": "",
+            "image_desktop": "shopify:\/\/shop_images\/05_869e7626-c91a-4493-9a8f-bf371090aaee.jpg"
+          }
+        },
+        "column_PkLBKJ": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link": "",
+            "image_desktop": "shopify:\/\/shop_images\/04_c1067b24-c80d-459e-af5a-2deb0f800654.jpg"
+          }
+        },
+        "column_QzYEXy": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link": "",
+            "image_desktop": "shopify:\/\/shop_images\/03_9dc698da-7968-45a6-98d0-877a9e6e2da4.jpg"
+          }
+        },
+        "column_hfNnwe": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link": "",
+            "image_desktop": "shopify:\/\/shop_images\/02_8ebf669c-9a7c-400e-a7dd-2a25d1594204.jpg"
+          }
+        },
+        "button_Lr9KiF": {
+          "type": "button",
+          "settings": {
+            "button_label": "GET QUOTE",
+            "button_link": "\/https:\/\/costacover.com\/pages\/contact-us"
+          }
+        },
+        "button_VC8G98": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "\/https:\/\/costacover.com\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "column_LpfF37",
+        "column_HUXpWm",
+        "column_PkLBKJ",
+        "column_QzYEXy",
+        "column_hfNnwe",
+        "button_Lr9KiF",
+        "button_VC8G98"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_alignment": "left",
+        "heading_size": "title-lg tracking-heading",
+        "heading_tag": "h2",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "image_width": "full",
+        "columns_desktop": 5,
+        "column_alignment": "left",
+        "columns_mobile": "1",
+        "background_color": "#f3eae0",
+        "button_color": "#8b6c41",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "padding_top_mobile": 36,
+        "padding_bottom_mobile": 36
+      }
+    },
+    "image_with_text_yNWkQw": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_GW37Gq": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em>SAMPLE SET<\/em>",
+            "heading_size": "title-xl tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "sketch-underline"
+          }
+        },
+        "text_9YP8fb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Order a sample set of all materials to personally check their texture and quality, and choose the one that best suits your space<\/p>",
+            "text_size": "subtext-custom",
+            "text_max_size": 22,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_xDdVtJ": {
+          "type": "button",
+          "settings": {
+            "button_label": "ORDER NOW",
+            "button_link": "\/https:\/\/costacover.com\/pages\/contact-us",
+            "button_size": "md",
+            "button_secondary_style": false,
+            "is_button_absolute": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_GW37Gq",
+        "text_9YP8fb",
+        "button_xDdVtJ"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/20240612_105312.jpg",
+        "image_height": "500px",
+        "image_width": "medium",
+        "layout": "text_first",
+        "text_alignment": "right",
+        "image_height_mobile": "auto",
+        "layout_proportion": "secondary",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "horizontal"
+      }
+    },
+    "multi_collage_rBwrtQ": {
+      "type": "multi-collage",
+      "blocks": {
+        "collage_row_77yHHR": {
+          "type": "_collage-row",
+          "settings": {
+            "image_overlay": "radial-gradient(rgba(0, 0, 0, var(--colorImageOverlayTextShadow)) 0%, transparent 60%)",
+            "columns": 2,
+            "columns_mobile": 1
+          },
+          "blocks": {
+            "collage_row_media_BQgcHB": {
+              "type": "_collage-row-media",
+              "settings": {
+                "media_size": "auto",
+                "media_size_mobile": "auto",
+                "media_width": "75%",
+                "media_width_mobile": "33%",
+                "style_media": false,
+                "title": "Wall murals for offices",
+                "text": "Create a sophisticated space that represents your brands identity.",
+                "button_text": "LEARN MORE",
+                "button_url": "\/",
+                "type_media": "image",
+                "image": "shopify:\/\/shop_images\/01_86c6f25d-9769-4494-9737-9c1df6990e39.jpg"
+              },
+              "blocks": {}
+            },
+            "collage_row_media_wBkHM7": {
+              "type": "_collage-row-media",
+              "settings": {
+                "media_size": "auto",
+                "media_size_mobile": "auto",
+                "media_width": "50%",
+                "media_width_mobile": "50%",
+                "style_media": false,
+                "title": "Wall murals for hotels",
+                "text": "Make your hotel a memorable destination your guests will forever remember.",
+                "button_text": "LEARN MORE",
+                "button_url": "\/",
+                "type_media": "image",
+                "image": "shopify:\/\/shop_images\/Screenshot2025-01-17at12.44.26PM.png"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "collage_row_media_BQgcHB",
+            "collage_row_media_wBkHM7"
+          ]
+        },
+        "collage_row_Cf4HUR": {
+          "type": "_collage-row",
+          "settings": {
+            "image_overlay": "radial-gradient(rgba(0, 0, 0, var(--colorImageOverlayTextShadow)) 0%, transparent 60%)",
+            "columns": 3,
+            "columns_mobile": 1
+          },
+          "blocks": {
+            "collage_row_media_GBTtCk": {
+              "type": "_collage-row-media",
+              "settings": {
+                "media_size": "auto",
+                "media_size_mobile": "auto",
+                "media_width": "33%",
+                "media_width_mobile": "33%",
+                "style_media": false,
+                "title": "For retail",
+                "text": "Create an inspiring environment that  will elevate your customers shopping experience.",
+                "button_text": "LEARN MORE",
+                "button_url": "\/",
+                "type_media": "image",
+                "image": "shopify:\/\/shop_images\/02_38f35f4f-1fae-48f7-8703-be93540841a8.jpg"
+              },
+              "blocks": {}
+            },
+            "collage_row_media_TCTDkN": {
+              "type": "_collage-row-media",
+              "settings": {
+                "media_size": "auto",
+                "media_size_mobile": "auto",
+                "media_width": "33%",
+                "media_width_mobile": "33%",
+                "style_media": false,
+                "title": "For gyms",
+                "text": "Nothing screams \"motivation\" as loud as a wall size mural.",
+                "button_text": "LEARN MORE",
+                "button_url": "\/",
+                "type_media": "image",
+                "image": "shopify:\/\/shop_images\/03_ed323a12-ddfb-43e1-bdd6-cc7e455ea8bb.jpg"
+              },
+              "blocks": {}
+            },
+            "collage_row_media_LeF3j8": {
+              "type": "_collage-row-media",
+              "settings": {
+                "media_size": "auto",
+                "media_size_mobile": "auto",
+                "media_width": "33%",
+                "media_width_mobile": "33%",
+                "style_media": false,
+                "title": "For restaurants",
+                "text": "Easily add to your customers` dining experience with a focus wall they will gaze upon.",
+                "button_text": "LEARN MORE",
+                "button_url": "\/",
+                "type_media": "image",
+                "image": "shopify:\/\/shop_images\/04_6444d45c-4e7e-4d89-a7ed-525b3ef9d146.jpg"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "collage_row_media_GBTtCk",
+            "collage_row_media_TCTDkN",
+            "collage_row_media_LeF3j8"
+          ]
+        }
+      },
+      "block_order": [
+        "collage_row_77yHHR",
+        "collage_row_Cf4HUR"
+      ],
+      "settings": {
+        "title": "Shop by category",
+        "color_button_background": "#8b6c41",
+        "padding_top": 48,
+        "padding_bottom": 50,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 20
+      }
+    },
+    "multicolumn_BKiwCY": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_UknCCT": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "heading_alignment": "center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image_ratio": "adapt",
+            "heading": "Get a Trade Account",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "REQUEST",
+            "button_link": "https:\/\/costacover.com\/pages\/designer-trade-account",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_3w8tx3": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "heading_alignment": "center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image_ratio": "adapt",
+            "heading": "Free quote for your project today",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "GET QUOTE",
+            "button_link": "\/https:\/\/costacover.com\/pages\/contact-us",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_UknCCT",
+        "column_3w8tx3"
+      ],
+      "settings": {
+        "columns": 2,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "heading": "ARE YOU A DESIGNER?",
+        "padding_left": 0,
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_type": "secondary",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#f3eae0",
+        "gradient_background": "",
+        "color_card_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "#8b6c41",
+        "color_button_gradient": "",
+        "padding_top": 52,
+        "padding_bottom": 120,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "gap": 40
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "image_with_text_overlay_JmCmfG",
+    "logo_list_v2_7xXp9a",
+    "rich_text_v2_NC3LtE",
+    "content_grid_dj469z",
+    "images_slider_QjjjG9",
+    "logo_grid_Y3EzKz",
+    "multicolumn_3PTHrR",
+    "content_grid_wNHPAN",
+    "image_with_text_yNWkQw",
+    "multi_collage_rBwrtQ",
+    "multicolumn_BKiwCY"
+  ]
+}

@@ -1,0 +1,445 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "CostaCover",
+            "title_size": 80,
+            "subheading": "Custom Peel and Stick and Traditional Wallpaper",
+            "link": "shopify://products/self-adhesive-eucalyptus-leaves-and-branches-removable-wallpaper-cc227",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/011.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 12,
+            "focal_point": "top center"
+          }
+        },
+        "slideshow-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Fairy Tale \nin the kids room",
+            "title_size": 60,
+            "subheading": "",
+            "link": "shopify://collections/kids",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/07_a0c208c7-128b-4bfb-9fad-21ff92cfd1ea.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 12,
+            "focal_point": "bottom center"
+          }
+        },
+        "7f9d9f16-05cf-441d-83ae-80ef88b49081": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Neutral abstract\nmurals",
+            "title_size": 60,
+            "subheading": "",
+            "link": "shopify://collections/abstract-wall-mural",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/08_2.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 12,
+            "focal_point": "center center"
+          }
+        },
+        "09434f1f-44ef-4f54-924f-4b659161dce9": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "visualize our designs\n in your room",
+            "title_size": 60,
+            "subheading": "",
+            "link": "https://costacover.com/pages/visualizer",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/02_8bb5ef53-f013-46c9-909a-74fa0f632650.jpg",
+            "image_mobile": "shopify://shop_images/02_8bb5ef53-f013-46c9-909a-74fa0f632650.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 12,
+            "focal_point": "center center"
+          }
+        },
+        "14a45ee7-f63c-490c-8565-d8c2e2eeec66": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "Local Showroom at Dania Beach, FL",
+            "title": "CONCEPT WALLS",
+            "title_size": 80,
+            "subheading": "Over 10 000 Wallpaper, Wall Panels, Stone Veneer, Faux Paint",
+            "link": "https://conceptwalls.store",
+            "link_text": "COnceptwalls.store",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#dddddd",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/Living_2_web.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 16,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-0",
+        "slideshow-1",
+        "7f9d9f16-05cf-441d-83ae-80ef88b49081",
+        "09434f1f-44ef-4f54-924f-4b659161dce9",
+        "14a45ee7-f63c-490c-8565-d8c2e2eeec66"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Popular",
+        "home_featured_products": "featured",
+        "per_row": 5,
+        "rows": 2,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "39e1c403-fe02-4ee0-ae0c-b022d0ed571e": {
+      "type": "custom-images-clash",
+      "blocks": {
+        "template--14815470288963__39e1c403-fe02-4ee0-ae0c-b022d0ed571e-16715867549fe7cac5-0": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/0555.jpg",
+            "title": "Wall mural",
+            "btn-text": "Shop all",
+            "btn-url": "shopify://collections/wall-mural-bestseller"
+          }
+        },
+        "template--14815470288963__39e1c403-fe02-4ee0-ae0c-b022d0ed571e-16715867549fe7cac5-1": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/06_29472f14-8245-4d95-a334-a5ce2e5b13db.jpg",
+            "title": "Wallpaper",
+            "btn-text": "Shop all",
+            "btn-url": "shopify://collections/wallpaper-bestseller"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815470288963__39e1c403-fe02-4ee0-ae0c-b022d0ed571e-16715867549fe7cac5-0",
+        "template--14815470288963__39e1c403-fe02-4ee0-ae0c-b022d0ed571e-16715867549fe7cac5-1"
+      ],
+      "settings": {
+        "main-color": "#ffffff",
+        "margin-top": 0,
+        "margin-bottom": 75,
+        "margin-top-mob": 40,
+        "margin-bottom-mob": 40
+      }
+    },
+    "hero_video_fbMTVH": {
+      "type": "hero-video",
+      "name": "t:sections.hero-video.presets.video_hero.name",
+      "settings": {
+        "title": "Let us bring your walls to life",
+        "title_size": 54,
+        "subheading": "",
+        "link_text": "our story",
+        "link": "shopify://pages/about-us",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https://youtu.be/yB_-6JscMf8",
+        "overlay_opacity": 20,
+        "section_height": "750px",
+        "mobile_height": "250px"
+      }
+    },
+    "16706011882250f9b9": {
+      "type": "apps",
+      "blocks": {
+        "712019e5-1acc-4fc6-8d27-66ea41914f65": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        },
+        "3d7a16ba-1328-42ae-878b-6ea1801578d4": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "left",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "712019e5-1acc-4fc6-8d27-66ea41914f65",
+        "3d7a16ba-1328-42ae-878b-6ea1801578d4"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "text_and_image_TWMkiT": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/AM036_interior_01_copy.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Trendy Designs and Best Customer Service",
+        "text": "<ul><li> Top-notch, high quality and eco-friendly   Materials. High-end printing and cutting equipment.</li><li>1000+ designs of elegant and modern wallpaper and wall murals</li><li>US based and family owned business</li><li>Easy installation and removable material options</li><li>Proudly made in the USA</li><li>Customer care - We always happy to assist you. Don't hesitate to contact us.</li></ul>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "f6e6688c-6444-4eb1-9fbd-344ae07bc88a": {
+      "type": "newsletter",
+      "blocks": {
+        "template--14815470288963__f6e6688c-6444-4eb1-9fbd-344ae07bc88a-1671582214f4ffab94-0": {
+          "type": "title",
+          "settings": {
+            "title": "GET FREE SAMPLES"
+          }
+        },
+        "template--14815470288963__f6e6688c-6444-4eb1-9fbd-344ae07bc88a-1671582214f4ffab94-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Subscribe and get free samples with free shipping</p>"
+          }
+        },
+        "template--14815470288963__f6e6688c-6444-4eb1-9fbd-344ae07bc88a-1671582214f4ffab94-2": {
+          "type": "form",
+          "settings": {
+            "btn-text": "SUBSCRIBE",
+            "btn-text-color": "#ffffff",
+            "btn-color": "#e9c013"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815470288963__f6e6688c-6444-4eb1-9fbd-344ae07bc88a-1671582214f4ffab94-0",
+        "template--14815470288963__f6e6688c-6444-4eb1-9fbd-344ae07bc88a-1671582214f4ffab94-1",
+        "template--14815470288963__f6e6688c-6444-4eb1-9fbd-344ae07bc88a-1671582214f4ffab94-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_background": "#fafafa",
+        "color_text": "#020202"
+      }
+    },
+    "37e928d8-9712-4f33-a6a4-38397db3a96c": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "TEST A SAMPLE",
+        "text": "<p>on your wall</p>",
+        "button_label": "read",
+        "button_link": "shopify://blogs/how-it-works/test-a-peel-and-stick-wallpaper-sample",
+        "image": "shopify://shop_images/sample.jpg",
+        "focal_point": "20% 100%",
+        "layout": "right",
+        "height": 550,
+        "framed": true,
+        "parallax": true,
+        "parallax_direction": "top"
+      }
+    },
+    "a577b0e5-70f0-41ff-9314-b700d767d860": {
+      "type": "image-compare",
+      "blocks": {
+        "template--14815470288963__a577b0e5-70f0-41ff-9314-b700d767d860-1674507269acb6cbb5-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/before_2000x960_v2.jpg"
+          }
+        },
+        "template--14815470288963__a577b0e5-70f0-41ff-9314-b700d767d860-1674507269acb6cbb5-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/after_2000x960_v2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815470288963__a577b0e5-70f0-41ff-9314-b700d767d860-1674507269acb6cbb5-0",
+        "template--14815470288963__a577b0e5-70f0-41ff-9314-b700d767d860-1674507269acb6cbb5-1"
+      ],
+      "settings": {
+        "heading": "Before & after",
+        "heading_size": "h2",
+        "heading_position": "center",
+        "fullwidth": true,
+        "slider_style": "minimal",
+        "height": 480,
+        "color": "#ffffff"
+      }
+    },
+    "c9ec8c6b-0bdd-4495-82dc-d9a48251ced5": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--15114958831683__c9ec8c6b-0bdd-4495-82dc-d9a48251ced5-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/banner.jpg",
+            "link": "shopify://blogs/how-it-works/our-materials",
+            "width": "66%",
+            "alignment": "center"
+          }
+        },
+        "template--15114958831683__c9ec8c6b-0bdd-4495-82dc-d9a48251ced5-liquid-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>NEW MATERIALS!</h2><p style=\"margin-bottom: 10px;\">Now we offer Traditional materials for Printed Wallpaper:</p>\n<ul>\n<li style=\"margin-bottom: 10px;\">Canvas textured Unpasted Type II Wallpaper (Glue required)</li>\n<li>Smooth Pre-Pasted Wallpaper (Water activated glue)</li></p>\n<li style=\"margin-bottom: 10px;\">Non-Woven Unpasted Wallpaper (Glue required)</li>\n</ul>",
+            "width": "33%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15114958831683__c9ec8c6b-0bdd-4495-82dc-d9a48251ced5-image-1",
+        "template--15114958831683__c9ec8c6b-0bdd-4495-82dc-d9a48251ced5-liquid-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "advanced_content_KwHWby": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_3Bn6wn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DS_PPN_Badge_3_copy2_be5a0146-c474-4c09-b240-7b0a325af1de.jpg",
+            "link": "https://dreamscapewalls.com/",
+            "width": "33%",
+            "alignment": "center"
+          }
+        },
+        "liquid_TRJbfx": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Professional Wall Coverings by DreamScape</h2><p>We are proud to be a trusted member of\nthe DreamScape Print Provider Network,\nauthorized to produce exceptional wallcoverings using their premium media.\nWith our expertise in wallcovering printing and commitment to quality, we offer our clients the opportunity to transform their spaces with vibrant designs and stunning visuals on DreamScape's innovative materials.</p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_3Bn6wn",
+        "liquid_TRJbfx"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "58148d36-5862-4869-91fa-274b7270bae0": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "Blog articles",
+        "blog": "how-it-works",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": false,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": true,
+        "blog_image_size": "natural",
+        "divider": false
+      }
+    },
+    "b8a64fde-002b-4181-942f-50dfed17649c": {
+      "type": "wizart-floating-button",
+      "custom_css": [],
+      "settings": {
+        "second_option": true,
+        "token": "VtngFar8uyUmV8DjDKU6bk4Fp0POM5mm9W4w7MvjbkIQGsFZj5MG8MwK9fXY",
+        "button_title": "Try it in your room in one click!",
+        "tooltip_disable": true,
+        "glitter_disable": true,
+        "tooltip_title": "See it in your room!",
+        "tooltip_position": "top",
+        "custom_class": "wizart-homepage",
+        "width": "275px",
+        "height": "40px",
+        "color_background": "#876b44",
+        "text_color": "#ffffff",
+        "image_url": "",
+        "border": "",
+        "border_css": "1px solid #876B44",
+        "show_compact": false,
+        "tutorial": true,
+        "tutorial_delay": "",
+        "element_selector": "body",
+        "insert_element_selector": "before",
+        "iframe_selector": "body",
+        "insert_iframe_selector": "before"
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "featured-collection",
+    "39e1c403-fe02-4ee0-ae0c-b022d0ed571e",
+    "hero_video_fbMTVH",
+    "16706011882250f9b9",
+    "text_and_image_TWMkiT",
+    "f6e6688c-6444-4eb1-9fbd-344ae07bc88a",
+    "37e928d8-9712-4f33-a6a4-38397db3a96c",
+    "a577b0e5-70f0-41ff-9314-b700d767d860",
+    "c9ec8c6b-0bdd-4495-82dc-d9a48251ced5",
+    "advanced_content_KwHWby",
+    "58148d36-5862-4869-91fa-274b7270bae0",
+    "b8a64fde-002b-4181-942f-50dfed17649c"
+  ]
+}

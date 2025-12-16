@@ -1,0 +1,293 @@
+{%- liquid
+    assign type_media = block.settings.type_media
+    assign video = block.settings.video
+    assign image = block.settings.image
+    assign media_size = block.settings.media_size
+    assign style_media = 'cover'
+    if block.settings.style_media == true
+      assign style_media = 'contain'
+    endif
+    assign show_media = false
+  
+    if type_media == 'image' and image != blank
+      assign show_media = true
+    endif
+    if type_media == 'video' and video != blank
+      assign show_media = true
+    endif
+  
+    assign current_media = null
+  
+    if type_media == 'image' and image != blank
+      assign current_media = image
+    endif
+    if type_media == 'video' and video != blank
+      assign current_media = video
+    endif
+  
+    assign media_ratio = current_media.aspect_ratio
+  
+    assign image_mobile = block.settings.image_mobile
+    assign video_mobile = block.settings.video_mobile
+    assign poster = video.preview_image
+    assign title = block.settings.title
+    assign text = block.settings.text
+    assign button_text = block.settings.button_text
+    assign button_url = block.settings.button_url
+  -%}
+  {%- if show_media == true -%}
+    <div
+      {{ block.shopify_attributes }} class="collage-rows__media collage-media">
+      <div
+        style="--aspect-ratio: {{ media_ratio }};"
+  
+        class="collage-media__item  collage-media__item--style-{{ style_media }} collage-media__item--size-{{ media_size }}  collage-media__item--size-{{ media_size_mobile }}-mobile"
+      >
+        {%- if type_media == 'video' -%}
+          {% render 'video',
+            video: video,
+            video_mobile: video_mobile,
+            media_request: 750,
+            playsinline: true,
+            autoplay: true,
+            controls: false,
+            loop: true,
+            muted: true,
+            poster: poster
+          %}
+        {%- endif -%}
+        {%- if type_media == 'image' -%}
+          {% render 'picture',
+            image: image,
+            image_mobile: image_mobile,
+            mobile_breakpoint: 750,
+            loading: 'lazy',
+            fetchpriority: 'low'
+          %}
+        {%- endif -%}
+        {% if title != blank %}
+          <div class="collage-media__content">
+            <h3 class="heading text-lg-2xl font-bold">
+              {{ title }}
+            </h3>
+            {% if text != blank %}
+              <p>{{ text }}</p>
+            {% endif %}
+            {% if button_text != blank and button_url != blank %}
+              <a href="{{ button_url }}" class="btn button button--primary button--fixed icon-with-text">
+                <span class="btn-text">
+                  {{ button_text }}
+                  {%- render 'icon', icon: 'arrow-right', size: 'sm', class: 'transform' -%}
+                </span>
+              </a>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {%- endif -%}
+  
+  {% schema %}
+  {
+    "name": "Collage Row Media",
+    "tag": null,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Media Settings"
+      },
+      {
+        "type": "select",
+        "id": "media_size",
+        "label": "Media size",
+        "options": [
+          {
+            "value": "auto",
+            "label": "Original image ratio"
+          },
+          {
+            "value": "sm",
+            "label": "Small"
+          },
+          {
+            "value": "md",
+            "label": "Medium"
+          },
+          {
+            "value": "lg",
+            "label": "Large"
+          }
+        ],
+        "default": "auto"
+      },
+      {
+        "type": "select",
+        "id": "media_size_mobile",
+        "label": "Media size(mobile)",
+        "options": [
+          {
+            "value": "auto",
+            "label": "Original image ratio"
+          },
+          {
+            "value": "sm",
+            "label": "Small"
+          },
+          {
+            "value": "md",
+            "label": "Medium"
+          },
+          {
+            "value": "lg",
+            "label": "Large"
+          }
+        ],
+        "default": "auto"
+      },
+      {
+        "type": "select",
+        "id": "media_width",
+        "label": "Media width",
+        "options": [
+          {
+            "value": "100%",
+            "label": "100%"
+          },
+          {
+            "value": "75%",
+            "label": "75%"
+          },
+          {
+            "value": "66%",
+            "label": "66%"
+          },
+          {
+            "value": "50%",
+            "label": "50%"
+          },
+          {
+            "value": "33%",
+            "label": "33%"
+          },
+          {
+            "value": "25%",
+            "label": "25%"
+          }
+        ],
+        "default": "100%"
+      },
+      {
+        "type": "select",
+        "id": "media_width_mobile",
+        "label": "Media width(mobile)",
+        "options": [
+          {
+            "value": "100%",
+            "label": "100%"
+          },
+          {
+            "value": "75%",
+            "label": "75%"
+          },
+          {
+            "value": "66%",
+            "label": "66%"
+          },
+          {
+            "value": "50%",
+            "label": "50%"
+          },
+          {
+            "value": "33%",
+            "label": "33%"
+          },
+          {
+            "value": "25%",
+            "label": "25%"
+          }
+        ],
+        "default": "100%"
+      },
+      {
+        "type": "checkbox",
+        "id": "style_media",
+        "label": "Disabled style: “object-fit: cover” for media",
+        "default": false
+      },
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "label": "Title",
+        "default": "Lorem Ipsum"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "Lorem Ipsum Lorem Ipsum Lorem Ipsum"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button text",
+        "default": "Lorem"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button link",
+        "default": "/"
+      },
+      {
+        "type": "select",
+        "id": "type_media",
+        "label": "Type of media",
+        "options": [
+          {
+            "value": "image",
+            "label": "Image"
+          },
+          {
+            "value": "video",
+            "label": "Video"
+          }
+        ],
+        "default": "image"
+      },
+      {
+        "type": "header",
+        "content": "Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image(Desktop)"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_mobile",
+        "label": "Image(Mobile)"
+      },
+      {
+        "type": "header",
+        "content": "Video"
+      },
+      {
+        "type": "video",
+        "id": "video",
+        "label": "Video(Desktop)"
+      },
+      {
+        "type": "video",
+        "id": "video_mobile",
+        "label": "Video(Mobile)"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Collage Row Media"
+      }
+    ]
+  }
+  {% endschema %}
+  

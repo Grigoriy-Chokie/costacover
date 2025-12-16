@@ -1,0 +1,235 @@
+{{ 'calculator-popup.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'calculator-popup.js' | asset_url }}" defer></script>
+<script src="{{ 'calculator.js' | asset_url }}" defer></script>
+
+{% liquid
+  assign product_type = ''
+  assign product_collections = product.collections | map: 'handle'
+
+  if product_collections contains 'wallpaper'
+    assign product_type = 'wallpaper'
+  elsif product_collections contains 'wall-mural'
+    assign product_type = 'wall-mural'
+  endif
+%}
+
+<calculator-popup class="calculator-popup">
+  <div class="calculator-popup__container">
+    <div class="calculator-popup__close-cross calculator-popup__close">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" x="0" y="0" viewBox="0 0 320.591 320.591" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g></svg>
+    </div>
+    <aside class="calculator-popup__info calculator-aside-info">
+      {% if block.settings.aside_title_1 != blank %}
+        <p class="calculator-aside-info__title">
+          {{ block.settings.aside_icon_1 }}
+          {{ block.settings.aside_title_1 }}
+        </p>
+      {% endif %}
+      {% if block.settings.aside_text_1  != blank%}
+        <div class="calculator-aside-info__text">
+          {{ block.settings.aside_text_1 }}
+        </div>
+      {% endif %}
+
+      {% if block.settings.aside_title_2 != blank %}
+        <p class="calculator-aside-info__title">
+          {{ block.settings.aside_icon_2 }}
+          {{ block.settings.aside_title_2 }}
+        </p>
+      {% endif %}
+      {% if block.settings.aside_text_2 != blank%}
+        <div class="calculator-aside-info__text">
+          {{ block.settings.aside_text_2 }}
+        </div>
+      {% endif %}
+    </aside>
+    <div class="calculator-popup__form-container">
+      <p class="calculator__title">{{ 'wallpaper_calculator.popup_title' | t }}</p>
+      {% assign qty_id = section.id | append: product.id %}
+      <calculator-from class="calculator"
+                      data-product-type="{{- product_type -}}"
+                      data-product-form-id="AddToCartForm-{{ section.id }}-{{ product.id }}"
+                      data-product-quantity-id="Quantity-{{ qty_id }}"
+      >
+        <form class="calculator__form" method="get" id="calculator-form">
+          <select name="measurement" id="measurement" class="calculator__measurement-selector">
+            <option value="in" default>in,ft</option>
+            <option value="cm">cm</option>
+          </select>
+          <div class="calculator-errors" hidden>{{ 'wallpaper_calculator.empty_error' | t }}</div>
+          <div class="calculator__wall-size-inputs wall-size">
+            <div class="wall-size__inch-inputs wall-size__inch-inputs--active">
+              <p class="wall-size__inputs-title">{{ 'wallpaper_calculator.wall_height' | t }}</p>
+              <div class="wall-size__inputs wall-size__height">
+                <div class="calculator-input__container height-input__container">
+                  <input name="height-ft"
+                    id="height-ft"
+                    type="number"
+                    class="height-input height-input__ft"
+                    min="1"
+                    step="1"
+                  >
+                  <label for="height-ft" class="height-input__label">ft</label>
+                </div>
+                <div class="calculator-input__container height-input__container">
+                  <input name="height-in"
+                    id="height-in"
+                    type="number"
+                    class="height-input height-input__in"
+                    min="1"
+                    step="1"
+                  >
+                  <label for="height-in" class="height-input__label">in</label>
+                </div>
+              </div>
+              <p class="wall-size__inputs-title wall-size__inputs-title--width">{{ 'wallpaper_calculator.wall_width' | t }}</p>
+              <div class="wall-size__inputs wall-size__width" id="wall-inch-base-input">
+                <div class="calculator-input__container width-input__container">
+                  <input name="width-ft"
+                    id="width-ft"
+                    type="number"
+                    class="width-input width-input__ft"
+                    min="1"
+                    step="1"
+                  >
+                  <label for="width-ft" class="width-input__label">ft</label>
+                </div>
+                <div class="calculator-input__container width-input__container">
+                  <input name="width-in"
+                    id="width-in"
+                    type="number"
+                    class="width-input width-input__in"
+                    min="1"
+                    step="1"
+                  >
+                  <label for="width-in" class="width-input__label">in</label>
+                </div>
+              </div>
+            </div>
+            <div class="wall-size__centimeter-inputs">
+              <p class="wall-size__inputs-title">{{ 'wallpaper_calculator.wall_height' | t }}</p>
+              <div class="wall-size__inputs wall-size__height">
+                <div class="calculator-input__container height-input__container">
+                  <input name="height-cm"
+                    id="height-cm"
+                    type="number"
+                    class="height-input height-input__cm"
+                    min="1"
+                    step="1"
+                    disabled
+                  >
+                  <label for="height-cm" class="height-input__label">cm</label>
+                </div>
+              </div>
+              <p class="wall-size__inputs-title wall-size__inputs-title--width">{{ 'wallpaper_calculator.wall_width' | t }}</p>
+              <div class="wall-size__inputs wall-size__width" id="wall-centimeter-base-input">
+                <div class="calculator-input__container width-input__container">
+                  <input name="width-cm"
+                    id="width-cm"
+                    type="number"
+                    class="width-input width-input__cm"
+                    min="1"
+                    step="1"
+                    disabled
+                  >
+                  <label for="width-cm" class="width-input__label">cm</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="calculator__add-wall-button">
+            <span>+</span>
+            {{ 'wallpaper_calculator.add_another_wall' | t }}
+          </button>
+        </form>
+        <div class="calculator__results calculator-results" hidden>
+          <div class="calculator-results__main-info results-main-info"></div>
+          <p class="calculator-results__note">
+            {{ block.settings.result_note }}
+          </p>
+        </div>
+        {%- form 'contact', class: 'calculator-contact-form', hidden: true -%}
+          <input type="hidden" name="contact[form_type]" value="Calculator product form">
+
+          {%- if form.posted_successfully? -%}
+            <p class="note note--success">
+              {{ 'contact.form.post_success' | t }}
+            </p>
+          {%- endif -%}
+
+          {{ form.errors | default_errors }}
+
+          <div class="calculator-contact-form__flex-container">
+            <div class="calculator-contact-form__data">
+              <div class="grid grid--small">
+                <div class="grid__item medium-up--one-half">
+                  <label for="ContactFormName-{{ section.id }}">{{ 'contact.form.name' | t }}</label>
+                  <input type="text" id="ContactFormName-{{ section.id }}" class="input-full" name="contact[name]" autocapitalize="words" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
+                </div>
+
+                <div class="grid__item medium-up--one-half">
+                  <label for="ContactFormEmail-{{ section.id }}">{{ 'contact.form.email' | t }}</label>
+                  <input type="email" id="ContactFormEmail-{{ section.id }}" class="input-full" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+                </div>
+              </div>
+              {%- if section.settings.show_phone -%}
+                <label for="ContactFormPhone-{{ section.id }}">{{ 'contact.form.phone' | t }}</label>
+                <input type="tel" id="ContactFormPhone-{{ section.id }}" class="input-full" name="contact[phone]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+              {%- endif -%}
+
+              <div class="grid__item grid__item--calculator-contact">
+                <label for="ContactFormMessage-{{ section.id }}">{{ 'contact.form.message' | t }}</label>
+                <textarea rows="5" id="ContactFormMessage-{{ section.id }}" class="input-full" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+              </div>
+
+              <label for="contact-form-submit-{{ section.id }}" class="hidden-label">{{ 'contact.form.send' | t }}</label>
+              <button type="submit" id="contact-form-submit-{{ section.id }}" class="btn">
+                {{ 'contact.form.send' | t }}
+              </button>
+
+              {% comment %}
+                Remove the following three lines of code to remove the note
+                about being protected by Google's reCAPTCHA service.
+                By removing it, the small reCAPTCHA widget will appear in the
+                bottom right corner of the page.
+              {% endcomment %}
+              {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
+            </div>
+          </div>
+        {%- endform -%}
+      </calculator-from>
+      <footer class="calculator-popup__footer">
+        <button class="calculator-popup__close btn btn--secondary calculator-popup__close">{{ 'wallpaper_calculator.close' | t }}</button>
+        <button class="calculator-popup__submit btn" type="submit" form="calculator-form">{{ 'wallpaper_calculator.calculate' | t }}</button>
+
+        {%- liquid
+          assign current_variant = product.selected_or_first_available_variant
+
+          assign default_text = 'products.product.add_to_cart' | t
+          assign button_text = 'products.product.add_to_cart' | t
+          if template contains 'preorder'
+            assign default_text = 'products.product.preorder' | t
+            assign button_text = 'products.product.preorder' | t
+          endif
+          unless current_variant.available
+            assign default_text = 'products.product.sold_out' | t
+            assign button_text = 'products.product.sold_out' | t
+          endunless
+        -%}
+
+        <button
+          {% if product.empty? %}type="button"{% else %}type="submit"{% endif %}
+          name="add"
+          data-add-to-cart
+          class="btn add-to-cart calculator__add-to-cart"
+          form="AddToCartForm-{{ section.id }}-{{ product.id }}"
+          hidden="true"
+          {% unless current_variant.available %} disabled="disabled"{% endunless %}>
+          <span data-add-to-cart-text data-default-text="{{ default_text }}">
+            {{ button_text }}
+          </span>
+        </button>
+      </footer>
+    </div>
+  </div>
+</calculator-popup>

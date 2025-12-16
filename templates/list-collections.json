@@ -1,0 +1,200 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "list-collections-template",
+      "blocks": {
+        "b9497ec9-e4d2-490c-869b-2c8ba421916a": {
+          "type": "collection",
+          "settings": {
+            "collection": "abstract-wall-mural"
+          }
+        },
+        "ba85e062-64a2-41ee-bd8b-b6934768de90": {
+          "type": "collection",
+          "settings": {
+            "collection": "art-deco-wallpaper"
+          }
+        },
+        "bdaf06e8-d081-4573-b5ee-4494e2034c08": {
+          "type": "collection",
+          "settings": {
+            "collection": "black-white-wall-mural"
+          }
+        },
+        "d8f464d7-9ed2-45ee-9db6-89540052c4ef": {
+          "type": "collection",
+          "settings": {
+            "collection": "boho-wallpaper"
+          }
+        },
+        "fbf61692-1d0b-4c5d-b2a9-a38fc6b7e3da": {
+          "type": "collection",
+          "settings": {
+            "collection": "floral-wallpaper-1"
+          }
+        },
+        "0847675b-7a5a-49a1-a808-1f3f976d03a4": {
+          "type": "collection",
+          "settings": {
+            "collection": "geometric-wallpaper"
+          }
+        },
+        "bb8f28dd-9a25-484c-b5e3-20a608db9097": {
+          "type": "collection",
+          "settings": {
+            "collection": "kids-wall-mural"
+          }
+        },
+        "dd992e83-f204-42f0-bcea-d83fa8524d2f": {
+          "type": "collection",
+          "settings": {
+            "collection": "nature-wall-mural"
+          }
+        },
+        "7cb2f00b-1b72-428d-a9a7-5635b7a88a00": {
+          "type": "collection",
+          "settings": {
+            "collection": "nursery-wallpaper"
+          }
+        },
+        "dbb34619-3a0c-4103-bbab-faa45f110d1b": {
+          "type": "collection",
+          "settings": {
+            "collection": "tropical-wallpaper"
+          }
+        },
+        "7d316563-e07d-4b7d-b19b-ef111e9af4e6": {
+          "type": "collection",
+          "settings": {
+            "collection": "watercolor-wall-mural"
+          }
+        },
+        "28de89c7-5b53-4fd4-a410-3ebdd32f3e94": {
+          "type": "collection",
+          "settings": {
+            "collection": "wall-mural"
+          }
+        }
+      },
+      "block_order": [
+        "b9497ec9-e4d2-490c-869b-2c8ba421916a",
+        "ba85e062-64a2-41ee-bd8b-b6934768de90",
+        "bdaf06e8-d081-4573-b5ee-4494e2034c08",
+        "d8f464d7-9ed2-45ee-9db6-89540052c4ef",
+        "fbf61692-1d0b-4c5d-b2a9-a38fc6b7e3da",
+        "0847675b-7a5a-49a1-a808-1f3f976d03a4",
+        "bb8f28dd-9a25-484c-b5e3-20a608db9097",
+        "dd992e83-f204-42f0-bcea-d83fa8524d2f",
+        "7cb2f00b-1b72-428d-a9a7-5635b7a88a00",
+        "dbb34619-3a0c-4103-bbab-faa45f110d1b",
+        "7d316563-e07d-4b7d-b19b-ef111e9af4e6",
+        "28de89c7-5b53-4fd4-a410-3ebdd32f3e94"
+      ],
+      "settings": {
+        "title_enable": true,
+        "display_type": "selected",
+        "sort": "alphabetical",
+        "grid": "4"
+      }
+    },
+    "5667be1d-1aaa-4fcc-84c7-961feeb56269": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14815470321731__5667be1d-1aaa-4fcc-84c7-961feeb56269-16751679231cec9a00-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--14815470321731__5667be1d-1aaa-4fcc-84c7-961feeb56269-16751679231cec9a00-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2 style=\"text-align: center;\" data-mce-fragment=\"1\">Find your aesthetics &amp; make your home elegant with our diverse collection of unique wallpapers!<br><\/h2>\n<p style=\"text-align: center;\" data-mce-fragment=\"1\"><em><span style=\"font-weight: 400;\" data-mce-fragment=\"1\" data-mce-style=\"font-weight: 400;\">Make Your Home A Reflection Of You With <a href=\"https:\/\/costacover.com\/\">CostaCover<\/a>!<\/span><\/em><\/p>\n<p data-mce-fragment=\"1\"><span style=\"font-weight: 400;\" data-mce-fragment=\"1\" data-mce-style=\"font-weight: 400;\">Take a look at our designs to find exactly what you have been searching for in our <\/span><span style=\"font-weight: 400;\" data-mce-fragment=\"1\" data-mce-style=\"font-weight: 400;\">catalog wallpaper <\/span><span style=\"font-weight: 400;\" data-mce-fragment=\"1\" data-mce-style=\"font-weight: 400;\">store. We have designs in so many different styles, waiting to be explored.<\/span><\/p>\n<p data-mce-fragment=\"1\"><span style=\"font-weight: 400;\" data-mce-fragment=\"1\" data-mce-style=\"font-weight: 400;\">Our designs range from soft feminine to dark minimalist themes. You can search for what you are looking for by theme or according to the area you wish to decorate. Make sure to take a look at our <\/span><span style=\"font-weight: 400;\" data-mce-fragment=\"1\" data-mce-style=\"font-weight: 400;\">collection peel and stick removable wallpaper<\/span><span style=\"font-weight: 400;\" data-mce-fragment=\"1\" data-mce-style=\"font-weight: 400;\"> and murals!<\/span><\/p>\n<h3 style=\"text-align: center;\" data-mce-fragment=\"1\"><span style=\"font-weight: 400;\" data-mce-fragment=\"1\" data-mce-style=\"font-weight: 400;\">All Types Of Wall-Murals<\/span><\/h3>\n<p data-mce-fragment=\"1\"><span style=\"font-weight: 400;\" data-mce-fragment=\"1\" data-mce-style=\"font-weight: 400;\"><strong>Abstract:<\/strong> You can find abstract art murals in different colors and patterns ranging from classic pastels to dark colors. You can find background and foreground colors depending on how you want to present your space.<\/span><\/p>\n<p data-mce-fragment=\"1\"><span style=\"font-weight: 400;\" data-mce-fragment=\"1\" data-mce-style=\"font-weight: 400;\"><strong>Black and White:<\/strong> A classic minimalist theme of black and white color can add elegance and dimension to your home.<\/span><\/p>\n<p data-mce-fragment=\"1\"><span style=\"font-weight: 400;\" data-mce-fragment=\"1\" data-mce-style=\"font-weight: 400;\"><strong>Kids Wall Mural:<\/strong> Browse our collection to find <\/span><span style=\"font-weight: 400;\" data-mce-fragment=\"1\" data-mce-style=\"font-weight: 400;\">peel and stick wall murals<\/span><span style=\"font-weight: 400;\" data-mce-fragment=\"1\" data-mce-style=\"font-weight: 400;\"> designs in animal themes, aquatic themes, and floral designs. If your child is super into dinosaurs, we’ve murals that would be perfect for them!<\/span><\/p>\n<p data-mce-fragment=\"1\"><span style=\"font-weight: 400;\" data-mce-fragment=\"1\" data-mce-style=\"font-weight: 400;\"><strong>Watercolor Ink:<\/strong> The beautiful swirly patterns can add beauty to your house. They can make it look enriched and classy.<\/span><\/p>\n<h3 style=\"text-align: center;\" data-mce-fragment=\"1\"><span style=\"font-weight: 400;\" data-mce-fragment=\"1\" data-mce-style=\"font-weight: 400;\">Get Exclusive Wallpapers<\/span><\/h3>\n<p data-mce-fragment=\"1\"><span style=\"font-weight: 400;\" data-mce-fragment=\"1\" data-mce-style=\"font-weight: 400;\"><strong>Art Deco:<\/strong> The rich colors, the beautiful geometric designs and the organized patterns available in our <\/span><span style=\"font-weight: 400;\" data-mce-fragment=\"1\" data-mce-style=\"font-weight: 400;\">catalog wallpaper<\/span><span style=\"font-weight: 400;\" data-mce-fragment=\"1\" data-mce-style=\"font-weight: 400;\"> can add that classic French look to your space.<\/span><\/p>\n<p data-mce-fragment=\"1\"><span style=\"font-weight: 400;\" data-mce-fragment=\"1\" data-mce-style=\"font-weight: 400;\"><strong>Boho:<\/strong> A trademark of the free-spirited people, these mixed cultural designs and natural themes in geometrical patterns of this art style can enhance your living space.<\/span><\/p>\n<p data-mce-fragment=\"1\"><span style=\"font-weight: 400;\" data-mce-fragment=\"1\" data-mce-style=\"font-weight: 400;\"><strong>Geometric:<\/strong> Add color and dimension to your space while maintaining the order and discipline of your space with these.<\/span><\/p>\n<p data-mce-fragment=\"1\"><span style=\"font-weight: 400;\" data-mce-fragment=\"1\" data-mce-style=\"font-weight: 400;\"><strong>Tropical:<\/strong> Living in a city can take its toll if you’re a nature lover. Stay close to the beauty of the sun, seas, and nature with these options!<\/span><\/p>\n<p style=\"text-align: center;\" data-mce-fragment=\"1\"><i data-mce-fragment=\"1\"><span style=\"font-weight: 400;\" data-mce-fragment=\"1\" data-mce-style=\"font-weight: 400;\">Tell Your Story Through Your Home!<\/span><\/i><\/p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815470321731__5667be1d-1aaa-4fcc-84c7-961feeb56269-16751679231cec9a00-0",
+        "template--14815470321731__5667be1d-1aaa-4fcc-84c7-961feeb56269-16751679231cec9a00-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "logo-list": {
+      "type": "logo-list",
+      "blocks": {
+        "logo1": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo2": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo3": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo4": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo5": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo6": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo1",
+        "logo2",
+        "logo3",
+        "logo4",
+        "logo5",
+        "logo6"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Our brands",
+        "logo_opacity": 76,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "5667be1d-1aaa-4fcc-84c7-961feeb56269",
+    "logo-list"
+  ]
+}

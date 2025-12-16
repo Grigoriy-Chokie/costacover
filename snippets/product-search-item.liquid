@@ -1,0 +1,12 @@
+{% comment %}
+  {% render 'product-search-item', product: product, terms: predictive_search.terms, class: string %}
+{% endcomment %}
+
+<a href="{{ product.url }}" class="product-search-item {{ class }}">
+  {%- unless product.featured_image == blank -%}
+    <div class="product-search-item__image">
+      {{ product.featured_image | image_url: width: 700 | image_tag }}
+    </div>
+  {%- endunless -%}
+  <p class="product-search-item__title">{{ product.title | highlight: terms }}</p>
+</a>

@@ -1,0 +1,130 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "rich_text_aGXCwT": {
+      "type": "rich-text",
+      "blocks": {
+        "text_8yYPeQ": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>You have decided that you would like to install traditional wallpaper in your home. This is a great decision! Traditional  wallpaper is beautiful, and it is a very easy material to work with. Below, we will walk you through the installation process step-by-step.<\/p><p>Before you start, make sure that the surface you are wallpapering is clean and dry. You may also want to apply a coat of primer to help the wallpaper adhere better.<\/p><p>Now let's get started!<\/p><p>Before you start installing your wallpaper, you will need the following tools:<\/p><ul><li>Measuring tape<\/li><li>Paint roller and tray<\/li><li>Paintbrush<\/li><li>Wallpaper paste<\/li><li>Scissors and a sharp knife<\/li><li>Squeegee<\/li><li>Level<\/li><li>Sponge<\/li><\/ul><p>Make sure you have everything you need before starting the installation process. This will help ensure a smooth and successful installation.<\/p><h3><strong>Before You Start: Preparation Tips<\/strong><\/h3><p>Before you start wallpapering, it's important to do a little preparation work. Here are a few tips to help make the process go smoothly:<\/p><p>Measure the space you plan to wallpaper and make sure you have enough wallpaper to cover it. It's always better to have too much than not enough.<\/p><p>Remove the wallpaper roll from the box, unfold it on a flat surface (floor or table), pattern side down, and leave it resting for about an hour so the wallpaper is not warped and could achieve room temperature. Check the colors and pattern match before installation.<\/p><p>Trim your wallpaper to the correct size before beginning. This will help avoid mistakes and make the installation process go more quickly.<\/p><p>Make sure the surface you're papering is clean and smooth, with no bumps or ridges. Any imperfections will show through the wallpaper.<\/p><p>Remove any loose paint and old wallcoverings<\/p><p>If your walls are newly plastered, you'll need to wait at least 3-4 weeks for them to completely dry before applying the wallpaper.<\/p><p>All the nicks, nail heads, drywall joints should be filled or taped, and sanded.<\/p><p>Do not hang wallpaper over ballpoint pen markings, wax crayon, ink marker, oil-based stains that may bleed through the wallpaper. <\/p><p>Glossy surfaces should be sanded or Primed<\/p><h3><strong>Step-by-Step Guide to Wallpapering<\/strong><\/h3><p>Now that you know what you need and have gathered your supplies, you’re ready to start installing your non-woven wallpaper. Here are some tips to make the process go as smoothly as possible.<\/p><ul><li>Decide where you want to start papering and measure the height and width of the wall. This will help you determine how much wallpaper you will need.<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "text_8yYPeQ"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "text_and_image_jjAcLr": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/step_1_copy_480x480_36651808-6859-48ab-93ec-62ad64a7733b.webp",
+        "image_width": 280,
+        "subtitle": "",
+        "title": "Step 1",
+        "text": "<p>Start from left to right. The murals installation starts with the number 1 panel from left to right. Measure the wallpaper panel width and then on the wall measure out the width of the panel from the left and draw a mark. <\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "text_and_image_EKPNhF": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/01_31fa21d9-1f5e-432a-842d-6da8b565c80b.jpg",
+        "image_width": 280,
+        "subtitle": "",
+        "title": "Step 2",
+        "text": "<p>Draw a vertical line using a level. This is a line for your first panel. Do NOT align a wallpaper to a corner or ceiling since they are not perfectly straight.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "text_and_image_FRQAQ7": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/apply_glue_8d32fdf9-8911-4c8a-9c99-3aee94722841.jpg",
+        "image_width": 280,
+        "subtitle": "",
+        "title": "STEP 3",
+        "text": "<p>Apply adhesive to the wallpaper using a roller or brush. <\/p><p>Once the adhesive is applied, position the wallpaper on the wall, align the right side to the vertical line.<br\/>Smooth the panel from the center to the sides with a towel or roller working your way down so the wallpaper could adhere properly and no bubbles would not form.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "text_and_image_6ycMR3": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/05_f73ccadd-e4ff-41cc-aca3-cd6bfb727875.jpg",
+        "image_width": 280,
+        "subtitle": "",
+        "title": "step 4",
+        "text": "<p>Select your next panel and apply it in the same way but you’ll need to overlap the right edge of the previous panel by the next panel’s left side, matching the pattern.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "rich_text_yzghCz": {
+      "type": "rich-text",
+      "blocks": {
+        "text_bfVXER": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<ul><li>Continue applying adhesive and hanging wallpaper until the entire wall is covered. Make sure the panels are lined up.<\/li><li>As each strip is installed, immediately remove excess glue from the wallpaper surface and seam using a sponge.<\/li><li>Roll the seams together with a seam roller<\/li><li>When you're finished, trim away any excess wallpaper with a sharp knife or scissors.<\/li><li>Stand back and admire your work!<\/li><\/ul><p>That being said, traditional wallpaper can be a great choice if you're looking for something durable and long-lasting. Just make sure you take the necessary precautions before starting the installation process.<\/p><h3><strong>Troubleshooting Common Issues With Wallpaper Installations<\/strong><\/h3><p>If you find that you have any air bubbles or creases in your wallpaper after installation, simply use a pin to puncture the wallpaper and then smooth it out with your fingers. If there are any areas where the wallpaper isn't sticking, you can use a wallpaper brush or roller to apply more adhesive. Just be careful not to apply too much adhesive, as this can cause the wallpaper to wrinkle.<\/p><p>Another issue you might run into is that the seams of your wallpaper are showing. To fix this, simply apply seam adhesive to the back of the paper and then smooth it out with your fingers. Once the adhesive is dry, you can use a seam roller to make sure the edges are sealed properly.<\/p><p>If you find that your wallpaper is starting to peel away from the wall, don't panic! You can simply reapply the adhesive to the back of the paper and press it firmly against the wall. If that doesn't work, you can try using a brayer to roll over the entire surface of the paper. This will help embed the paper into the adhesive and make it less likely to peel away from the wall.<\/p><h3><strong>Conclusion<\/strong><\/h3><p>So there you have it—a comprehensive guide on how to install traditional non-woven wallpaper! We hope you found this guide helpful, and that you enjoy your newly wallpapered room.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_bfVXER"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_aGXCwT",
+    "text_and_image_jjAcLr",
+    "text_and_image_EKPNhF",
+    "text_and_image_FRQAQ7",
+    "text_and_image_6ycMR3",
+    "rich_text_yzghCz"
+  ]
+}

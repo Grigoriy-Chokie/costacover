@@ -1,0 +1,32 @@
+.wrapper__text {
+    width: 100%;
+    max-width: 1240px;
+    display: flex;
+    justify-content: center;
+
+    & p {
+        margin-bottom: 20px;
+    }
+
+}
+
+.rich_text_custom {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.text__item {
+    max-width: 70%;
+    font-size: var(--typeBaseSize);
+    padding-top: 50px;
+    letter-spacing: var(--typeBaseSpacing);
+    line-height: var(--typeBaseLineHeight);
+}
+
+@media (max-width: 768px) {
+    .text__item {
+        max-width: 100%;
+        padding: 20px;
+    }
+}

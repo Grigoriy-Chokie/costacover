@@ -1,0 +1,79 @@
+{{ 'section-designer-advantages.css' | asset_url | stylesheet_tag }}
+{{ 'fonts.css' | asset_url | stylesheet_tag }}
+{{ 'swiper.css' | asset_url | stylesheet_tag }}
+<div class="advantages__wrapper">
+  <div class="wrapper__header">
+    <h5 class="header__text">
+      {{ section.settings.main_heading }}
+    </h5>
+  </div>
+  <div class="swiper advantages__swiper">
+    <div class="swiper-wrapper wrapper__swiper">
+      {% for block in section.blocks %}
+        <div class="swiper-slide advantage_slide">
+          <div class="slide__main_content">
+            <div class="main_content__image">
+              <img src="{{ block.settings.slide_image | image_url}}">
+            </div>
+            <div class="main_content__text">
+              {% if block.settings.slide_heading != blank %}
+                <h5 class="text__heading">{{ block.settings.slide_heading }}</h5>
+              {% endif %}
+              {% if block.settings.slide_description != blank %}
+                <span class="text__description">{{ block.settings.slide_description }}</span>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="swiper-button-next advantages_swiper__btn_next">{% render 'icon-arrow' %}</div>
+    <div class="swiper-button-prev advantages_swiper__btn_prev">{% render 'icon-arrow' %}</div>
+
+    {{ 'swiper.js' | asset_url | script_tag }}
+    {{ 'section-designer-advantages.js' | asset_url | script_tag }}
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Designer swiper",
+  "tag": "section",
+  "class": "designer_swiper",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Main heading",
+      "id": "main_heading",
+      "default": "Exclusive Wallpaper Materials"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Slide heading",
+          "id": "slide_heading"
+        },
+        {
+          "type": "richtext",
+          "label": "Slide description",
+          "id": "slide_description"
+        },
+        {
+          "type": "image_picker",
+          "label": "Slide Image",
+          "id": "slide_image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Designer advantages swiper"
+    }
+  ]
+}
+{% endschema %}

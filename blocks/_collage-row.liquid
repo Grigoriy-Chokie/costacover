@@ -1,0 +1,44 @@
+<div style="--columns: {{ block.settings.columns }};--columns-mobile: {{ block.settings.columns_mobile }};--image-overlay: {{ block.settings.image_overlay }};" id="{{ name_row }}" class="collage-rows__item" {{ block.shopify_attributes }}>
+    {% content_for 'blocks' %}
+  </div>
+  
+  {% schema %}
+  {
+    "name": "Collage Row",
+    "class": "multi-collage__collage-rows collage-rows",
+    "blocks": [
+      {
+        "type": "_collage-row-media"
+      }
+    ],
+    "settings": [
+      {
+        "type": "color_background",
+        "label": "Image overlay",
+        "id": "image_overlay"
+      },
+      {
+        "type": "range",
+        "id": "columns",
+        "label": "Columns",
+        "min": 2,
+        "max": 4,
+        "default": 2
+      },
+      {
+        "type": "range",
+        "id": "columns_mobile",
+        "label": "Columns",
+        "min": 1,
+        "max": 4, 
+        "default": 2
+      }
+    ],
+    "presets": [
+      {
+        "name": "Collage Row"
+      }
+    ]
+  }
+  {% endschema %}
+  

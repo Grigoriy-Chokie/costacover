@@ -1,0 +1,26 @@
+{{ 'section-rich-text.css' | asset_url | stylesheet_tag -}}
+{%- if section.settings.text != blank %}
+  <div class="wrapper__text">
+    <span class="text__item">{{ section.settings.text }}</span>
+  </div>
+{% endif %}
+{% schema %}
+{
+  "name": "Rich text custom",
+  "tag": "section",
+  "class": "rich_text_custom",
+  "settings": [
+    {
+      "type": "richtext",
+      "label": "Text",
+      "id": "text"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Rich text custom"
+    }
+  ]
+}
+{% endschema %}

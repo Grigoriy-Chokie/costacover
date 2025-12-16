@@ -1,0 +1,283 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "e14ee3aa-a97a-4125-9c93-ab87b23923b9": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14815470485571__e14ee3aa-a97a-4125-9c93-ab87b23923b9-16730325381b8cf575-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/our_photo_c773fc2d-3288-4162-b0ab-b594d04a8aa7.jpg",
+            "link": "",
+            "width": "25%",
+            "alignment": "center"
+          }
+        },
+        "template--14815470485571__e14ee3aa-a97a-4125-9c93-ab87b23923b9-16730325381b8cf575-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>about us<\/h2><p>We are a family-owned business that specializes in designing and creating stick-and-peel wallpaper. That's right - it's a high quality wallpaper that you stick on the wall just like a sticker, remove any time you want! No glue, no hassle so this is a super easy and convenient way to remodel or just add a pop of color to your walls. You can do it all on your own, it's that easy! We are always happy to help with custom orders - you can choose any design you like and we will adjust it to your specified size, color and scale. Please let us know if you have any questions or inquiries - we are always happy to help!<\/p> <p>CostaCover - we got you covered.<\/p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "f9bd7871-b92a-4c1c-b549-00d75d9ef7d4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/about_b19abef3-d62d-49e1-9004-f72a9c9e5478.jpg",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815470485571__e14ee3aa-a97a-4125-9c93-ab87b23923b9-16730325381b8cf575-0",
+        "template--14815470485571__e14ee3aa-a97a-4125-9c93-ab87b23923b9-16730325381b8cf575-1",
+        "f9bd7871-b92a-4c1c-b549-00d75d9ef7d4"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "e507c466-37a2-4454-839f-b17a5b6bea4c": {
+      "type": "designer-image-banner-slideshow",
+      "blocks": {
+        "template--15224501403715__e507c466-37a2-4454-839f-b17a5b6bea4c-image-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/designer_trade23.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15224501403715__e507c466-37a2-4454-839f-b17a5b6bea4c-image-1"
+      ],
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "180e2569-1d19-46e8-86ff-82978001c054": {
+      "type": "rich-text-custom",
+      "settings": {
+        "text": "<p>We collaborate closely with design experts to deliver the ideal solution for their clients requirements. Discover our extensive selection of fashionable wallpapers and wall murals. <\/p><p>All you need to do is contact us via email, letting us know all about yourself and your business - by forwarding us your social media accounts as well as your website. As all of the orders need to be placed online, we will email you your trade discount codes that you will be able to use when making a purchase.<\/p>"
+      }
+    },
+    "63173880-ff3f-4d06-b9b4-d06a10f9835f": {
+      "type": "benefits-of-trade",
+      "blocks": {
+        "da2214cf-061d-4dca-b299-2ee13fa75425": {
+          "type": "benefit_island",
+          "settings": {
+            "heading": "No extra fees",
+            "icon": "shopify:\/\/shop_images\/01.png",
+            "description": "Printing your designs at no extra cost. Free custom size and color service."
+          }
+        },
+        "6ddbdcef-8792-424f-a619-abaeb8a128d9": {
+          "type": "benefit_island",
+          "settings": {
+            "heading": "Exclusive Materials",
+            "icon": "shopify:\/\/shop_images\/02.png",
+            "description": "Commercial Grade Type II Vinyl, Grasscloth, Canvas, Plaster texture, Silk etc."
+          }
+        },
+        "23a6d429-e604-4437-868f-9d68b1867456": {
+          "type": "benefit_island",
+          "settings": {
+            "heading": "Customer service",
+            "icon": "shopify:\/\/shop_images\/03.png",
+            "description": "Any request response and quote within 1 hour"
+          }
+        },
+        "820f66ac-bc75-4746-92a8-01d4197590e2": {
+          "type": "benefit_island",
+          "settings": {
+            "heading": "Rush orders",
+            "icon": "shopify:\/\/shop_images\/04.png",
+            "description": "Lead Time 1-2 weeks. Expedited production and shipping for extra fee."
+          }
+        },
+        "abba0262-89d1-4546-ba7c-e143e5dbc304": {
+          "type": "benefit_island",
+          "settings": {
+            "heading": "Free Samples",
+            "icon": "shopify:\/\/shop_images\/05.png",
+            "description": "30 Free samples and swatches per year."
+          }
+        },
+        "e3a89315-1181-4e2d-b45a-0e687529899a": {
+          "type": "benefit_island",
+          "settings": {
+            "heading": "Trade Pricing",
+            "icon": "shopify:\/\/shop_images\/06.png",
+            "description": "Exclusive trade discount - no minimum order."
+          }
+        }
+      },
+      "block_order": [
+        "da2214cf-061d-4dca-b299-2ee13fa75425",
+        "6ddbdcef-8792-424f-a619-abaeb8a128d9",
+        "23a6d429-e604-4437-868f-9d68b1867456",
+        "820f66ac-bc75-4746-92a8-01d4197590e2",
+        "abba0262-89d1-4546-ba7c-e143e5dbc304",
+        "e3a89315-1181-4e2d-b45a-0e687529899a"
+      ],
+      "settings": {
+        "main_heading": "<p>The benefits of <em>Costa Cover<\/em>  Trade<\/p>"
+      }
+    },
+    "0193ceec-45a1-480a-87a7-95d241d92650": {
+      "type": "designer-advantages-swiper",
+      "blocks": {
+        "139a247c-f99b-43f7-90c1-f67991d4ff1f": {
+          "type": "slide",
+          "settings": {
+            "slide_heading": "Grasscloth",
+            "slide_description": "<ul><li>Unpasted Type II Vinyl 20oz Wallpaper. <\/li><li>Elegant Grasscloth Texture. <\/li><li>Organic look with a deep texture. <\/li><li>Matte finish. <\/li><li>Water resistant. Flame resistant Class A. <\/li><li>Can be used in bathrooms.<\/li><\/ul>",
+            "slide_image": "shopify:\/\/shop_images\/grasscloth.jpg"
+          }
+        },
+        "9e2bf233-6050-429e-857d-51ad7baf8969": {
+          "type": "slide",
+          "settings": {
+            "slide_heading": "Canvas",
+            "slide_description": "<ul><li>Unpasted Type II Vinyl 20oz Wallpaper. <\/li><li>Canvas Texture. <\/li><li>Matte finish. <\/li><li>Water resistant. Flame resistant Class A. <\/li><li>Contains bactericides and mildew inhibitors to discourage the growth of mold and mildew under normal conditions. Passes ASTM-G21-09. <\/li><li>Can be used in bathrooms.<\/li><\/ul>",
+            "slide_image": "shopify:\/\/shop_images\/canvas.jpg"
+          }
+        },
+        "94f7a5cf-e991-4e43-8c3c-9d880ec6139c": {
+          "type": "slide",
+          "settings": {
+            "slide_heading": "Smooth 20 Oz Vinyl",
+            "slide_description": "<ul><li>Unpasted Type II Vinyl 20oz Wallpaper with Non-Woven backside. <\/li><li>Smooth matte finish. <\/li><li>Water resistant. Flame resistant Class A. <\/li><li>Contains bactericides and mildew inhibitors to discourage the growth of mold and mildew under normal conditions. Passes ASTM-G21-09. <\/li><li>Can be used in bathrooms.<\/li><\/ul>",
+            "slide_image": "shopify:\/\/shop_images\/trad_type2.jpg"
+          }
+        },
+        "47270199-33d3-41f9-a232-1db6d0d543a4": {
+          "type": "slide",
+          "settings": {
+            "slide_heading": "Sand",
+            "slide_description": "<ul><li>Unpasted Type II Vinyl 20oz Wallpaper. <\/li><li>Middle ground texture looks like the beach sand. <\/li><li>Water resistant. Flame resistant Class A. <\/li><li>Can be used in bathrooms.<\/li><\/ul>",
+            "slide_image": "shopify:\/\/shop_images\/sand.jpg"
+          }
+        },
+        "211c5996-c51f-48eb-abfa-899beefeb30f": {
+          "type": "slide",
+          "settings": {
+            "slide_heading": "Plaster",
+            "slide_description": "<ul><li>Unpasted Type II Vinyl 20oz Wallpaper. <\/li><li>The plaster-like look makes it appear as if your artwork has been painted directly onto the drywall surface. To replicate the look of plaster, this material is embossed with rough grooves randomly mixed with raised flat surfaces.<\/li><li>Water resistant. Flame resistant Class A. <\/li><li>Can be used in bathrooms.<\/li><\/ul>",
+            "slide_image": "shopify:\/\/shop_images\/plaster.jpg"
+          }
+        },
+        "8c17acef-60ba-41b8-ba6b-0b6a174af4ff": {
+          "type": "slide",
+          "settings": {
+            "slide_heading": "Silk",
+            "slide_description": "<ul><li>Unpasted Type II Vinyl 20oz Wallpaper. <\/li><li>Silk embossing on the printable surface. <\/li><li>Water resistant. Flame resistant Class A. <\/li><li>Can be used in bathrooms.<\/li><\/ul>",
+            "slide_image": "shopify:\/\/shop_images\/silk.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "139a247c-f99b-43f7-90c1-f67991d4ff1f",
+        "9e2bf233-6050-429e-857d-51ad7baf8969",
+        "94f7a5cf-e991-4e43-8c3c-9d880ec6139c",
+        "47270199-33d3-41f9-a232-1db6d0d543a4",
+        "211c5996-c51f-48eb-abfa-899beefeb30f",
+        "8c17acef-60ba-41b8-ba6b-0b6a174af4ff"
+      ],
+      "settings": {
+        "main_heading": "Exclusive Wallpaper Materials"
+      }
+    },
+    "3cb28250-ab6c-417d-95e2-238355eb5d60": {
+      "type": "rich-text-custom",
+      "settings": {
+        "text": "<p>All prices are in US Dollars. All approved customers will receive a discount code with additional discount to our retail price. <\/p><p>To Apply send us an email to: <a href=\"mailto:sales@costacover.com\" target=\"_blank\" title=\"mailto:sales@costacover.com\"><strong>sales@costacover.com<\/strong><\/a><strong> <\/strong>or fill out the Contact Us form below<strong><br\/><\/strong>Include in the email: Your full name, company name, company email, company address, website, Instagram and other social media.<\/p><p> Each item is made to order, Production time - 5 business days. Printing on the exclusive materials - 2-3 weeks <\/p><p>All sales are final for Trade Accounts. <br\/>For more information please visit<strong> <\/strong><a href=\"https:\/\/costacover.com\/policies\/refund-policy\" target=\"_blank\" title=\"https:\/\/costacover.com\/policies\/refund-policy\"><strong>Refunds and Returns<\/strong><\/a>.<\/p>"
+      }
+    },
+    "69994274-be93-4c06-8f5a-725766982bab": {
+      "type": "custom-images-clash",
+      "blocks": {
+        "template--15224501403715__69994274-be93-4c06-8f5a-725766982bab-image-1": {
+          "type": "image",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/2023-07-20_10.57.18.jpg",
+            "title": "",
+            "btn-text": "shop wallpaper",
+            "btn-url": "shopify:\/\/collections\/wallpaper-bestseller"
+          }
+        },
+        "template--15224501403715__69994274-be93-4c06-8f5a-725766982bab-image-2": {
+          "type": "image",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/iap_fullxfull.3084093718_kzh29x4l.webp",
+            "title": "",
+            "btn-text": "Shop wall mural",
+            "btn-url": "shopify:\/\/collections\/wall-mural-bestseller"
+          }
+        }
+      },
+      "block_order": [
+        "template--15224501403715__69994274-be93-4c06-8f5a-725766982bab-image-1",
+        "template--15224501403715__69994274-be93-4c06-8f5a-725766982bab-image-2"
+      ],
+      "settings": {
+        "main-color": "#ffffff",
+        "margin-top": 0,
+        "margin-bottom": 0,
+        "margin-top-mob": 16,
+        "margin-bottom-mob": 40
+      }
+    },
+    "49f7a608-34f2-4b7c-bc94-784130366adf": {
+      "type": "contact-form",
+      "settings": {
+        "title": "Contact us",
+        "text": "",
+        "show_phone": false,
+        "narrow_column": true
+      }
+    }
+  },
+  "order": [
+    "e14ee3aa-a97a-4125-9c93-ab87b23923b9",
+    "main",
+    "e507c466-37a2-4454-839f-b17a5b6bea4c",
+    "180e2569-1d19-46e8-86ff-82978001c054",
+    "63173880-ff3f-4d06-b9b4-d06a10f9835f",
+    "0193ceec-45a1-480a-87a7-95d241d92650",
+    "3cb28250-ab6c-417d-95e2-238355eb5d60",
+    "69994274-be93-4c06-8f5a-725766982bab",
+    "49f7a608-34f2-4b7c-bc94-784130366adf"
+  ]
+}

@@ -1,0 +1,64 @@
+{{ 'section-benefits-of-trade.css' | asset_url | stylesheet_tag }}
+{{ 'fonts.css' | asset_url | stylesheet_tag }}
+<div class="benefits__wrapper">
+  {% if section.settings.main_heading != blank %}
+    <h2 class="wrapper__ben_heading">
+      {{ section.settings.main_heading }}
+    </h2>
+  {% endif %}
+  <div class="wrapper__ben_islands">
+    {% for block in section.blocks %}
+      <div class="ben_islands__item">
+        <div class="item__icon">
+          <img src="{{ block.settings.icon | image_url}}">
+        </div>
+        <h5 class="item__heading">{{ block.settings.heading }}</h5>
+        <span class="item__description"> {{ block.settings.description }}</span>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Benefits",
+  "tag": "section",
+  "class": "benefits",
+  "settings": [
+    {
+      "type": "richtext",
+      "label": "Main heading",
+      "id": "main_heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "benefit_island",
+      "name": "Benefit island",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Heading",
+          "id": "heading",
+          "default": "Trade Pricing"
+        },
+        {
+          "type": "image_picker",
+          "label": "Icon",
+          "id": "icon"
+        },
+        {
+          "type": "text",
+          "label": "Description",
+          "id": "description",
+          "default": "Order free swatches of any design on any fabric or wallpaper"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Benefits"
+    }
+  ]
+}
+{% endschema %}

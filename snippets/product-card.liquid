@@ -1,0 +1,69 @@
+{% comment %} 
+ * product:
+ * image_loading: 'lazy' 
+ * show_compare_price
+ * hide_description
+ * class
+ * rating
+{% endcomment %}
+
+{%- liquid
+  assign is_sample_avaiable = false
+
+  for variant in product.variants
+    if variant.available and variant.title contains 'Sample'
+      assign is_sample_avaiable = true
+      break
+    endif
+  endfor
+-%}
+
+<a class="product-card {{ class }}" href="{{ product.url }}">
+  {%- unless hide-tags -%}
+    {%- if is_sample_avaiable -%}
+      <div class="product-card__tag product-card__tag--sample-available">
+        {{ 'products.general.sample_available' | t }}
+      </div>
+    {%- elsif product.available == false -%}
+      <div class="product-card__tag product-card__tag--sold-out">
+        {{ 'products.product.sold_out' | t }}
+      </div>
+    {%- endif -%}
+  {%- endunless -%}
+
+  {%- unless product.featured_image == blank -%}
+    {{ product.featured_image | image_url: width: 800 | image_tag: class: 'product-card__image' }}
+  {%- endunless -%}
+
+  <div class="product-card__info">
+    <p class="info__title">{{ product.title }}</p>
+
+    {%- unless product.description == blank or hide_description -%}
+      <div class="info__description">{{ product.description }}</div>
+    {%- endunless -%}
+
+    <div class="info__price-rating">
+      <div class="info__price-wrapper {% unless product.available %}product-card--no-available{% endunless %}">
+        {%- if show_compare_price and product.compare_at_price != blank -%}
+          <p class="price-wrapper__compare-price">{{ product.compare_at_price | money }}</p>
+        {%- endif -%}
+
+        <p class="price-wrapper__price {% if show_compare_price and product.compare_at_price != blank %}product-card--sale{% endif %}">
+          {{ product.price | money }}
+        </p>
+      </div>
+
+      <div class="info__rating">
+        {%- for index in (1..5)-%}
+          {%- liquid
+            if index > rating
+              assign product_icon_class = product_icon_class | append: 'star--empty'
+            endif
+          -%}
+
+          {% render 'icon', icon: 'star-2', class: product_icon_class %}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</a>

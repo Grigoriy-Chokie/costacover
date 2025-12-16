@@ -1,0 +1,271 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "81573b8b-1c8c-4d46-8cf6-a18094804d38": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "5c550cd0-9923-4019-9b03-5321bd59a6b4": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": true
+          }
+        },
+        "81af3c83-4ffc-4d86-b25d-57602777daea": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "package",
+            "text": "Free US shipping"
+          }
+        },
+        "6f7b1171-97ce-4d9f-bdae-410a2865a2cf": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "globe",
+            "text": "Made in USA"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "ec10080d-043c-43fe-8dfa-261c365bd5df": {
+          "type": "separator",
+          "settings": {}
+        },
+        "d1da427e-1be6-454a-986f-5830d5ed62fa": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "leaf",
+            "text": "GREENGUARD Gold Certified Materials. Water based Inks"
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "disabled": true,
+          "settings": {
+            "inventory_threshold": 10,
+            "inventory_transfers_enable": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "a7bda8c7-221a-4cc0-8dfe-9d7e94bcc922": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Materials",
+            "content": "<p>We use only Genuine Water-Based NON-Solvent Inks, Class “A” Flame Resistant and GREENGUARD GOLD Certified Materials. <\/p><ul><li>Peel and Stick Vinyl: Smooth. Matte finish. Removable and repositionable for smooth surfaces. For long or short-term installations.<\/li><li>Peel and Stick Canvas Vinyl: Canvas texture. Matte finish. Removable and repositionable for smooth surfaces. For long or short-term installations.<\/li><li>Peel and Stick Polyester Fabric: Matte finish. Light texture. Removable and repositionable for smooth surfaces. For long or short-term installations. PVC-free.  It is not recommended to use the fabric if your wall is painted with any bright or dark paint, i.e.- green\/red\/yellow\/dark gray\/blue etc. The fabric paper is not 100% opaque. <\/li><li>Traditional Pre-Pasted Wallpaper: Matte and Ultra Smooth. Water activated glue. For long -term installations. Can be installed with wallpaper paste. PVC-free. <\/li><li>Traditional Unpasted Canvas Type II Wallpaper : Elegant Canvas texture. Matte finish. For long-term installations. Requires professional installation and wallpaper glue (Not included).  Overlap double cut removal is optional. Can be installed on textured walls. <\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "2cbcc13c-1181-490e-a49a-d218d0abb7c0": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Disclaimer",
+            "content": "<p>!! PLEASE READ THIS BEFORE MAKING A PURCHASE<\/p><p>* Our wallpaper is designed to be applied to almost any clean, smooth, dry, and dust-free surface. The removable self-adhesive wallpaper sheets are NOT designed for textured walls, bumped walls, freshly painted walls, damp or cold surfaces, plaster, chalk, lime-painted finishes. They are NOT designed for the walls painted with a “stain resistant” or low VOC paint. The wallpaper WILL NOT stick to it. All sanded or drywall textures should be smoothed. To ensure strong adhesion, old wallcovering and loose paint flakes should be removed.  Refunds will not be given for wall incompatibility.<\/p><p>* Commercial Grade Type II 20 oz Vinyl Wallpaper with Canvas Texture is a durable and long-lasting material that requires professional installation and is applied using paste or adhesive (Not included). Overlap double cut removal is optional. Can be installed on textured walls.   <\/p><p>* It is not recommended to use the fabric if your wall is painted with any bright or dark paint, i.e.- green\/red\/yellow\/dark gray\/blue etc. The fabric paper is not 100% opaque. <\/p><p>* If your walls have been recently painted please allow for at least 4 weeks of drying time. Some types of paint might even require up to 5 weeks of drying time for all the fumes to evaporate entirely. If removable wallpaper is applied to fresh paint, it will damage the adhesive backing, and the wallpaper will not be able to hold onto the wall.<\/p><p>* If you have any concerns, we recommend ordering a sample to check how our wallpaper material sticks to your desired surface, how well it holds, and how the design works with your environment.<\/p><p>* The adhesive on “Peel and stick Vinyl” and “Fabric” are considered removable and should be easy to remove for at least 6 months. However, the longer the wallpaper is mounted, generally, the more challenging removal will be. Removability also depends on the mounting surface. Paper-based, painted, and composite materials may not allow for complete removal without damaging the mounting surface. If a residue remains after the vinyl is removed from a solid surface, use soapy water and aggressive rubbing. <\/p><p>* Even if your walls fit all of the previously mentioned criteria, there is always a possibility that  other variables are at play in your specific space. Some of those might be excessive moisture\/heat and\/or dryness, dust, or a specific incompatible type of paint or other wall coverings. We cannot control or predict these variables, so we, therefore, cannot guarantee that our removable wallpaper will be 100% compatible with your specific wall. This is why we strongly encourage our customers to consider trying a sample if they have any doubts. <\/p><p>* We always recommend ordering a sample to check how our wallpaper material sticks to your desired surface and how the design works with your environment.<\/p><p>* Photos displayed are for reference only and do not reflect the exact sheet size. Before placing an order, please measure your desired area and order the appropriate number of sheets. Remember to always round up!<\/p><p>* Due to different computer monitor settings, product colors may vary slightly from the pictures provided. We print with water-based inks - and we cannot print real metallic gold. It doesn't look like gold foil. This will be an orange\/brown\/yellow gradient print.<\/p><p>* Please contact us immediately if you receive a damaged shipment, so we can have it resolved ASAP.<\/p><p>* By placing an order, you confirm that you have read the listing description and the disclaimer and acknowledge and accept all the rules and regulations.<\/p><p>* We are not responsible for wallpaper damages, mistakes made during the installation, or any issues caused by uneven walls and ceilings. <\/p><p>* We are not responsible for the wallpaper quality printed from your picture. Please check the quality and colors of the image before sending it to us, and please order the sample before your main order.<\/p>",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Shipping information",
+            "content": "",
+            "page": "shipping"
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "settings": {
+            "title": "Ask a question",
+            "phone": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "81573b8b-1c8c-4d46-8cf6-a18094804d38",
+        "price",
+        "separator",
+        "5c550cd0-9923-4019-9b03-5321bd59a6b4",
+        "81af3c83-4ffc-4d86-b25d-57602777daea",
+        "sales_point",
+        "6f7b1171-97ce-4d9f-bdae-410a2865a2cf",
+        "description",
+        "ec10080d-043c-43fe-8dfa-261c365bd5df",
+        "d1da427e-1be6-454a-986f-5830d5ed62fa",
+        "inventory_status",
+        "buy_buttons",
+        "a7bda8c7-221a-4cc0-8dfe-9d7e94bcc922",
+        "2cbcc13c-1181-490e-a49a-d218d0abb7c0",
+        "tab",
+        "contact",
+        "share"
+      ],
+      "settings": {
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "large",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_height": "flexible",
+        "thumbnail_arrows": true,
+        "mobile_layout": "full",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "cb97f37d-2309-4378-af75-f9102decbea9": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "Blog posts",
+        "blog": "how-it-works",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": false,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": true,
+        "blog_image_size": "wide",
+        "divider": false
+      }
+    },
+    "5d17d290-c473-4a6e-9643-ab09c89343df": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--14815470616643__5d17d290-c473-4a6e-9643-ab09c89343df-16706025460b5fe1f4-0": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.<\/p>"
+          }
+        },
+        "template--14815470616643__5d17d290-c473-4a6e-9643-ab09c89343df-16706025460b5fe1f4-1": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.<\/p>"
+          }
+        },
+        "template--14815470616643__5d17d290-c473-4a6e-9643-ab09c89343df-16706025460b5fe1f4-2": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815470616643__5d17d290-c473-4a6e-9643-ab09c89343df-16706025460b5fe1f4-0",
+        "template--14815470616643__5d17d290-c473-4a6e-9643-ab09c89343df-16706025460b5fe1f4-1",
+        "template--14815470616643__5d17d290-c473-4a6e-9643-ab09c89343df-16706025460b5fe1f4-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "divider": false
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "You may also like",
+        "related_count": 5
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "recent_count": 5
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {}
+    },
+    "1670602581397c5ee3": {
+      "type": "apps",
+      "blocks": {
+        "52c2e065-cd17-412e-9870-52ebc4d50d1e": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "52c2e065-cd17-412e-9870-52ebc4d50d1e"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cb97f37d-2309-4378-af75-f9102decbea9",
+    "5d17d290-c473-4a6e-9643-ab09c89343df",
+    "sub",
+    "product-recommendations",
+    "recently-viewed",
+    "collection-return",
+    "1670602581397c5ee3"
+  ]
+}

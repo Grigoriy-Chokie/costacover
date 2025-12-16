@@ -1,0 +1,295 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "81573b8b-1c8c-4d46-8cf6-a18094804d38": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "5c550cd0-9923-4019-9b03-5321bd59a6b4": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "dropdown",
+            "product_dynamic_variants_enable": false,
+            "color_swatches": false
+          }
+        },
+        "81af3c83-4ffc-4d86-b25d-57602777daea": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "package",
+            "text": "Free US shipping"
+          }
+        },
+        "6f7b1171-97ce-4d9f-bdae-410a2865a2cf": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "globe",
+            "text": "Made in USA"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "ec10080d-043c-43fe-8dfa-261c365bd5df": {
+          "type": "separator",
+          "settings": {}
+        },
+        "d1da427e-1be6-454a-986f-5830d5ed62fa": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "leaf",
+            "text": "GREENGUARD Gold Certified Materials. Water based Inks"
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "disabled": true,
+          "settings": {
+            "inventory_threshold": 10,
+            "inventory_transfers_enable": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "a7bda8c7-221a-4cc0-8dfe-9d7e94bcc922": {
+          "type": "tab",
+          "settings": {
+            "title": "Description",
+            "content": "<p>We have a unique approach to each of your orders. Don't hesitate to contact us with the wall dimensions (height and width) of each wall you'd like to cover, and we will calculate how many wallpaper sheets you'll need for your project. It can be a bit complicated to figure out all the small details, but that’s why we're here!<\/p><p>Each panel covers 2ft wide x from 4 to 10 ft high. You’ll need several panels to cover the whole wall.<\/p><p><strong>Wallpaper samples<\/strong>:<\/p><p>We always recommend ordering a sample to check how our wallpaper material sticks to your desired surface and how the design works with your environment.<\/p><p>Each sample is presented in 2 variations:<\/p><ul><li>The actual size to show the scale of the print  AND<\/li><li>A mini version of what a whole sheet of 24”x72” wallpaper would look like to give you a better idea of the full pattern of the design. <\/li><\/ul><p><strong>Wallpaper<\/strong> <strong>standard sheet sizes:<\/strong><\/p><p>24\" wide x 48\" height \/ 61 cm x 122 cm<\/p><p>24\" wide x 72\" height \/ 61 cm x 183 cm<\/p><p>24\" wide x 96\" height \/ 61 cm x 244 cm<\/p><p>24\" wide x 108\" height \/ 61 cm x 275 cm<\/p><p>24\" wide x 120\" height \/ 61 cm x 305 cm<\/p><p>Any other size is considered a custom size.<\/p><p>Wallpaper sheets can be customized shorter or longer to fit your desired area perfectly. CUSTOM SIZES and COLORS are available upon request. Please send us a message, and we will be happy to help! <\/p><p>A detailed application manual and installation scheme are included with every shipment. <\/p><p><strong>Overlap<\/strong>:<\/p><p>Our wallpaper panels are designed with a 1-inch overlap in addition to the 24-inch width.  When determining how many panels you will need, please do not include the overlap in your calculations, as it will be concealed by the next panel. Overlap double cut removal is optional.<\/p>",
+            "page": ""
+          }
+        },
+        "2cbcc13c-1181-490e-a49a-d218d0abb7c0": {
+          "type": "tab",
+          "settings": {
+            "title": "Disclaimer",
+            "content": "<p>!! PLEASE READ THIS BEFORE MAKING A PURCHASE<\/p><p>* Commercial Grade Type II 20 oz Vinyl Wallpaper with Grasscloth Texture is a durable and long-lasting material that requires professional installation and is applied using paste or adhesive (Not included). Can be installed on textured walls.   <\/p><p>* If you have any concerns, we recommend ordering a sample to check how our wallpaper material sticks to your desired surface, how well it holds, and how the design works with your environment.<\/p><p>* Photos displayed are for reference only and do not reflect the exact sheet size. Before placing an order, please measure your desired area and order the appropriate number of sheets. Remember to always round up!<\/p><p>* Due to different computer monitor settings, product colors may vary slightly from the pictures provided. We print with water-based inks - and we cannot print real metallic gold. It doesn't look like gold foil. This will be an orange\/brown\/yellow gradient print.<\/p><p>* Please contact us immediately if you receive a damaged shipment, so we can have it resolved ASAP.<\/p><p>* By placing an order, you confirm that you have read the listing description and the disclaimer and acknowledge and accept all the rules and regulations.<\/p><p>* We are not responsible for wallpaper damages, mistakes made during the installation, or any issues caused by uneven walls and ceilings. <\/p><p>* We are not responsible for the wallpaper quality printed from your picture. Please check the quality and colors of the image before sending it to us, and please order the sample before your main order.<\/p>",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping information",
+            "content": "",
+            "page": "shipping"
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "settings": {
+            "title": "Ask a question",
+            "phone": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "81573b8b-1c8c-4d46-8cf6-a18094804d38",
+        "price",
+        "separator",
+        "5c550cd0-9923-4019-9b03-5321bd59a6b4",
+        "81af3c83-4ffc-4d86-b25d-57602777daea",
+        "sales_point",
+        "6f7b1171-97ce-4d9f-bdae-410a2865a2cf",
+        "description",
+        "ec10080d-043c-43fe-8dfa-261c365bd5df",
+        "d1da427e-1be6-454a-986f-5830d5ed62fa",
+        "inventory_status",
+        "buy_buttons",
+        "a7bda8c7-221a-4cc0-8dfe-9d7e94bcc922",
+        "2cbcc13c-1181-490e-a49a-d218d0abb7c0",
+        "tab",
+        "contact",
+        "share"
+      ],
+      "settings": {
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "large",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_height": "flexible",
+        "thumbnail_arrows": true,
+        "mobile_layout": "full",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "cb97f37d-2309-4378-af75-f9102decbea9": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "Blog posts",
+        "blog": "how-it-works",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": false,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": true,
+        "blog_image_size": "wide",
+        "divider": false
+      }
+    },
+    "5d17d290-c473-4a6e-9643-ab09c89343df": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--14815470616643__5d17d290-c473-4a6e-9643-ab09c89343df-16706025460b5fe1f4-0": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.<\/p>"
+          }
+        },
+        "template--14815470616643__5d17d290-c473-4a6e-9643-ab09c89343df-16706025460b5fe1f4-1": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.<\/p>"
+          }
+        },
+        "template--14815470616643__5d17d290-c473-4a6e-9643-ab09c89343df-16706025460b5fe1f4-2": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815470616643__5d17d290-c473-4a6e-9643-ab09c89343df-16706025460b5fe1f4-0",
+        "template--14815470616643__5d17d290-c473-4a6e-9643-ab09c89343df-16706025460b5fe1f4-1",
+        "template--14815470616643__5d17d290-c473-4a6e-9643-ab09c89343df-16706025460b5fe1f4-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "divider": false
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "You may also like",
+        "related_count": 5
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "recent_count": 5
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {}
+    },
+    "1670602581397c5ee3": {
+      "type": "apps",
+      "blocks": {
+        "52c2e065-cd17-412e-9870-52ebc4d50d1e": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "52c2e065-cd17-412e-9870-52ebc4d50d1e"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "fa83204e-750d-4ff2-9032-0a97fcf74d94": {
+      "type": "wizart-entry-point-button",
+      "settings": {
+        "token": "VtngFar8uyUmV8DjDKU6bk4Fp0POM5mm9W4w7MvjbkIQGsFZj5MG8MwK9fXY",
+        "width": "65%",
+        "height": "60px",
+        "title": "Try it in your room in one click!",
+        "custom_class": "wizart-product-page",
+        "tooltip_disable": true,
+        "glitter_disable": true,
+        "tooltip_position": "top",
+        "tooltip_title": "See it in your room!",
+        "element_selector": ".product-slideshow",
+        "insert_element_position": "after",
+        "iframe_selector": "body",
+        "insert_iframe_selector": "before",
+        "color": "#f2e9e0",
+        "background": "#876b44",
+        "images": "",
+        "border_radius": "var(--buttonRadius)",
+        "css_border": "",
+        "onload-callback": "",
+        "close-callback": "",
+        "on-button-click": "updateVendorCode"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cb97f37d-2309-4378-af75-f9102decbea9",
+    "5d17d290-c473-4a6e-9643-ab09c89343df",
+    "sub",
+    "product-recommendations",
+    "recently-viewed",
+    "collection-return",
+    "1670602581397c5ee3",
+    "fa83204e-750d-4ff2-9032-0a97fcf74d94"
+  ]
+}

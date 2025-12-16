@@ -1,0 +1,32 @@
+.hero__text-shadow.designer {
+    background: rgb(242, 233, 224);
+    padding: 30px;
+    color: #876b44;
+    text-align: left;
+}
+
+.hero__title.designer em {
+    font-family: Albra;
+    font-style:normal;
+}
+
+.animation-contents {
+    margin-bottom: 15px;
+
+    & p {
+        margin-bottom: 0;
+    }
+}
+
+.slideshow__slide.designer-slide,
+.designer-hero.hero {
+    height: 420px;
+}
+
+@media (max-width: 768px) {
+
+    .slideshow__slide.designer-slide,
+    .designer-hero.hero {
+        height: 250px;
+    }
+}

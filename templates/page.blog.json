@@ -1,0 +1,213 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "fd4bf2d0-b843-423f-88c9-8d23f79a869c": {
+      "type": "advanced-content",
+      "blocks": {
+        "53bcab28-2ca0-4050-bb7a-32c5f610befd": {
+          "type": "liquid",
+          "settings": {
+            "code": "It's happened to the best of us. We've seen that perfect wallpaper, fallen in love with it, and then realized...we don't know how to measure for it!\n\nDon't worry, we're here to help. In this comprehensive guide, we'll teach you how to measure walls for any type of wallpaper, from traditional to removable. So read on, and get ready to wallpaper your world!<\/p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "template--14833326850115__fd4bf2d0-b843-423f-88c9-8d23f79a869c-167288743721d8bb1c-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Preparing to Measure a Wall<\/h2><p>Measurement is key when it comes to wallpaper. If you don't measure correctly, you could end up with mismatched panels or wallpaper that's too small (or large) for your walls. And believe us, that's a headache you don't want to deal with.\n\nSo, how do you go about measuring your walls for wallpaper? Well, it depends on the shape of your wall. Walls are typically rectangular, but they can also be slanted or have obstacles in them (like a window or door). In this guide, we'll walk you through how to measure each type of wall.\n\nBut before we get started, there are a few things you'll need: a tape measure, a level, a pencil, and some paper.<\/p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--14833326850115__fd4bf2d0-b843-423f-88c9-8d23f79a869c-167288743721d8bb1c-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tools3.jpg",
+            "link": "",
+            "width": "33%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "53bcab28-2ca0-4050-bb7a-32c5f610befd",
+        "template--14833326850115__fd4bf2d0-b843-423f-88c9-8d23f79a869c-167288743721d8bb1c-1",
+        "template--14833326850115__fd4bf2d0-b843-423f-88c9-8d23f79a869c-167288743721d8bb1c-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "359dbedc-1590-4394-b443-de9ae6b4bbdf": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14833326850115__359dbedc-1590-4394-b443-de9ae6b4bbdf-1672860649232fdcdd-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/01_f8909450-035b-43d9-a11e-b0590adf46b5.jpg",
+            "link": "",
+            "width": "33%",
+            "alignment": "center"
+          }
+        },
+        "template--14833326850115__359dbedc-1590-4394-b443-de9ae6b4bbdf-1672860649232fdcdd-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>How to Measure a Rectangular Wall<\/h2><p>To measure a rectangular wall, you'll need a measuring tape \nStart by measuring the width of the wall at the top, and then the height at the left and right sides. Write these numbers down, as you'll need them later. Next, measure the width of the wall at the bottom since it can be different on the top and bottom. Choose the largest width for the next calculations.<\/p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14833326850115__359dbedc-1590-4394-b443-de9ae6b4bbdf-1672860649232fdcdd-0",
+        "template--14833326850115__359dbedc-1590-4394-b443-de9ae6b4bbdf-1672860649232fdcdd-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "9458a1c5-15f5-4c3d-a158-6fc314c7a592": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14833326850115__9458a1c5-15f5-4c3d-a158-6fc314c7a592-1672860649232fdcdd-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/02_1398a82a-7627-46d8-bc83-a38f082d5f22.jpg",
+            "link": "",
+            "width": "33%",
+            "alignment": "center"
+          }
+        },
+        "template--14833326850115__9458a1c5-15f5-4c3d-a158-6fc314c7a592-1672860649232fdcdd-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>How to Measure a Slanted Wall<\/h2><p>When it comes to measuring a slanted wall, you’ll have to find the highest and the widest point and measure there.<\/p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14833326850115__9458a1c5-15f5-4c3d-a158-6fc314c7a592-1672860649232fdcdd-0",
+        "template--14833326850115__9458a1c5-15f5-4c3d-a158-6fc314c7a592-1672860649232fdcdd-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "f0610d11-81c8-4bc2-aaf4-41f4a4cc4f1f": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14833326850115__f0610d11-81c8-4bc2-aaf4-41f4a4cc4f1f-16728865206f65c99a-0": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "33%",
+            "alignment": "center"
+          }
+        },
+        "template--14833326850115__f0610d11-81c8-4bc2-aaf4-41f4a4cc4f1f-16728865206f65c99a-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>How to Measure a Wall With Obstacles<\/h2><p>We recommend measuring the full height and width of the wall including the windows and doors so you could cut around the obstacles while installation.<\/p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14833326850115__f0610d11-81c8-4bc2-aaf4-41f4a4cc4f1f-16728865206f65c99a-0",
+        "template--14833326850115__f0610d11-81c8-4bc2-aaf4-41f4a4cc4f1f-16728865206f65c99a-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "baf26c4e-631f-4a75-85dd-94c97b4eaf77": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14833326850115__baf26c4e-631f-4a75-85dd-94c97b4eaf77-16728865206f65c99a-0": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "33%",
+            "alignment": "center"
+          }
+        },
+        "template--14833326850115__baf26c4e-631f-4a75-85dd-94c97b4eaf77-16728865206f65c99a-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>How to Measure a Multiple Wall<\/h2><p>You can combine the width of the walls and place the order or you can separate them and ask us for a custom order to match individual wall murals.<\/p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14833326850115__baf26c4e-631f-4a75-85dd-94c97b4eaf77-16728865206f65c99a-0",
+        "template--14833326850115__baf26c4e-631f-4a75-85dd-94c97b4eaf77-16728865206f65c99a-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "4c2deb87-7579-4dc8-8932-e6d2e80a4047": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14833326850115__4c2deb87-7579-4dc8-8932-e6d2e80a4047-167288743721d8bb1c-0": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--14833326850115__4c2deb87-7579-4dc8-8932-e6d2e80a4047-167288743721d8bb1c-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2> How Much Removable Wallpaper Do I Need?<\/h2><p>You've measured your walls and you're ready to buy wallpaper. But how much wallpaper do you need?<p>\n\nHere's a quick and easy way to calculate how many panels of wallpaper you'll need:<p>\n\nDivide the width by 24 or 35 to get the panel quantity. Round up to the whole number\nRound up the height to the closest option:  48, 96, 108, 120\nFor example, if you have a rectangular wall that's 11 feet wide and 7 feet high. (132in x 84in ) \n\nDivide the width by 24: 132\/24=5.5. Round up to 6.\n\nThe height is 84. Round up to 96.\n\nTotal you’ll need 6 panels x 24in wide x 96in high\n\nKeep in mind that this is just an estimate - you may need more or less depending on the pattern repeat and other factors. But this should give you a general idea of how much wallpaper you'll need to buy.<\/p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14833326850115__4c2deb87-7579-4dc8-8932-e6d2e80a4047-167288743721d8bb1c-0",
+        "template--14833326850115__4c2deb87-7579-4dc8-8932-e6d2e80a4047-167288743721d8bb1c-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    }
+  },
+  "order": [
+    "fd4bf2d0-b843-423f-88c9-8d23f79a869c",
+    "main",
+    "359dbedc-1590-4394-b443-de9ae6b4bbdf",
+    "9458a1c5-15f5-4c3d-a158-6fc314c7a592",
+    "f0610d11-81c8-4bc2-aaf4-41f4a4cc4f1f",
+    "baf26c4e-631f-4a75-85dd-94c97b4eaf77",
+    "4c2deb87-7579-4dc8-8932-e6d2e80a4047"
+  ]
+}

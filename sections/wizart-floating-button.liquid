@@ -1,0 +1,263 @@
+{% if section.settings.second_option == false %}
+    <script defer
+            class="wizart__floating-button"
+            data-token="{{ section.settings.token }}"
+            {% if section.settings.show_compact == true %}data-compact="true"{% endif %}
+            {% if section.settings.tooltip_disable == true %}data-tooltip_disable="true"{% endif %}
+            data-background="{{ section.settings.color_background }}"
+            data-color="{{ section.settings.text_color }}"
+            data-width="{{ section.settings.width }}"
+            data-height="{{ section.settings.height }}"
+            data-tooltip_position="{{ section.settings.tooltip_position }}"
+            data-tooltip_title="{{ section.settings.tooltip_title }}"
+            {% if section.settings.glitter_disable == true %}data-glitter-disable="true"{% endif %}
+            data-title="{{ section.settings.button_title }}"
+            data-image="{{ section.settings.image_url }}"
+            data-border="{{ section.settings.border_css }}"
+            data-border_radius="{{ section.settings.border }}"
+            data-class_name="{{ section.settings.custom_class }}"
+            {% if section.settings.tutorial == true %}data-tutorial="true"{% endif %}
+            data-tutorial-delay="{{ section.settings.tutorial_delay }}"
+            data-element-selector="{{ section.settings.element_selector }}"
+            data-insert-element-position="{{ section.settings.insert_element_selector }}"
+            data-iframe-element-selector="{{ section.settings.iframe_selector }}"
+            data-insert-iframe-element-position="{{ section.settings.insert_iframe_selector }}"
+            src="https://d35so7k19vd0fx.cloudfront.net/production/integration/floating-button.min.js">
+    </script>
+
+{% else %}
+
+    <script type="application/javascript" src="https://d35so7k19vd0fx.cloudfront.net/production/integration/floating-button.min.js" defer></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const floatingButton = new window.WFloatingButton({
+                token: "{{ section.settings.token }}",
+                element: document.getElementsByTagName('body')[0]
+            });
+            var checkTooltipDisable;
+            var checkGlitterDisable;
+            var compactDisplay;
+            var addTutorial;
+            {% if section.settings.tooltip_disable == true %}checkTooltipDisable = "true"{% endif %}
+            {% if section.settings.glitter_disable == true %}checkGlitterDisable = "true"{% endif %}
+            {% if section.settings.show_compact == true %}compactDisplay = "true"{% endif %}
+            {% if section.settings.tutorial == true %}addTutorial = "true"{% endif %}
+            floatingButton.render({
+                title: "{{ section.settings.button_title }}",
+                tooltipTitle: "{{ section.settings.tooltip_title }}",
+                tooltipPosition: "{{ section.settings.tooltip_position }}",
+                tooltipDisable: checkTooltipDisable,
+                glitterDisable: checkGlitterDisable,
+                className: "{{ section.settings.custom_class }}",
+                borderRadius: "{{ section.settings.border }}",
+                background: "{{ section.settings.color_background }}",
+                color: "{{ section.settings.text_color }}",
+                width: "{{ section.settings.width }}",
+                height: "{{ section.settings.height }}",
+                border: "{{ section.settings.border_css }}",
+                image: "{{ section.settings.image_url }}",
+                compact: compactDisplay,
+                tutorial: addTutorial,
+                tutorialDelay: "{{ section.settings.tutorial_delay }}",
+                iframeElementSelector: "{{ section.settings.iframe_selector }}",
+                insertIframeElementPosition: "{{ section.settings.insert_iframe_selector }}"
+            });
+        });
+    </script>
+
+{% endif %}
+
+<style>
+  .floating-button__inner {
+   box-shadow: none!important; 
+  }
+</style>
+
+{% schema %}
+{
+"name": "Floating Button",
+"settings": [
+{
+"type": "checkbox",
+"id": "second_option",
+"label": "Second integration option",
+"default": false
+},
+{
+"type": "text",
+"id": "token",
+"label": "Token from PIM"
+},
+{
+"type": "text",
+"id": "button_title",
+"label": "Title",
+"default": "Try it in your room in one click!"
+},
+{
+"type": "checkbox",
+"id": "tooltip_disable",
+"label": "Disable Tooltip",
+"default": false
+},
+{
+"type": "checkbox",
+"id": "glitter_disable",
+"label": "Disable glitter",
+"default": false
+},
+{
+"type": "text",
+"id": "tooltip_title",
+"label": "Tooltip Title",
+"default": "See it in your room!"
+},
+{
+"type": "select",
+"id": "tooltip_position",
+"label": "Position Tooltip",
+"default": "top",
+"options": [
+{
+"value": "top",
+"label": "Top"
+},
+{
+"value": "right",
+"label": "Right"
+},
+{
+"value": "bottom",
+"label": "Bottom"
+},
+{
+"value": "left",
+"label": "Left"
+}
+]
+},
+{
+"type": "text",
+"id": "custom_class",
+"label": "Custom class for button",
+"default": "wizart-homepage"
+},
+{
+"type": "text",
+"id": "width",
+"label": "Width",
+"default": "auto"
+},
+{
+"type": "text",
+"id": "height",
+"label": "Height",
+"default": "75px"
+},
+{
+"type": "color",
+"id": "color_background",
+"label": "Background color",
+"default": "#FA5961"
+},
+{
+"type": "color",
+"id": "text_color",
+"label": "Text color",
+"default": "#ffffff"
+},
+{
+"type": "url",
+"id": "image_url",
+"label": "Image link"
+},
+{
+"type": "text",
+"id": "border",
+"label": "Border radius"
+},
+{
+"type": "text",
+"id": "border_css",
+"label": "Border style"
+},
+{
+"type": "checkbox",
+"id": "show_compact",
+"label": "Enable Compact Mode",
+"default": false
+},
+{
+"type": "checkbox",
+"id": "tutorial",
+"label": "Animation for the button",
+"default": false
+},
+{
+"type": "text",
+"id": "tutorial_delay",
+"label": "Period of time before the animation is activated"
+},
+{
+"type": "text",
+"id": "element_selector",
+"label": "CSS selector to insert your button",
+"default": "body"
+},
+{
+"type": "select",
+"id": "insert_element_selector",
+"label": "The Insertion Position of the Element",
+"default": "before",
+"options": [
+{
+"value": "before",
+"label": "Before"
+},
+{
+"value": "append",
+"label": "Append"
+},
+{
+"value": "after",
+"label": "After"
+}
+]
+},
+{
+"type": "text",
+"id": "iframe_selector",
+"label": "CSS selector to insert iframe",
+"default": "body"
+},
+{
+"type": "select",
+"id": "insert_iframe_selector",
+"label": "Iframe Insertion Position",
+"default": "before",
+"options": [
+{
+"value": "before",
+"label": "Before"
+},
+{
+"value": "append",
+"label": "Append"
+},
+{
+"value": "after",
+"label": "After"
+}
+]
+}
+],
+   	"presets": [
+	{
+		"name": "Wizart Floating Button",
+		"category": "Wizart"
+	}
+],
+"templates": ["index"]
+}
+{% endschema %}

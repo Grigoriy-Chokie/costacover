@@ -1,0 +1,127 @@
+<div class="sitemap">
+    <div class="sitemap-container page-width">
+        {% if section.settings.title != blank %}
+            <h2 class="sitemap-title">{{section.settings.title}}</h2> 
+        {% endif %}
+        <div class="sitemap-item">
+            <div class="sitemap-wrap">
+                <div class="sitemap-item_left">
+                    <ul class="sitemap-item_list">
+                        {% for page in pages %}
+                        {% assign mod = forloop.index | modulo: 2 %}
+                            {% if mod == 1 %}
+                                <li class="sitemap-item_item">
+                                    <a class="sitemap-item_link" href="{{page.url}}">{{page.title}}</a>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="sitemap-item_right">
+                    <ul class="sitemap-item_list">
+                        {% for page in pages %}
+                        {% assign mod = forloop.index | modulo: 2 %}
+                            {% if mod == 0 %}
+                                <li class="sitemap-item_item">
+                                    <a class="sitemap-item_link" href="{{page.url}}">{{page.title}}</a>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.sitemap {
+    padding: 40px 0;
+}
+.sitemap-container {
+    display: flex;
+    flex-direction: column;
+}
+.sitemap-container >*:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.sitemap-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.sitemap-wrap >*:not(:last-child) {
+    margin-left: 40px;
+}
+ .sitemap-link {
+    font-size: 25px;
+    margin-bottom: 15px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+.sitemap-item_list {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.sitemap-item_item {
+    padding: 10px 0;
+}
+.sitemap-item_link {
+    text-transform: capitalize;
+}
+.sitemap-item_left {
+    max-width: 50%;
+    flex: 0 1 calc(50% - 20px);
+}
+.sitemap-item_right {
+    max-width: 50%;
+    flex: 0 1 calc(50% - 20px);
+}
+
+.sitemap a:hover {
+    text-decoration: underline;
+}
+@media(max-width: 768px) {
+    .sitemap-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .sitemap-wrap >*:not(:last-child) {
+        margin-left: 0px;
+    }
+    .sitemap-item_left {
+        max-width: 100%;
+        flex: 1 1 100%
+    }
+    .sitemap-item_right {
+        max-width: 100%;
+        flex: 1 1 100%
+    }
+}
+</style>
+  
+
+{% schema %}
+{
+        "name": "All page",
+        "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title",
+                "default": "Page"
+            }
+        ],
+        "presets": [
+        {
+            "name": "All page"
+        }
+  ]
+}
+{% endschema %}

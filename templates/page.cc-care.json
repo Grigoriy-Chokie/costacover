@@ -1,0 +1,288 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_d8z7gH": {
+      "type": "slideshow",
+      "blocks": {
+        "image_9fKB8G": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/3700x1500_v3.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_9fKB8G"
+      ],
+      "name": "t:sections.slideshow.presets.hero_optional_slideshow.name",
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "250px",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "e14ee3aa-a97a-4125-9c93-ab87b23923b9": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14815470485571__e14ee3aa-a97a-4125-9c93-ab87b23923b9-16730325381b8cf575-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/our_photo_c773fc2d-3288-4162-b0ab-b594d04a8aa7.jpg",
+            "link": "",
+            "width": "25%",
+            "alignment": "center"
+          }
+        },
+        "template--14815470485571__e14ee3aa-a97a-4125-9c93-ab87b23923b9-16730325381b8cf575-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>about us</h2><p>We are a family-owned business that specializes in designing and creating stick-and-peel wallpaper. That's right - it's a high quality wallpaper that you stick on the wall just like a sticker, remove any time you want! No glue, no hassle so this is a super easy and convenient way to remodel or just add a pop of color to your walls. You can do it all on your own, it's that easy! We are always happy to help with custom orders - you can choose any design you like and we will adjust it to your specified size, color and scale. Please let us know if you have any questions or inquiries - we are always happy to help!</p> <p>CostaCover - we got you covered.</p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "f9bd7871-b92a-4c1c-b549-00d75d9ef7d4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/about_b19abef3-d62d-49e1-9004-f72a9c9e5478.jpg",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815470485571__e14ee3aa-a97a-4125-9c93-ab87b23923b9-16730325381b8cf575-0",
+        "template--14815470485571__e14ee3aa-a97a-4125-9c93-ab87b23923b9-16730325381b8cf575-1",
+        "f9bd7871-b92a-4c1c-b549-00d75d9ef7d4"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "rich_text_7qmUWh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_im68RX": {
+          "type": "heading",
+          "settings": {
+            "tag": true,
+            "title": "COSTACOVER CARE"
+          }
+        },
+        "text_EAVrkr": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>We are Costa Cover, a U.S.-based company located in sunny Florida, specializing in wallpaper printing<strong> since 2017</strong>. Our materials are <strong>eco-friendly, certified, and completely safe for children</strong>, making them ideal for family homes, playrooms, and learning spaces.</p><p>With <strong>over 20,000 </strong>completed projects behind us, we take pride in helping families and communities create warm, inspiring, and beautiful spaces that bring comfort and joy.</p><p>Today, we’re launching <strong>CostaCover Care</strong>—our charitable initiative supporting centers serving neurodivergent children by transforming the spaces where they learn and grow.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_im68RX",
+        "text_EAVrkr"
+      ],
+      "name": "t:sections.rich-text.presets.rich_text.name",
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "text_and_image_PVbgEJ": {
+      "type": "text-and-image",
+      "name": "t:sections.text-and-image.presets.image_with_text.name",
+      "settings": {
+        "image": "shopify://shop_images/02_e3783222-9a3b-41af-ae94-d3e6bc56a49a.jpg",
+        "image_width": 430,
+        "subtitle": "",
+        "title": "",
+        "text": "<h3>Why it matters</h3><p>The environment around children with autism spectrum plays a significant role in their emotional well-being, helping them feel safe and calm. <a href=\"https://www.mdpi.com/1660-4601/18/6/3203?utm_source\" title=\"https://www.mdpi.com/1660-4601/18/6/3203?utm_source\"><strong>Read more in this study</strong></a><strong>.</strong></p><h3>Which wallpapers are best for children with autism spectrum?</h3><p>For these spaces, it is important to use:</p><ul><li>Soft pastel shades (light blues, greens, gentle sand tones)<br/></li><li>Minimal, calm patterns without overwhelming brightness<br/></li><li>Nature-inspired themes (forests, clouds, leaves) to create a sense of peace</li></ul>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "image_compare_HLieHm": {
+      "type": "image-compare",
+      "blocks": {
+        "image_Yd6xWJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/01_Kids_interior_copy.jpg"
+          }
+        },
+        "image_J9yVzU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/01_Kids_interior_copy2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_Yd6xWJ",
+        "image_J9yVzU"
+      ],
+      "name": "t:sections.image-comparison.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "heading_position": "left",
+        "fullwidth": false,
+        "slider_style": "minimal",
+        "height": 900,
+        "color": "#ffffff"
+      }
+    },
+    "rich_text_FFgtFh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_YRqRdJ": {
+          "type": "heading",
+          "settings": {
+            "tag": false,
+            "title": ""
+          }
+        },
+        "text_DXxgTK": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<h3>How we help</h3><p>We have set <strong>monthly quotas</strong> to support centers by <strong>fully covering the printing and installation of wallpapers</strong> in selected spaces.</p><p>Any child care center working with autistic spectrum children is welcome to apply for the project, and we will do our best to help. Please fill out the <strong>contact form</strong> below.</p><p><em><strong>Join Costa Cover Care in creating warm and safe spaces for children with special needs</strong></em><em>.</em><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_YRqRdJ",
+        "text_DXxgTK"
+      ],
+      "name": "t:sections.rich-text.presets.rich_text.name",
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "featured_collection_mReHtC": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.featured_collection.name",
+      "settings": {
+        "title": "COmfort collection",
+        "home_featured_products": "comfort-collection",
+        "per_row": 5,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "contact_form_nDK7Ht": {
+      "type": "contact-form",
+      "name": "t:sections.contact-form.presets.contact_form.name",
+      "settings": {
+        "title": "Contact us",
+        "text": "",
+        "show_phone": false,
+        "narrow_column": false
+      }
+    },
+    "text_columns_TbmiPy": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_n3y9aX": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/2_6cb86a0f-0893-485c-b099-75833a3e737d.jpg",
+            "image_width": 450,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_Rd7F3U": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/5_e28a21e4-97ad-45e9-94ca-5c3caa8756ea.jpg",
+            "image_width": 650,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_m8TdeB": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/4_56e6f5fd-f399-4a6e-bba5-88350a10d375.jpg",
+            "image_width": 650,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_n3y9aX",
+        "text_block_Rd7F3U",
+        "text_block_m8TdeB"
+      ],
+      "name": "t:sections.text-columns.presets.text_columns_with_images.name",
+      "settings": {
+        "title": "Some of our project",
+        "align_text": "center",
+        "divider": true
+      }
+    }
+  },
+  "order": [
+    "slideshow_d8z7gH",
+    "e14ee3aa-a97a-4125-9c93-ab87b23923b9",
+    "main",
+    "rich_text_7qmUWh",
+    "text_and_image_PVbgEJ",
+    "image_compare_HLieHm",
+    "rich_text_FFgtFh",
+    "featured_collection_mReHtC",
+    "contact_form_nDK7Ht",
+    "text_columns_TbmiPy"
+  ]
+}

@@ -1,0 +1,112 @@
+{%- liquid
+  assign padding_top = section.settings.padding_top | append: 'px'
+  assign padding_bottom = section.settings.padding_bottom | append: 'px'
+  assign padding_top_mobile = section.settings.padding_top_mobile | append: 'px'
+  assign padding_bottom_mobile = section.settings.padding_bottom_mobile | append: 'px'
+-%}
+
+{%- style -%}
+  .multi-collage--{{section.id}} {
+    padding-top: {{padding_top}};
+    padding-bottom: {{padding_bottom}};
+  }
+
+  @media(max-width: 768px) {
+    .multi-collage--{{section.id}} {
+      padding-top: {{padding_top_mobile}};
+      padding-bottom: {{padding_bottom_mobile}};
+    }
+  }
+{%- endstyle -%}
+<style>
+    #shopify-section-{{ section.id }} {
+      {%- render 'section-variables', section: section -%}
+    }
+</style>
+{{ 'section-multi-collage.css' | asset_url | stylesheet_tag }}
+
+<div class="multi-collage page-width multi-collage--{{section.id}}">
+  {% if section.settings.title != blank %}
+      <h2 class="heading title-wrapper font-bold title-md text-center">{{ section.settings.title }}</h2>
+  {% endif %}
+  {% content_for 'blocks' %}
+</div>
+
+{% schema %}
+{
+  "name": "Multi Collage",
+  "tag": "section",
+  "blocks": [
+    {
+      "type": "_collage-row"
+    }
+  ],
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Title",
+      "default": "Lorem title"
+    },
+    {
+      "type": "paragraph",
+      "content": "Space between template sections(Desktop)"
+    },
+    {
+      "type": "color",
+      "id": "color_button_background",
+      "label": "t:sections.global.settings.color_button_background.label",
+      "default": "#8B6C41"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 0
+    },
+    {
+      "type": "paragraph",
+      "content": "Space between template sections(Mobile)"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top mobile",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom mobile",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Multi Collage"
+    }
+  ]
+}
+{% endschema %}

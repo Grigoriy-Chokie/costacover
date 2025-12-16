@@ -1,0 +1,618 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "background_image_text_v2_9VRcCx": {
+      "type": "background-image-text-v2",
+      "custom_css": [
+        ".page-width {padding-top: 40px; padding-bottom: 40px; @media screen and (max-width: 768px) {padding-top: 0; padding-bottom: 30px; }}"
+      ],
+      "name": "Image with content",
+      "settings": {
+        "subtitle": "",
+        "title": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_label_2": "",
+        "button_link_2": "",
+        "product": "abstract-beige-arches-wall-mural-am127",
+        "product_card_position": "bottom-right",
+        "image": "shopify://shop_images/Group_26_3.png",
+        "image_mobile": "shopify://shop_images/Group_25_3.png",
+        "image_position_desktop": "absolute",
+        "image_position_mobile": "absolute",
+        "focal_point": "80% 100%",
+        "content_position": "top-left",
+        "height": 550,
+        "full_width": false,
+        "content_width": 40,
+        "content_background_color": "",
+        "button_color": "#876b44"
+      }
+    },
+    "content_with_media_8yxbzY": {
+      "type": "content-with-media",
+      "blocks": {
+        "media_e9hz8P": {
+          "type": "media",
+          "settings": {
+            "media": "shopify://shop_images/0ad6368179eb1a124ea774aea48e458cded6c607.png",
+            "media_text": "Girls",
+            "media_url": "shopify://collections/about-walls"
+          }
+        },
+        "media_UFbpFQ": {
+          "type": "media",
+          "settings": {
+            "media": "shopify://shop_images/e1a1171c03e110c68a0ee58dfd603f0e514b82f5.png",
+            "media_text": "Boys",
+            "media_url": "shopify://collections/abstract-wall-mural"
+          }
+        },
+        "media_YdWjkH": {
+          "type": "media",
+          "settings": {
+            "media": "shopify://shop_images/120d6414820b47c7d046645af8de089bebf10fc0.png",
+            "media_text": "Gender Neutral",
+            "media_url": "shopify://collections/accent-wallpaper"
+          }
+        }
+      },
+      "block_order": [
+        "media_e9hz8P",
+        "media_UFbpFQ",
+        "media_YdWjkH"
+      ],
+      "name": "Content with media",
+      "settings": {
+        "heading": "Create a Room They’ll Love from Day One to Big-Kid Days",
+        "description": "<p>Soft, safe, washable nursery wallpaper crafted to make early days—and sleepless nights—a little cozier.</p><p>Nursery wallpaper designed for newborns and toddlers - soft tones, baby-safe finishes and calming prints for peaceful naps and everyday cuddles.</p><p>Kids’ wallpaper for bedrooms and playrooms - bolder colors, playful stories and durable, washable surfaces made for forts, crayons and big imaginations. All designs are printed on eco-friendly, low-VOC materials in the USA.</p>",
+        "link_text": "Shop Nursery collection",
+        "link_url": "shopify://collections/nursery",
+        "button_background": "#876b44",
+        "button_color": "#ffffff"
+      }
+    },
+    "logo_grid_HWxNJ3": {
+      "type": "logo-grid",
+      "blocks": {
+        "block_TJLXpL": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify://shop_images/Frame_7.svg",
+            "logo_text": "<p>Greenguard Gold Certified</p>"
+          }
+        },
+        "block_6bQEHr": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify://shop_images/Frame_7_1.svg",
+            "logo_text": "<p>Made in USA</p>"
+          }
+        },
+        "block_pX73cJ": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify://shop_images/Frame_11.svg",
+            "logo_text": "<p>Free Shipping</p>"
+          }
+        },
+        "block_GyPMxT": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify://shop_images/Frame_12_1.svg",
+            "logo_text": "<p>Pvc Free <br/>Paper Options</p>"
+          }
+        },
+        "block_wn9HxQ": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify://shop_images/03_2eb5c468-62d2-4fb7-9693-92e7f24d177e.png",
+            "logo_text": "<p>Non-Toxic Inks</p>"
+          }
+        },
+        "block_bhAwyn": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify://shop_images/Frame_10.svg",
+            "logo_text": "<p>Low Voc <br/>Odor Free</p>"
+          }
+        },
+        "block_TBTFWj": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify://shop_images/07.png",
+            "logo_text": "<p>Easy To Install & Remove</p>"
+          }
+        }
+      },
+      "block_order": [
+        "block_TJLXpL",
+        "block_6bQEHr",
+        "block_pX73cJ",
+        "block_GyPMxT",
+        "block_wn9HxQ",
+        "block_bhAwyn",
+        "block_TBTFWj"
+      ],
+      "name": "Logo grid",
+      "settings": {
+        "title": "What Makes Our Wallpapers Better",
+        "button_1_text": "",
+        "button_1_url": "",
+        "button_2_text": "",
+        "button_2_url": "",
+        "columns": 7,
+        "columns_mobile": 2,
+        "color_button_background": "#8b6c41",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0,
+        "logo_size": 100,
+        "center_last_grid_item": true
+      }
+    },
+    "info_card_grid_H3Be9D": {
+      "type": "info-card-grid",
+      "blocks": {
+        "card_item_TdiQGT": {
+          "type": "card-item",
+          "settings": {
+            "card_image": "shopify://shop_images/Rectangle_1_2.png",
+            "card_text": "Canvas Vinyl Peel & Stick",
+            "card_url": ""
+          }
+        },
+        "card_item_47napJ": {
+          "type": "card-item",
+          "settings": {
+            "card_image": "shopify://shop_images/Rectangle_2.png",
+            "card_text": "Smooth Vinyl Peel & Stick",
+            "card_url": ""
+          }
+        },
+        "card_item_KJ8yee": {
+          "type": "card-item",
+          "settings": {
+            "card_image": "shopify://shop_images/Rectangle_3.png",
+            "card_text": "Non-Woven Traditional Paper",
+            "card_url": ""
+          }
+        },
+        "card_item_CBLAWN": {
+          "type": "card-item",
+          "settings": {
+            "card_image": "shopify://shop_images/Rectangle_4.png",
+            "card_text": "Pre-Pasted Traditional Paper",
+            "card_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_item_TdiQGT",
+        "card_item_47napJ",
+        "card_item_KJ8yee",
+        "card_item_CBLAWN"
+      ],
+      "name": "Info & Card grid",
+      "settings": {
+        "heading": "Material & Finish Options",
+        "description": "Every home is different. Choose a finish that fits your home & values.",
+        "link_text": "Read about Materials",
+        "link_url": "shopify://blogs/how-it-works/our-materials",
+        "button_background": "#876b44",
+        "button_color": "#ffffff"
+      }
+    },
+    "product_list_4N7Pqn": {
+      "type": "product-list",
+      "blocks": {
+        "product_item_kH8WVy": {
+          "type": "product-item",
+          "settings": {
+            "product": "neutral-animal-print-wall-mural-ccm177",
+            "product_rating": 5
+          }
+        },
+        "product_item_J76KtB": {
+          "type": "product-item",
+          "settings": {
+            "product": "blue-watercolor-stripes-wallpaper-a060",
+            "product_rating": 5
+          }
+        },
+        "product_item_BY3LCE": {
+          "type": "product-item",
+          "settings": {
+            "product": "pink-flowers-and-leaves-boho-pastel-floral-botanical-wallpaper-cc271",
+            "product_rating": 5
+          }
+        },
+        "product_item_pNCUp6": {
+          "type": "product-item",
+          "settings": {
+            "product": "wild-animals-in-fairy-forest-self-adhesive-wm056",
+            "product_rating": 5
+          }
+        },
+        "product_item_9FFnGM": {
+          "type": "product-item",
+          "settings": {
+            "product": "blue-undersea-world-wall-mural-sm059",
+            "product_rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "product_item_kH8WVy",
+        "product_item_J76KtB",
+        "product_item_BY3LCE",
+        "product_item_pNCUp6",
+        "product_item_9FFnGM"
+      ],
+      "name": "Product list",
+      "settings": {
+        "heading": "Nursery Bestsellers",
+        "link_text": "View all",
+        "link_url": "shopify://collections/nursery",
+        "swiper_only_mobile": true,
+        "hide_product_description": true,
+        "button_color": "#876b44"
+      }
+    },
+    "promo_grid_BfjkAQ": {
+      "type": "promo-grid",
+      "blocks": {
+        "advanced_LTY6fk": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Each space is very individual",
+            "heading": "Order A Sample",
+            "textarea": "Check the color and design style, and look at the quality of the material.",
+            "cta_text1": "SHOP collection",
+            "cta_link1": "shopify://collections/nursery",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify://shop_images/sample1_copy.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 380,
+            "text_size": 40,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "advanced_Rf383D": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Quick, clean and simple",
+            "heading": "Install peel & Stick",
+            "textarea": "Check out the wallpaper installation guide",
+            "cta_text1": "How to install",
+            "cta_link1": "shopify://blogs/news/how-to-install-peel-and-stick-wallpaper-over-low-voc-paints",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify://shop_images/install_ps_1.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 380,
+            "text_size": 40,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "advanced_LTY6fk",
+        "advanced_Rf383D"
+      ],
+      "name": "t:sections.promo-grid.presets.promotional_grid.name",
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": true
+      }
+    },
+    "image_comparison_v2_AnzDWq": {
+      "type": "image-comparison-v2",
+      "blocks": {
+        "image_qrcK6Q": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/before_873953ab-339a-45e3-9cc6-7b0176de42bc.jpg"
+          }
+        },
+        "image_Fqi7ME": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/after_4606c87e-eed1-4f8c-9950-6014b8d805c8.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_qrcK6Q",
+        "image_Fqi7ME"
+      ],
+      "name": "Image comparison v2",
+      "settings": {
+        "product": "blue-bunny-balloons-wall-mural-sm080",
+        "heading": "Little Changes, Big Warmth",
+        "button_text": "Shop now",
+        "button_url": "shopify://collections/bunny-wallpaper",
+        "fullwidth": false,
+        "slider_style": "classic",
+        "height": 450,
+        "color": "#ffffff",
+        "border_color": "#876b44",
+        "button_color": "#876b44",
+        "full_width": false
+      }
+    },
+    "how_it_works_8WHWee": {
+      "type": "how-it-works",
+      "blocks": {
+        "item_m9bREf": {
+          "type": "item",
+          "settings": {
+            "item_icon": "shopify://shop_images/Frame_13_1.svg",
+            "item_text": "<p>Pick A Design</p>"
+          }
+        },
+        "item_qKh6DR": {
+          "type": "item",
+          "settings": {
+            "item_icon": "shopify://shop_images/Frame_7_3.svg",
+            "item_text": "<p>Choose Material <br/>Vinyl / PVC Free / Paper</p>"
+          }
+        },
+        "item_TxCFgc": {
+          "type": "item",
+          "settings": {
+            "item_icon": "shopify://shop_images/Frame_11_1.svg",
+            "item_text": "<p>Approve Sample <br/>Or Proof</p>"
+          }
+        },
+        "item_Q3LN7K": {
+          "type": "item",
+          "settings": {
+            "item_icon": "shopify://shop_images/Frame_12_2.svg",
+            "item_text": "<p>We Print & Ship</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_m9bREf",
+        "item_qKh6DR",
+        "item_TxCFgc",
+        "item_Q3LN7K"
+      ],
+      "name": "How it works",
+      "settings": {
+        "heading": "How It Works"
+      }
+    },
+    "background_image_text_v2_aMKpKB": {
+      "type": "background-image-text-v2",
+      "name": "Image with content",
+      "settings": {
+        "subtitle": "",
+        "title": "Ready to Create a Calm, Safe Nursery?",
+        "text": "",
+        "button_label": "Shop Collection",
+        "button_link": "shopify://collections/kids-wall-mural",
+        "button_label_2": "FREE design help",
+        "button_link_2": "shopify://pages/contact-us",
+        "product": "white-beige-forest-animals-wall-mural-sm018",
+        "product_card_position": "bottom-right",
+        "image": "shopify://shop_images/08_-_Kids_interior_scene_copy_1.jpg",
+        "image_mobile": "shopify://shop_images/08_-_Kids_interior_scene_copy_2.jpg",
+        "image_position_desktop": "absolute",
+        "image_position_mobile": "absolute",
+        "focal_point": "80% 100%",
+        "content_position": "top-left",
+        "height": 550,
+        "full_width": false,
+        "content_width": 40,
+        "content_background_color": "",
+        "button_color": "#876b44"
+      }
+    },
+    "testimonials_slider_6bQTte": {
+      "type": "testimonials-slider",
+      "blocks": {
+        "testimonial_slide_AkPJ9B": {
+          "type": "testimonial-slide",
+          "settings": {
+            "testimonial_author": "M.",
+            "testimonial_avatar": "shopify://shop_images/avatar.png",
+            "testimonial_rating": 5,
+            "testimonial_info": "5 days ago",
+            "testimonial_image": "shopify://shop_images/01_f2ff5de5-7704-4207-8ad3-9eb43822f048_jpg.png",
+            "testimonial_text": "<p><strong>The quality of the wallpaper is amazing and so beautiful!!</strong></p><p>The quality of the wallpaper is amazing and so beautiful!! I am so happy with the end product.</p><p>I'd highly recommend hiring someone to install the wallpaper especially if it's a mural like this.</p><p>It'll make your life easier I promise!! I am sooo glad I went with Costa Cover as they were so helpful in helping us get the finish product we wanted! 10/10</p>"
+          }
+        },
+        "testimonial_slide_nNcpj8": {
+          "type": "testimonial-slide",
+          "settings": {
+            "testimonial_author": "V.",
+            "testimonial_avatar": "shopify://shop_images/avatar.png",
+            "testimonial_rating": 5,
+            "testimonial_info": "25 days ago",
+            "testimonial_image": "shopify://shop_images/Screenshot_20.jpg",
+            "testimonial_text": "<p><strong>I placed a custom order for this wallpaper and I was extremely happy with it.</strong><br/></p><p>It turned out beautifully and exactly like the picture. I will definitely use them again for any wallpaper needs.<br/></p>"
+          }
+        },
+        "testimonial_slide_AtKpNU": {
+          "type": "testimonial-slide",
+          "settings": {
+            "testimonial_author": "D.",
+            "testimonial_avatar": "shopify://shop_images/avatar.png",
+            "testimonial_rating": 5,
+            "testimonial_info": "11 days ago",
+            "testimonial_image": "shopify://shop_images/Screenshot_1_6fb6e327-551c-4ddb-a76b-a03b5ff732a8.jpg",
+            "testimonial_text": "<p><strong>I love it</strong></p><p>I loved my experience with Costa Cover. I ordered the wallpaper for our nursery (picture attached), and the quality is amazing. <br/></p><p>Shipping was exactly as promised, and the whole transaction was smooth and on time. I just placed my second order because I’m so happy with the company. Highly recommend!</p>"
+          }
+        },
+        "testimonial_slide_eYdBBi": {
+          "type": "testimonial-slide",
+          "settings": {
+            "testimonial_author": "L.",
+            "testimonial_avatar": "shopify://shop_images/avatar.png",
+            "testimonial_rating": 5,
+            "testimonial_info": "22 days ago",
+            "testimonial_image": "shopify://shop_images/Screenshot_3_796cd530-6edd-4c46-870b-76e5333bb9e2.jpg",
+            "testimonial_text": "<p>this wallpaper is stunning! <br/><br/>we had it professionally installed and i could not be happier!!<br/><br/></p>"
+          }
+        },
+        "testimonial_slide_t7bRUn": {
+          "type": "testimonial-slide",
+          "settings": {
+            "testimonial_author": "Marta Kent",
+            "testimonial_avatar": "shopify://shop_images/avatar.png",
+            "testimonial_rating": 5,
+            "testimonial_info": "30 days ago",
+            "testimonial_image": "shopify://shop_images/Screenshot_2_2abdb71f-e5c8-45c4-a009-429ca4a0a95a.jpg",
+            "testimonial_text": "<p><strong>Turned out amazing!!!</strong></p><p>Im in love with this wallpaper 😍😍😍 It turned out even better than I expected!! <br/></p><p>My husband and my sister managed to put this up in a few hours by themselves. The first panel was a bit a learning curve, but all others were easy!! I’m very happy with my purchase 😊</p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_slide_AkPJ9B",
+        "testimonial_slide_nNcpj8",
+        "testimonial_slide_AtKpNU",
+        "testimonial_slide_eYdBBi",
+        "testimonial_slide_t7bRUn"
+      ],
+      "name": "Testimonials slider",
+      "settings": {
+        "heading": "Customer reviews",
+        "button_text": "See more reviews",
+        "button_url": "shopify://pages/reviews",
+        "button_color": "#876b44",
+        "testimonial_border_color": "#876b44"
+      }
+    },
+    "background_image_text_v2_AJ6e6m": {
+      "type": "background-image-text-v2",
+      "name": "Image with content",
+      "settings": {
+        "subtitle": "",
+        "title": "Easy & Quick Room Makeover",
+        "text": "<p>Transform your child’s room in just a few hours</p>",
+        "button_label": "Shop now",
+        "button_link": "shopify://collections",
+        "button_label_2": "",
+        "button_link_2": "",
+        "product": "pink-balloons-and-cute-animals-self-adhesive-wall-mural-wm065",
+        "product_card_position": "top-right",
+        "video_desktop": "shopify://files/videos/video 3 family 16x9 Youtube.MOV",
+        "image": "shopify://shop_images/BG_6.png",
+        "image_mobile": "shopify://shop_images/Frame_4.png",
+        "image_position_desktop": "absolute",
+        "image_position_mobile": "relative",
+        "focal_point": "80% 100%",
+        "content_position": "bottom-left",
+        "height": 550,
+        "full_width": false,
+        "content_width": 30,
+        "content_background_color": "#ffffff",
+        "button_color": "#876b44"
+      }
+    },
+    "faq_grid_LzVh3d": {
+      "type": "faq-grid",
+      "blocks": {
+        "question_KekAh6": {
+          "type": "question",
+          "settings": {
+            "title": "Can you do a custom size?",
+            "text": "<p>Yes, we can make any custom size! You’re very welcome to contact us if you’d like to confirm whether your wall requires a custom-size order. We’ll be happy to assist.</p>"
+          }
+        },
+        "question_NJfEDe": {
+          "type": "question",
+          "settings": {
+            "title": "Is wallpaper washable?",
+            "text": "<p>Our wallpaper is water-resistant but not washable. It can easily withstand everyday moisture, but we don’t recommend scrubbing or using cleaning chemicals. You may gently wipe your wallpaper with a slightly damp, soft cloth if needed.</p>"
+          }
+        },
+        "question_fUnApT": {
+          "type": "question",
+          "settings": {
+            "title": "What material would work best for my wall?",
+            "text": "<p>Peel-and-stick wallpaper is intended to be installed on smooth, properly prepared walls. However, every wall is different, so when in doubt, please don’t hesitate to ask about your wall’s compatibility. To help us recommend the best material, please send a close-up photo of your wall surface with a hand or any other object included for scale.</p>"
+          }
+        },
+        "question_HaT4xD": {
+          "type": "question",
+          "settings": {
+            "title": "Can I get a sample before placing a full order?",
+            "text": "<p>Of course! We offer samples for each product and each material we sell. Simply select “Sample” in the Size drop-down menu and choose the material you’d like to preview. Ordering a sample allows you to see the true print colors, feel the material, and understand how the design may vary slightly across different finishes before committing to a full order.</p>"
+          }
+        },
+        "question_h9xMCa": {
+          "type": "question",
+          "settings": {
+            "title": "My wall is textured. What material should I use?",
+            "text": "<p>The choice of material depends on how heavily the wall is textured. Peel-and-stick wallpaper is generally not recommended for textured surfaces, as it adheres best to smooth walls. Traditional unpasted materials — such as non-woven wallpaper or Type II vinyl — usually work better on lightly textured or challenging surfaces.<br/>To recommend the best option for your specific wall, please send us a close-up photo of the texture with a hand or another object included for scale. We’ll be happy to help.</p>"
+          }
+        },
+        "question_tB7MgP": {
+          "type": "question",
+          "settings": {
+            "title": "How do I know how much to order?",
+            "text": "<p>This depends on the type of design — whether it’s a mural (one whole image divided into panels) or a repeating pattern. To determine the correct amount, we’ll need your exact wall measurements (width and height).<br/>If you’re unsure, just send us your measurements and we’ll be happy to calculate how much you’ll need for full coverage.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_KekAh6",
+        "question_NJfEDe",
+        "question_fUnApT",
+        "question_HaT4xD",
+        "question_h9xMCa",
+        "question_tB7MgP"
+      ],
+      "name": "Faq grid",
+      "settings": {
+        "title": "FAQs"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "background_image_text_v2_9VRcCx",
+    "content_with_media_8yxbzY",
+    "logo_grid_HWxNJ3",
+    "info_card_grid_H3Be9D",
+    "product_list_4N7Pqn",
+    "promo_grid_BfjkAQ",
+    "image_comparison_v2_AnzDWq",
+    "how_it_works_8WHWee",
+    "background_image_text_v2_aMKpKB",
+    "testimonials_slider_6bQTte",
+    "background_image_text_v2_AJ6e6m",
+    "faq_grid_LzVh3d"
+  ]
+}

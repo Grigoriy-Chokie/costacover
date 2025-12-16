@@ -1,0 +1,371 @@
+{{ 'calculator-popup.css' | asset_url | stylesheet_tag }}
+{{ 'section-calculator-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'calculator.js' | asset_url }}" defer></script>
+
+<div class="calculator-section__container page-width">
+  {% if section.settings.title != blank %}
+    <h1 class="calculator-section__title section-header__title">{{ section.settings.title }}</h1>
+  {% endif %}
+  <div class="calculator-section__flex-container">
+    <aside class="calculator-aside-info">
+      {% if section.settings.aside_title_1 != blank %}
+        <p class="calculator-aside-info__title">
+          {{ section.settings.aside_icon_1 }}
+          {{ section.settings.aside_title_1 }}
+        </p>
+      {% endif %}
+      {% if section.settings.aside_text_1  != blank%}
+        <div class="calculator-aside-info__text">
+          {{ section.settings.aside_text_1 }}
+        </div>
+      {% endif %}
+
+      {% if section.settings.aside_title_2 != blank %}
+        <p class="calculator-aside-info__title">
+          {{ section.settings.aside_icon_2 }}
+          {{ section.settings.aside_title_2 }}
+        </p>
+      {% endif %}
+      {% if section.settings.aside_text_2 != blank%}
+        <div class="calculator-aside-info__text">
+          {{ section.settings.aside_text_2 }}
+        </div>
+      {% endif %}
+    </aside>
+    <div class="calculator-main-info">
+      <div class="calculator-popup__form-container calculator-section__form-container">
+        <calculator-from-page class="calculator">
+          <form class="calculator__form" method="get" id="calculator-form">
+            <header class="calculator-form__header">
+              <p class="calculator-form__inputs-heading">{{ section.settings.inputs_title }}</p>
+              <div class="calculator-form__selects-container">
+                <select name="product-type" id="product-type" class="calculator__measurement-selector">
+                  <option value="wallpaper" default>{{ 'wallpaper_calculator.wallpaper' | t }}</option>
+                  <option value="wall-mural">{{ 'wallpaper_calculator.mural' | t }}</option>
+                </select>
+                <select name="measurement" id="measurement" class="calculator__measurement-selector">
+                  <option value="in" default>in,ft</option>
+                  <option value="cm">cm</option>
+                </select>
+              </div>
+            </header>
+            <div class="calculator-errors" hidden>{{ 'wallpaper_calculator.empty_error' | t }}</div>
+            <div class="calculator__wall-size-inputs wall-size">
+              <div class="wall-size__inputs-wrapper wall-size__inch-inputs wall-size__inch-inputs--active">
+                <p class="wall-size__inputs-title">{{ 'wallpaper_calculator.wall_height' | t }}</p>
+                <div class="wall-size__inputs wall-size__height">
+                  <div class="calculator-input__container height-input__container">
+                    <input name="height-ft"
+                      id="height-ft"
+                      type="number"
+                      class="height-input height-input__ft"
+                      min="1"
+                      step="1"
+                    >
+                    <label for="height-ft" class="height-input__label">ft</label>
+                  </div>
+                  <div class="calculator-input__container height-input__container">
+                    <input name="height-in"
+                      id="height-in"
+                      type="number"
+                      class="height-input height-input__in"
+                      min="1"
+                      step="1"
+                    >
+                    <label for="height-in" class="height-input__label">in</label>
+                  </div>
+                </div>
+                <p class="wall-size__inputs-title wall-size__inputs-title--width">{{ 'wallpaper_calculator.wall_width' | t }}</p>
+                <div class="wall-size__inputs wall-size__width" id="wall-inch-base-input">
+                  <div class="calculator-input__container width-input__container">
+                    <input name="width-ft"
+                      id="width-ft"
+                      type="number"
+                      class="width-input width-input__ft"
+                      min="1"
+                      step="1"
+                    >
+                    <label for="width-ft" class="width-input__label">ft</label>
+                  </div>
+                  <div class="calculator-input__container width-input__container">
+                    <input name="width-in"
+                      id="width-in"
+                      type="number"
+                      class="width-input width-input__in"
+                      min="1"
+                      step="1"
+                    >
+                    <label for="width-in" class="width-input__label">in</label>
+                  </div>
+                </div>
+              </div>
+              <div class="wall-size__inputs-wrapper wall-size__centimeter-inputs">
+                <div class="wall-size__inputs-inner-container">
+                  <p class="wall-size__inputs-title">{{ 'wallpaper_calculator.wall_height' | t }}</p>
+                  <div class="wall-size__inputs wall-size__height">
+                    <div class="calculator-input__container height-input__container">
+                      <input name="height-cm"
+                        id="height-cm"
+                        type="number"
+                        class="height-input height-input__cm"
+                        min="1"
+                        step="1"
+                        disabled
+                      >
+                      <label for="height-cm" class="height-input__label">cm</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="wall-size__inputs-inner-container">
+                  <p class="wall-size__inputs-title wall-size__inputs-title--width">{{ 'wallpaper_calculator.wall_width' | t }}</p>
+                  <div class="wall-size__inputs wall-size__width" id="wall-centimeter-base-input">
+                    <div class="calculator-input__container width-input__container">
+                      <input name="width-cm"
+                        id="width-cm"
+                        type="number"
+                        class="width-input width-input__cm"
+                        min="1"
+                        step="1"
+                        disabled
+                      >
+                      <label for="width-cm" class="width-input__label">cm</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="calculator__add-wall-button">
+              <span>+</span>
+              {{ 'wallpaper_calculator.add_another_wall' | t }}
+            </button>
+          </form>
+          <div class="calculator__results calculator-results" hidden>
+            <div class="calculator-results__main-info results-main-info">
+              <p class="static-text">{{ section.settings.result_static |  default: "We think you'll need:" }}</p>
+              <a href="#calculator-contact-form" class="dynamic-text"></a>
+              <button class="calculator-results-collection__secondary-cta calculator__clear-button btn btn--secondary" type="button">{{ 'wallpaper_calculator.clear' | t }}</button>
+            </div>
+            <p class="calculator-results__note">
+              {{ section.settings.result_note }}
+            </p>
+
+            <div class="calculator-results__collection calculator-results-collection__wrapper">
+              {%- if section.settings.collection_wallpaper != blank -%}
+                <div id="results-collection-wallpaper" class="calculator-results-collection" hidden>
+                  <div class="calculator-results-collection__image">
+                    {%- if section.settings.collection_wallpaper.featured_image
+                      != blank -%}
+                      {{ section.settings.collection_wallpaper.featured_image |  image_url: width: 2400 | image_tag }}
+                    {%- else -%}
+                      {{ 'image' |  placeholder_svg_tag }}
+                    {%- endif -%}
+                  </div>
+                  <div class="calculator-results-collection__content">
+                    <h3 class="calculator-results-collection__title">{{ section.settings.collection_wallpaper.title }}</h3>
+                    <div class="calculator-results-collection__buttons">
+                      <a href="{{ section.settings.collection_wallpaper.url }}" class="calculator-results-collection__primary-cta btn btn--primary">{{ 'wallpaper_calculator.shop_now' | t }}</a>
+                    </div>
+                  </div>
+                </div>
+              {%- endif -%}
+              {%- if section.settings.collection_mural != blank -%}
+                <div id="results-collection-mural" class="calculator-results-collection" hidden>
+                  <div class="calculator-results-collection__image">
+                    {%- if section.settings.collection_mural.featured_image != blank -%}
+                      {{ section.settings.collection_mural.featured_image |  image_url: width: 2400 | image_tag }}
+                    {%- else -%}
+                      {{ 'image' |  placeholder_svg_tag }}
+                    {%- endif -%}
+                  </div>
+                  <div class="calculator-results-collection__content">
+                    <h3 class="calculator-results-collection__title">{{ section.settings.collection_mural.title }}</h3>
+                    <div class="calculator-results-collection__buttons">
+                      <a href="{{ section.settings.collection_mural.url }}" class="calculator-results-collection__primary-cta btn btn--primary">{{ 'wallpaper_calculator.shop_now' | t }}</a>
+                    </div>
+                  </div>
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+          <footer class="calculator-popup__footer calculator-section__footer">
+            <button class="calculator-popup__submit btn" type="submit" form="calculator-form">{{ 'wallpaper_calculator.calculate' | t }}</button>
+          </footer>
+        </calculator-from-page>
+      </div>
+      {%- form 'contact', class: 'calculator-contact-form', id: 'calculator-contact-form' -%}
+        <input type="hidden" name="contact[form_type]" value="Calculator page form">
+        <div class="calculator-contact-form__flex-container">
+          <div class="calculator-contact-form__info">
+          {%- if section.settings.contact_title != blank -%}
+            <p class="calculator-contact-form__title">{{ section.settings.contact_title }}</p>
+          {%- endif -%}
+          {%- if section.settings.contact_text != blank -%}
+            <p class="calculator-contact-form__text">{{ section.settings.contact_text }}</p>
+          {%- endif -%}
+          </div>
+          <div class="calculator-contact-form__data">
+            {%- if form.posted_successfully? -%}
+              <p class="note note--success">
+                {{ 'contact.form.post_success' | t }}
+              </p>
+            {%- endif -%}
+
+            {{ form.errors | default_errors }}
+            <div class="grid grid--small">
+              <div class="grid__item medium-up--one-half">
+                <label for="ContactFormName-{{ section.id }}">{{ 'contact.form.name' | t }}</label>
+                <input type="text" id="ContactFormName-{{ section.id }}" class="input-full" name="contact[name]" autocapitalize="words" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
+              </div>
+
+              <div class="grid__item medium-up--one-half">
+                <label for="ContactFormEmail-{{ section.id }}">{{ 'contact.form.email' | t }}</label>
+                <input type="email" id="ContactFormEmail-{{ section.id }}" class="input-full" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+              </div>
+            </div>
+            {%- if section.settings.show_phone -%}
+              <div class="grid__item grid__item--calculator-contact">
+                <label for="ContactFormPhone-{{ section.id }}">{{ 'contact.form.phone' | t }}</label>
+                <input type="tel" id="ContactFormPhone-{{ section.id }}" class="input-full" name="contact[phone]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+              </div>
+            {%- endif -%}
+
+            <div class="grid__item grid__item--calculator-contact">
+              <label for="ContactFormMessage-{{ section.id }}">{{ 'contact.form.message' | t }}</label>
+              <textarea rows="5" id="ContactFormMessage-{{ section.id }}" class="input-full" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+            </div>
+
+            <label for="contact-form-submit-{{ section.id }}" class="hidden-label">{{ 'contact.form.send' | t }}</label>
+            <button type="submit" id="contact-form-submit-{{ section.id }}" class="btn">
+              {{ 'contact.form.send' | t }}
+            </button>
+
+            {% comment %}
+              Remove the following three lines of code to remove the note
+              about being protected by Google's reCAPTCHA service.
+              By removing it, the small reCAPTCHA widget will appear in the
+              bottom right corner of the page.
+            {% endcomment %}
+            {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
+          </div>
+        </div>
+      {%- endform -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+    "name": "Wallpaper size calculator",
+    "tag": "section",
+    "class": "calculator-section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Page title"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "title",
+        "default": "How much wallpaper should I order?"
+      },
+      {
+        "type": "header",
+        "content": "Aside info"
+      },
+      {
+        "type": "textarea",
+        "id": "aside_icon_1",
+        "label": "Icon 1"
+      },
+      {
+        "type": "text",
+        "id": "aside_title_1",
+        "label": "Aside title 1",
+        "default": "Tips for Measuring"
+      },
+      {
+        "type": "richtext",
+        "id": "aside_text_1",
+        "label": "Aside text 1"
+      },
+      {
+        "type": "textarea",
+        "id": "aside_icon_2",
+        "label": "Icon 2"
+      },
+      {
+        "type": "text",
+        "id": "aside_title_2",
+        "label": "Aside title 2",
+        "default": "Tips for Measuring"
+      },
+      {
+        "type": "richtext",
+        "id": "aside_text_2",
+        "label": "Aside text 2"
+      },
+      {
+        "type": "header",
+        "content": "Result info"
+      },
+      {
+        "type": "text",
+        "id": "result_note",
+        "label": "Result note",
+        "default": "Please note: this calculation is purely an estimate based on the measurements provided. Spoonflower is not responsible for shortages or overages. Depending on the repeat size of the selected design more wallpaper might be required."
+      },
+      {
+        "type": "header",
+        "content": "Form settings"
+      },
+      {
+        "type": "text",
+        "id": "inputs_title",
+        "label": "Form inputs title",
+        "default": "Insert your measurements"
+      },
+      {
+        "type": "header",
+        "content": "Collection result settings"
+      },
+      {
+        "type": "collection",
+        "id": "collection_wallpaper",
+        "label": "Collection Wallpaper"
+      },
+      {
+        "type": "collection",
+        "id": "collection_mural",
+        "label": "Collection Mural"
+      },
+      {
+        "type": "header",
+        "content": "Contact form"
+      },
+      {
+        "type": "text",
+        "id": "contact_title",
+        "label": "Contact Title",
+        "default": "Do you want to get more information?"
+      },
+      {
+        "type": "text",
+        "id": "contact_text",
+        "label": "Contact Text",
+        "default": "Enter your email address and phone number and we will send you our catalog with all the information."
+      },
+      {
+        "type": "checkbox",
+        "id": "show_phone",
+        "label": "Show phone input in contact form",
+        "default": false
+      }
+    ],
+    "presets": [
+    {
+        "name": "Wallpaper size calculator"
+    }
+  ]
+}
+{% endschema %}

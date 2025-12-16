@@ -1,0 +1,77 @@
+{{ 'section-designer-image-banner.css' | asset_url | stylesheet_tag }}
+{{ 'fonts.css' | asset_url | stylesheet_tag }}
+<div class="image_banner__wrapper">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'image_banner' %}
+        <div class="wrapper__main_image">
+          <img src="{{block.settings.main_image |image_url}}">
+          {% if block.settings.image_heading != blank or block.settings.description != blank %}
+            <div class="main_image__text_wrapper">
+              {% if block.settings.image_heading != blank %}
+                <span class="text_wrapper__main_heading">
+                  {{ block.settings.image_heading }}
+                </span>
+              {% endif %}
+              {% if block.settings.description != blank %}
+                <span class="text_wrapper__description"> {{ block.settings.description }}</span>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      {% when 'image_description' %}
+        <div class="wrapper__text">
+          {% if block.settings.main_text != blank %}
+            {{ block.settings.main_text }}
+          {% endif %}
+        </div>
+    {% endcase %}
+  {% endfor %}
+</div>
+{% schema %}
+{
+  "name": "Designer image banner",
+  "tag": "section",
+  "class": "designer_image_banner",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "image_banner",
+      "name": "Image banner ",
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Main image",
+          "id": "main_image"
+        },
+        {
+          "type": "richtext",
+          "label": "Image Heading",
+          "id": "image_heading"
+        },
+        {
+          "type": "text",
+          "label": "description",
+          "id": "description"
+        }
+      ]
+    },
+    {
+      "type": "image_description",
+      "name": "Image description",
+      "settings": [
+        {
+          "type": "richtext",
+          "label": "Main text",
+          "id": "main_text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Designer image banner"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,113 @@
+{%- style -%}
+  :root {
+    --typeHeaderPrimary: {{ settings.type_header_font_family.family }};
+    --typeHeaderFallback: {{ settings.type_header_font_family.fallback_families }};
+    --typeHeaderSize: {{ settings.type_header_base_size | default: '32' | append: 'px' }};
+    --typeHeaderWeight: {{ settings.type_header_font_family.weight }};
+    --typeHeaderLineHeight: {{ settings.type_header_line_height | default: 1.4 }};
+    --typeHeaderSpacing: {{ settings.type_header_spacing | default: '25' | divided_by: 1000.00 | append: 'em' }};
+
+    --typeBasePrimary:{{ settings.type_base_font_family.family }};
+    --typeBaseFallback:{{ settings.type_base_font_family.fallback_families }};
+    --typeBaseSize: {{ settings.type_base_size | default: 16 | append: 'px' }};
+    --typeBaseWeight: {{ settings.type_base_font_family.weight }};
+    --typeBaseSpacing: {{ settings.type_base_spacing | default: '50' | divided_by: 1000.00 | append: 'em' }};
+    --typeBaseLineHeight: {{ settings.type_base_line_height | default: 1.4 }};
+
+    --typeCollectionTitle: {{ settings.type_collection_size | append: 'px' }};
+
+    --iconWeight: {{ settings.icon_weight | default: '5px' }};
+    --iconLinecaps: {{ settings.icon_linecaps | default: 'miter' }};
+
+    {% if settings.button_style == 'round-slight' %}
+      --buttonRadius: 3px;
+    {% elsif settings.button_style == 'round' %}
+      --buttonRadius: 50px;
+    {% else %}
+      --buttonRadius: 0px;
+    {% endif %}
+
+    --colorGridOverlayOpacity: {{ settings.collection_grid_opacity | divided_by: 100.0 }};
+
+    --opacity-025: 0.025;
+    --opacity-045: 0.045;
+    --opacity-115: 0.115;
+    --opacity-600: 0.6;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+
+    --animation-nav: 0.5s cubic-bezier(0.6, 0, 0.4, 1);
+    --animation-primary: 0.5s cubic-bezier(0.3, 1, 0.3, 1);
+    --animation-smooth: 0.7s cubic-bezier(0.7, 0, 0.3, 1);
+    --animation-fast: 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+    --animation-short: 0.2s cubic-bezier(0.7, 0, 0.3, 1);
+
+    /*! Spacing */
+    --sp-0d5: 0.125rem;
+    --sp-1: 0.25rem;
+    --sp-1d5: 0.375rem;
+    --sp-2: 0.5rem;
+    --sp-2d5: 0.625rem;
+    --sp-3: 0.75rem;
+    --sp-3d5: 0.875rem;
+    --sp-4: 1rem;
+    --sp-4d5: 1.125rem;
+    --sp-5: 1.25rem;
+    --sp-5d5: 1.375rem;
+    --sp-6: 1.5rem;
+    --sp-6d5: 1.625rem;
+    --sp-7: 1.75rem;
+    --sp-7d5: 1.875rem;
+    --sp-8: 2rem;
+    --sp-8d5: 2.125rem;
+    --sp-9: 2.25rem;
+    --sp-9d5: 2.375rem;
+    --sp-10: 2.5rem;
+    --sp-10d5: 2.625rem;
+    --sp-11: 2.75rem;
+    --sp-12: 3rem;
+    --sp-13: 3.25rem;
+    --sp-14: 3.5rem;
+    --sp-15: 3.875rem;
+    --sp-16: 4rem;
+    --sp-18: 4.5rem;
+    --sp-20: 5rem;
+    --sp-23: 5.625rem;
+    --sp-24: 6rem;
+    --sp-28: 7rem;
+    --sp-32: 8rem;
+    --sp-36: 9rem;
+    --sp-40: 10rem;
+    --sp-44: 11rem;
+    --sp-48: 12rem;
+    --sp-52: 13rem;
+    --sp-56: 14rem;
+    --sp-60: 15rem;
+    --sp-64: 16rem;
+    --sp-72: 18rem;
+    --sp-80: 20rem;
+    --sp-96: 24rem;
+    --sp-100: 32rem;
+
+    --text-3xs: {{ settings.type_base_size | minus: 6 | at_least: 9 | divided_by: 16.0 }}rem;
+    --text-2xs: {{ settings.type_base_size | minus: 5 | at_least: 10 | divided_by: 16.0 }}rem;
+    --text-xs: {{ settings.type_base_size | minus: 4 | at_least: 11 | divided_by: 16.0 }}rem;
+    --text-2sm: {{ settings.type_base_size | minus: 3 | at_least: 12 | divided_by: 16.0 }}rem;
+    --text-sm: {{ settings.type_base_size | minus: 2 | at_least: 12 | divided_by: 16.0 }}rem;
+    --text-base: {{ settings.type_base_size | divided_by: 16.0 }}rem;
+    --text-lg: {{ settings.type_base_size | plus: 2 | divided_by: 16.0 }}rem;
+    --text-xl: {{ settings.type_base_size | plus: 4 | divided_by: 16.0 }}rem;
+    --text-2xl: {{ settings.type_base_size | plus: 8 | divided_by: 16.0 }}rem;
+    --text-3xl: {{ settings.type_base_size | plus: 14 | divided_by: 16.0 }}rem;
+    --text-4xl: {{ settings.type_base_size | plus: 20 | divided_by: 16.0 }}rem;
+    --text-5xl: {{ settings.type_base_size | plus: 32 | divided_by: 16.0 }}rem;
+    --text-6xl: {{ settings.type_base_size | plus: 44 | divided_by: 16.0 }}rem;
+    --text-7xl: {{ settings.type_base_size | plus: 56 | divided_by: 16.0 }}rem;
+    --text-8xl: {{ settings.type_base_size | plus: 80 | divided_by: 16.0 }}rem;
+  }
+
+  .placeholder-content {
+    background-image: linear-gradient(100deg, {{ settings.color_small_image_bg }} 40%, {{ settings.color_small_image_bg | color_darken: 3 }} 63%, {{ settings.color_small_image_bg }} 79%);
+  }
+{%- endstyle -%}

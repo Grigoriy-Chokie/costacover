@@ -1,0 +1,340 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+{% if section.settings.second_option == false %}
+  <script defer
+    class="wizart__entry-point"
+    data-token="{{ section.settings.token }}"
+    data-vendor_code="{{ product.variants[0].sku }}"
+    data-title="{{ section.settings.title }}"
+    data-tooltip_disable="{{ section.settings.tooltip_disable }}"
+    data-tooltip_position="{{ section.settings.tooltip_position }}"
+    data-tooltip_title="{{ section.settings.tooltip_title }}"
+    data-image="{{ section.settings.images}}"
+    data-color="{{ section.settings.color }}"
+    data-background="{{ section.settings.background }}"
+    data-glitter_disable="{{ section.settings.glitter_disable }}"
+    data-width="{{ section.settings.width }}"
+    data-height="{{ section.settings.height }}"
+    data-border="{{ section.settings.css_border }}"
+    data-border_radius="{{ section.settings.border_radius }}"
+    data-class_name="{{ section.settings.custom_class }}"
+    data-onload-callback="{{ section.settings.onload-callback }}"
+    data-on-button-click="updateVendorCode"
+    data-on-close-callback="{{ section.settings.close-callback }}"
+    data-element-selector="{{ section.settings.element_selector }}"
+    data-insert-element-position="{{ section.settings.insert_element_position }}"
+    data-iframe-element-selector="{{ section.settings.iframe_selector }}"
+    data-insert-iframe-element-position="{{ section.settings.insert_iframe_selector }}"
+    src="https://d35so7k19vd0fx.cloudfront.net/production/integration/entry-point.min.js"
+  ></script>
+{% else %}
+  <script defer
+    type="application/javascript"
+    src="https://d35so7k19vd0fx.cloudfront.net/production/integration/entry-point.min.js"
+  ></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function(){
+      const entryPoint = new window.WEntryPoint({
+      token: "{{ section.settings.token }}",
+      element: document.querySelectorAll("{{ section.settings.element_selector }}")[0],
+      vendorCode: "{{ product.variants[0].sku }}",
+    });
+
+      entryPoint.render({
+        title: "{{ section.settings.title }}",
+        tooltipTitle: "{{ section.settings.tooltip_title }}",
+        tooltipPosition: "{{ section.settings.tooltip_position }}",
+        tooltipDisable: "{{ section.settings.tooltip_disable }}",
+        glitterDisable: "{{ section.settings.glitter_disable }}",
+        className: "{{ section.settings.custom_class }}",
+        borderRadius: "{{ section.settings.border_radius }}",
+        background: "{{ section.settings.background }}",
+        color: "{{ section.settings.color }}",
+        width: "{{ section.settings.width }}",
+        height: "{{ section.settings.height }}",
+        border: "{{ section.settings.css_border }}",
+        image: "{{ section.settings.images}}",
+        onloadCallback: "{{ section.settings.onload-callback }}",
+        onCloseCallback: "{{ section.settings.close-callback }}",
+        onButtonClick: "updateVendorCode",
+        insertElementPosition: "{{ section.settings.insert_element_position }}",
+        iframeElementSelector: "{{ section.settings.iframe_selector }}",
+        insertIframeElementPosition: "{{ section.settings.insert_iframe_selector }}"
+      });
+     });
+  </script>
+{% endif %}
+
+<style>
+
+  @media (max-width: 768px) {
+       .{{ section.settings.custom_class }} {
+         width: 100%!important;
+         margin-left: unset!important;
+       }
+   }
+
+  
+  .{{ section.settings.custom_class }} {
+       display: none;
+    margin-left: 35%;
+    margin-top: 2rem!important;
+  }
+  .w-entry-point {
+    box-shadow: none!important;
+    line-height: 1.42;
+    text-decoration: none;
+    text-align: center;
+    white-space: normal;
+    font-size: max(calc(var(--typeBaseSize) - 4px), 13px);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+</style>
+
+<script>
+    window.addEventListener('popstate', function() {
+      checkAvailableVendorCode();
+    });
+  
+  document.addEventListener('DOMContentLoaded', function(){
+  	checkAvailableVendorCode();
+  });
+
+  function checkAvailableVendorCode() {
+    if(getSelectedSku()) {
+      const api_token = "{{ section.settings.token }}";
+      const server_address = 'https://pim-client.wizart.ai';
+
+      const availableVendorCodes = server_address
+          + '/api/articles/available-vendor-codes'
+      ;
+
+      $.ajax({
+              url: availableVendorCodes + '?vendor_code=' + getSelectedSku(),
+        	  dataType: 'json',
+              data: {
+                  api_token: api_token,
+              },
+              success: (response) => {
+                  $.each(response.data.vendor_codes, function (index, el) {
+                    if (el === true) {
+                    	initWizartButton()
+                    }
+                  });
+              },
+      });
+    }
+  }
+
+  function initWizartButton() {
+  	$('.'+"{{ section.settings.custom_class }}").css("display", "inline-flex")
+  }
+
+  function getSelectedSku() {
+    if (typeof meta !== 'undefined') {
+      queryString = window.location.search;
+      urlParams = new URLSearchParams(queryString);
+      selectedProductID = urlParams.get("variant") ?? meta.product.variants[0].id;
+
+      return meta.product.variants.find(item => item.id == selectedProductID).sku;
+    }
+    return "{{ product.selected_or_first_available_variant.sku }}";
+  }
+
+  function updateVendorCode(fittingRoomThis) {
+    fittingRoomThis.vendorCode = getSelectedSku();
+  }
+</script>
+
+{% schema %}
+ {
+   "name": "Wizart Entry Point Button",
+   "settings": [
+	{
+           "type": "text",
+           "id": "token",
+           "label": "Token from PIM",
+           "default": "$token"
+       },
+       {
+           "type": "text",
+           "id": "width",
+           "label": "Width",
+           "default": "500px"
+       },
+       {
+           "type": "text",
+           "id": "height",
+           "label": "Height",
+           "default": "60px"
+       },
+       {
+           "type": "text",
+           "id": "title",
+           "label": "Title",
+           "default": "Try it in your room in one click!"
+       },
+       {
+           "type": "text",
+           "id": "custom_class",
+           "label": "Custom class for button",
+           "default": "wizart-product-page"
+       },
+       {
+           "type": "checkbox",
+           "id": "tooltip_disable",
+           "label": "Disable Tooltip",
+           "default": false
+       },
+       {
+          "type": "checkbox",
+          "id": "glitter_disable",
+          "default": false,
+          "label": "Disable glitter"
+       },
+       {
+           "type": "select",
+           "id": "tooltip_position",
+           "label": "Position Tooltip",
+           "default": "top",
+           "options": [
+               {
+                 "value": "top",
+                 "label": "Top"
+               },
+               {
+                 "value": "right",
+                 "label": "Right"
+               },
+               {
+                 "value": "bottom",
+                 "label": "Bottom"
+               },
+       {
+                 "value": "left",
+                 "label": "Left"
+               }
+            ]
+       },
+       {
+           "type": "text",
+           "id": "tooltip_title",
+           "label": "Tooltip Title",
+           "default": "See it in your room!"
+       },
+       {
+           "type": "text",
+           "id": "element_selector",
+           "label": "CSS selector to insert button",
+           "default": "body"
+       },
+       {
+           "type": "select",
+           "id": "insert_element_position",
+           "label": "The Insertion Position of the Element",
+           "default": "before",
+                 "options": [
+                     {
+                       "value": "before",
+                       "label": "Before"
+                     },
+                     {
+                       "value": "append",
+                       "label": "Append"
+                     },
+                     {
+                       "value": "after",
+                       "label": "After"
+                     }
+                 ]
+       },
+       {
+           "type": "text",
+           "id": "iframe_selector",
+           "label": "CSS selector to insert iframe",
+           "default": "body"
+       },
+       {
+           "type": "select",
+           "id": "insert_iframe_selector",
+           "label": "Iframe Insertion Position",
+           "default": "before",
+                 "options": [
+                     {
+                       "value": "before",
+                       "label": "Before"
+                     },
+                     {
+                       "value": "append",
+                       "label": "Append"
+                     },
+                     {
+                       "value": "after",
+                       "label": "After"
+                     }
+                 ]
+       },
+       {
+          "type": "color",
+          "id": "color",
+          "label": "Choose color for button",
+          "default": "#FFFFFF"
+       },
+       {
+          "type": "color",
+          "id": "background",
+          "label": "Choose background for button",
+          "default": "#FA5961"
+       },
+       {
+           "id": "images",
+           "type": "url",
+           "label": "Link to the icon that will be displayed on the button"
+       },
+       {
+           "type": "text",
+           "id": "border_radius",
+           "label": "Border radius",
+           "default": "0px"
+       },
+       {
+           "type": "text",
+           "id": "css_border",
+           "label": {
+                       "en": "CSS Class for border"
+                    }
+       },
+       {
+           "type": "text",
+           "id": "onload-callback",
+           "label": "The function will be called when the visualizer is loaded"
+       },
+       {
+           "type": "text",
+           "id": "close-callback",
+           "label": "The function will be called when the visualizer is closed"
+       },
+       {
+           "type": "text",
+           "id": "on-button-click",
+           "label": "The function will be called when click on button",
+           "default": "updateVendorCode"
+       }
+ ],
+ 	"presets": [
+	{
+		"name": "Wizart Entry Point Button",
+		"category": "Wizart"
+	}
+],
+"templates": ["product"]
+ }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

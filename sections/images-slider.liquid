@@ -1,0 +1,285 @@
+{%- liquid
+  assign paddingTop = section.settings.padding_top | append: 'px'
+  assign paddingBottom = section.settings.padding_bottom | append: 'px'
+  assign paddingTopMobile = section.settings.padding_top_mobile | append: 'px'
+  assign paddingBottomMobile = section.settings.padding_bottom_mobile | append: 'px'
+
+  assign heading = section.settings.heading
+  assign typeButton = 'prev,next' | split: ','
+-%}
+
+{%- style -%}
+  .images-slider--{{section.id}} {
+      padding-top: {{paddingTop}};
+      padding-bottom: {{paddingBottom}};
+  }
+  @media(max-width: 768px) {
+      .images-slider--{{section.id}} {
+          padding-top: {{paddingTopMobile}};
+          padding-bottom: {{paddingBottomMobile}};
+      }
+  }
+{%- endstyle -%}
+
+{% capture slider_settings %}
+    {
+      "slidesPerView": {{ section.settings.columns_mobile }},
+      "loop": false,
+      "touchRatio" : 1,
+      "threshold": 10,
+      "grabCursor": true,
+      "navigation": {
+        "nextEl": ".images-slider--{{section.id}} .images-slider__actions-button--next",
+        "prevEl": ".images-slider--{{section.id}} .images-slider__actions-button--prev"
+      },
+      "breakpoints": {
+        "851": {
+            "slidesPerView": {{ section.settings.columns_desktop }}
+        }
+      }
+    }
+  {% endcapture %}
+
+{{- 'section-images-slider.css' | asset_url | stylesheet_tag -}}
+
+<div class="images-slider images-slider--{{section.id}}">
+  <div class="images-slider__container">
+    <div class="images-slider__header page-width page-width--narrow">
+      {%- if heading != blank -%}
+        {%- assign delay = delay | plus: 1 -%}
+        <h2 class="images-slider__header-title title-lg page-width--narrow heading font-bold leading-none {{ section.settings.heading_size }}">
+          {%- if section.settings.highlighted_text == 'none' -%}
+            <split-words
+              class="split-words title-wrapper flex flex-wrap"
+              data-animate="fade-up-large"
+              data-animate-delay="{{ delay | times: 250 }}"
+            >
+              {{- section.settings.heading -}}
+            </split-words>
+          {%- else -%}
+            {%- render 'highlighted-text',
+              content: section.settings.heading,
+              style: section.settings.highlighted_text,
+              scribble: section.settings.highlighted_scribble,
+              gradient: withGradient
+            -%}
+          {%- endif -%}
+        </h2>
+      {%- endif -%}
+      <div class="images-slider__header-actions images-slider__actions">
+        {% for type in typeButton %}
+          <button class="images-slider__actions-button images-slider__actions-button--{{type}}">
+            {% render 'icon-arrows-control', type: type %}
+          </button>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="images-slider__grid">
+      <div class="images-slider__grid-swiper swiper" {% render 'slider-attribute', config: slider_settings %}>
+        <div class="images-slider__grid-wrapper swiper-wrapper">
+          {% for block in section.blocks %}
+            <div class="images-slider__image-wrapper swiper-slide">
+              {% render 'picture',
+                image: block.settings.image,
+                image_mobile: block.settings.image_mobile,
+                mobile_breakpoint: 750,
+                widths_list: '350,800',
+                loading: 'lazy',
+                fetchpriority: 'low',
+                class: 'images-slider__image'
+              %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Images slider",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Images slider"
+    }
+  ],
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__highlight.content",
+      "info": "t:sections.global.settings.header__highlight.info"
+    },
+    {
+      "type": "select",
+      "id": "highlighted_text",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.global.settings.highlighted_text.options__1.label"
+        },
+        {
+          "value": "text",
+          "label": "t:sections.global.settings.highlighted_text.options__2.label"
+        },
+        {
+          "value": "full_text",
+          "label": "t:sections.global.settings.highlighted_text.options__3.label"
+        },
+        {
+          "value": "half_text",
+          "label": "t:sections.global.settings.highlighted_text.options__4.label"
+        },
+        {
+          "value": "underline",
+          "label": "t:sections.global.settings.highlighted_text.options__5.label"
+        },
+        {
+          "value": "stencil",
+          "label": "t:sections.global.settings.highlighted_text.options__6.label"
+        },
+        {
+          "value": "scribble",
+          "label": "t:sections.global.settings.highlighted_text.options__7.label"
+        }
+      ],
+      "default": "none",
+      "label": "t:sections.global.settings.highlighted_text.label"
+    },
+    {
+      "type": "select",
+      "id": "highlighted_scribble",
+      "options": [
+        {
+          "value": "circle",
+          "label": "t:sections.global.settings.highlighted_scribble.options__1.label"
+        },
+        {
+          "value": "basic-underline",
+          "label": "t:sections.global.settings.highlighted_scribble.options__2.label"
+        },
+        {
+          "value": "sketch-underline",
+          "label": "t:sections.global.settings.highlighted_scribble.options__3.label"
+        },
+        {
+          "value": "squiggle-underline",
+          "label": "t:sections.global.settings.highlighted_scribble.options__4.label"
+        },
+        {
+          "value": "squiggle-underline-2",
+          "label": "t:sections.global.settings.highlighted_scribble.options__5.label"
+        }
+      ],
+      "default": "circle",
+      "label": "t:sections.global.settings.highlighted_scribble.label",
+      "info": "t:sections.global.settings.highlighted_scribble.info"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 3,
+      "label": "Number of columns desktop"
+    },
+    {
+      "type": "header",
+      "content": "Mobile layout"
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "options": [
+        {
+          "value": "1",
+          "label": "1 column"
+        },
+        {
+          "value": "2",
+          "label": "2 column"
+        }
+      ],
+      "default": "1",
+      "label": "Number of column mobile"
+    },
+    {
+      "type": "paragraph",
+      "content": "Space between template sections(Desktop)"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 90
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 45
+    },
+    {
+      "type": "paragraph",
+      "content": "Space between template sections(Mobile)"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding top mobile",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding bottom mobile",
+      "default": 0
+    },
+    {
+      "type": "paragraph",
+      "content": "Other"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Most popular"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image(desktop)"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "Image(mobile)"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

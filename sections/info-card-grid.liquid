@@ -1,0 +1,140 @@
+{% style %}
+  #shopify-section-{{ section.id }} {
+    {%- unless section.settings.button_background == blank -%}
+      --info-card-grid-button-background: {{ section.settings.button_background }};
+    {%- endunless -%}
+    {%- unless section.settings.button_color == blank -%}
+      --info-card-grid-button-color: {{ section.settings.button_color }};
+    {%- endunless -%}
+  }
+
+  {%- for block in section.blocks -%}
+    .card-list__item-{{ block.id }} {
+      --card-background-image: url("{{ block.settings.card_image | image_url }}");
+    }
+  {%- endfor -%}
+{% endstyle %}
+
+<div class="info-card-grid__container">
+  <div class="info-card-grid__info">
+    {%- unless section.settings.heading == blank -%}
+      <h2 class="info__heading">{{ section.settings.heading }}</h2>
+    {%- endunless -%}
+
+    {%- unless section.settings.description == blank -%}
+      <p class="info__description">{{ section.settings.description }}</p>
+    {%- endunless -%}
+
+    {%- unless section.settings.link_text == blank  -%}
+      <a href="{{ section.settings.link_url }}" class="button btn button--primary button--md info-card-grid--desktop">
+        {{ section.settings.link_text }}
+      </a>
+    {%- endunless -%}
+  </div>
+
+  <div class="info-card-grid__card-list">
+    {%- for block in section.blocks -%}
+      {%- liquid
+        assign item_tag = 'div'
+
+        unless block.settings.card_url == blank
+          assign item_tag = 'a'
+        endunless
+      -%}
+
+      <{{item_tag}} 
+        {% unless block.settings.card_url == blank %}
+          href="{{ block.settings.card_url }}"
+        {% endunless %}
+        class="card-list__item card-list__item-{{ block.id }}">
+
+        {%- unless block.settings.card_text == blank -%}
+          <span class="card-list__item-text">{{ block.settings.card_text }}</span>
+        {%- endunless -%}
+
+      </{{item_tag}}>
+    {% endfor %}
+  </div>
+
+  {%- unless section.settings.link_text == blank  -%}
+    <a href="{{ section.settings.link_url }}" class="button btn button--primary button--md info-card-grid--mobile">
+      {{ section.settings.link_text }}
+    </a>
+  {%- endunless -%}
+</div>
+
+{% schema %}
+{
+  "name": "Info & Card grid",
+  "tag": "section",
+  "class": "info-card-grid",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Button url"
+    },
+    {
+      "type": "header",
+      "content": "Color"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Button background color"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button text color"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card-item",
+      "name": "Card item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "card_image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "card_text",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "card_url",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Info & Card grid"
+    }
+  ]
+}
+{% endschema %}
