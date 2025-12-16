@@ -44,9 +44,16 @@ h2 {
   box-shadow: var(--shadow-horizontal-offset) var(--shadow-vertical-offset) rgb(var(--color-shadow)/ var(--shadow-opacity));
 }
 
-.promo-grid__slide-link:hover ~ .promo-grid__content .promo-grid__text .btn {
-  background-color: #fff;
-  color: #876b44;
+.button--secondary {
+  background-color: transparent!important;
+  border: 1px solid #876B44!important;
+  color: #876B44!important;
+  transition: 0s all !important;
+}
+
+.button--secondary:hover {
+  background-color: #876B44 !important;
+  color: var(--colorBtnPrimaryText) !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -121,10 +128,10 @@ h2 {
       transition: background-color .15s linear, color .15s linear;
     }
 
-    & .btn:hover {
+    /* & .btn:hover {
       background-color: #fff;
       color: #876B44 !important;
-    }
+    } */
   }
 }
 

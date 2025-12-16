@@ -199,12 +199,12 @@
                       </div>
                     {%- endif -%}
                     {%- if block.settings.cta_text1 != blank -%}
-                      <a href="{{ block.settings.cta_link1 }}" class="btn{% unless accent_exists %}{% unless block.settings.boxed %} btn--inverse{% endunless %}{% endunless %}">
+                      <a href="{{ block.settings.cta_link1 }}" class="button btn button--primary">
                         {{ block.settings.cta_text1 }}
                       </a>
                     {%- endif -%}
                     {%- if block.settings.cta_text2 != blank -%}
-                      <a href="{{ block.settings.cta_link2 }}" class="btn{% unless accent_exists %}{% unless block.settings.boxed %} btn--inverse{% endunless %}{% endunless %}">
+                      <a href="{{ block.settings.cta_link2 }}" class="button btn button--primary">
                         {{ block.settings.cta_text2 }}
                       </a>
                     {%- endif -%}

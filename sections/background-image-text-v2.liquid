@@ -6,7 +6,19 @@
     --background-media-text-button-color: {{ section.settings.button_color }};
   }
 
+  #shopify-section-{{ section.id }} .background-media-text__video--mobile {
+    display: none;
+  }
+
   @media screen and (max-width: 768px) {
+    #shopify-section-{{ section.id }} .background-media-text__video--mobile {
+      display: block;
+    }
+
+    #shopify-section-{{ section.id }} .background-media-text__video--desktop.has-mobile {
+      display: none;
+    }
+
     #shopify-section-{{ section.id }} {
       --background-media-text-content-position: {{ section.settings.content_layout_mobile }};
       --background-media-text-image-position: {{ section.settings.image_position_mobile }};
@@ -20,6 +32,19 @@
 
 {% liquid
   assign product = section.settings.product
+
+  assign youtube_desktop_value = section.settings.youtube_desktop | strip
+  assign youtube_mobile_value = section.settings.youtube_mobile | strip
+
+  if youtube_desktop_value == blank and youtube_mobile_value != blank
+    assign youtube_desktop_value = youtube_mobile_value
+  endif
+
+  if youtube_mobile_value == blank and youtube_desktop_value != blank
+    assign youtube_mobile_value = youtube_desktop_value
+  endif
+
+  assign video_title = section.settings.title | strip_html | strip | default: 'YouTube video'
 
   if product.compare_at_price_varies
     assign product_min_compare_price = product.price_max
@@ -44,7 +69,24 @@
 
     <div
       class="background-media-text__container">
-      {% if section.settings.video_desktop != blank %}
+      {% if youtube_desktop_value != blank or youtube_mobile_value != blank %}
+        {% assign desktop_classes = 'background-media-text__video--desktop' %}
+        {% if youtube_mobile_value != blank and youtube_mobile_value != youtube_desktop_value %}
+          {% assign desktop_classes = desktop_classes | append: ' has-mobile' %}
+        {% endif %}
+
+        {% render 'youtube-embed',
+          source: youtube_desktop_value,
+          class: desktop_classes,
+          title: video_title %}
+
+        {% if youtube_mobile_value != blank and youtube_mobile_value != youtube_desktop_value %}
+          {% render 'youtube-embed',
+            source: youtube_mobile_value,
+            class: 'background-media-text__video--mobile',
+            title: video_title %}
+        {% endif %}
+      {% elsif section.settings.video_desktop != blank %}
         {% render 'video',
           video:  section.settings.video_desktop,
           video_mobile: section.settings.video_mobile,
@@ -100,7 +142,7 @@
                   <p class="h5">{{ section.settings.subtitle }}</p>
                 {%- endif -%}
                 {%- if section.settings.title != blank -%}
-                  <h2 class="background-media-text-custom__heading">{{ section.settings.title | escape }}</h2>
+                  <h2 class="background-media-text-custom__heading">{{ section.settings.title }}</h2>
                 {%- endif -%}
                 {%- if section.settings.text != blank -%}
                   <div class="rte background-media-text__subtext">{{ section.settings.text }}</div>
@@ -141,10 +183,10 @@
       "default": "Impressive"
     },
     {
-      "type": "text",
+      "type": "richtext",
       "id": "title",
       "label": "t:sections.background-image-text.settings.title.label",
-      "default": "Large image with text box"
+      "default": "<p>Large image with text box</p>"
     },
     {
       "type": "richtext",
@@ -235,6 +277,18 @@
       "type": "video",
       "id": "video_mobile",
       "label": "Video on mobile"
+    },
+    {
+      "type": "textarea",
+      "id": "youtube_desktop",
+      "label": "YouTube (desktop)",
+      "info": "Paste a YouTube link or iframe. Will be used on mobile if no mobile video is provided."
+    },
+    {
+      "type": "textarea",
+      "id": "youtube_mobile",
+      "label": "YouTube (mobile)",
+      "info": "Optional mobile-specific YouTube link or iframe."
     },
     {
       "type": "image_picker",

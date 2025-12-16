@@ -1,0 +1,97 @@
+{% assign source = source | strip %}
+{% unless source == blank %}
+  {% liquid
+    assign wrapper_class = class | default: '' | strip
+    assign video_title = title | strip | default: 'YouTube video'
+    assign safe_title = video_title | escape
+    assign iframe_title_attr = '<iframe title="' | append: safe_title | append: '"'
+  %}
+
+  {% if source contains '<iframe'%}
+    {% liquid
+      assign iframe_markup = source
+
+      assign autoplay_param = 'autoplay=1'
+      assign mute_param = 'mute=1'
+
+      unless iframe_markup contains 'loading='
+        assign iframe_markup = iframe_markup | replace_first: '<iframe', '<iframe loading="lazy"'
+      endunless
+
+      unless iframe_markup contains 'class='
+        assign iframe_markup = iframe_markup | replace_first: '<iframe', '<iframe class="background-media-text__youtube-frame"'
+      else
+        assign iframe_markup = iframe_markup | replace_first: 'class="', 'class="background-media-text__youtube-frame '
+      endunless
+
+      unless iframe_markup contains 'title='
+        assign iframe_markup = iframe_markup | replace_first: '<iframe', iframe_title_attr
+      endunless
+
+      unless iframe_markup contains 'referrerpolicy='
+        assign iframe_markup = iframe_markup | replace_first: '<iframe', '<iframe referrerpolicy="strict-origin-when-cross-origin"'
+      endunless
+
+      unless iframe_markup contains 'allow='
+        assign iframe_markup = iframe_markup | replace_first: '<iframe', '<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"'
+      endunless
+
+      unless iframe_markup contains 'allowfullscreen'
+        assign iframe_markup = iframe_markup | replace_first: '<iframe', '<iframe allowfullscreen'
+      endunless
+
+      if iframe_markup contains 'src="'
+        assign iframe_src_split = iframe_markup | split: 'src="'
+        assign iframe_src_and_rest = iframe_src_split[1]
+        assign iframe_src_value = iframe_src_and_rest | split: '"' | first
+
+        unless iframe_src_value contains 'autoplay=' or iframe_src_value contains 'mute='
+          assign updated_src = iframe_src_value
+          assign separator = '?'
+
+          if updated_src contains '?'
+            assign separator = '&'
+          endif
+
+          unless iframe_src_value contains 'autoplay='
+            assign updated_src = updated_src | append: separator | append: autoplay_param
+            assign separator = '&'
+          endunless
+
+          unless iframe_src_value contains 'mute='
+            assign updated_src = updated_src | append: separator | append: mute_param
+          endunless
+
+          assign iframe_markup = iframe_markup | replace_first: iframe_src_value, updated_src
+        endunless
+      endif
+    %}
+
+    <div class="background-media-text__video {{ wrapper_class }}">
+      {{ iframe_markup }}
+    </div>
+  {% else %}
+    {% liquid
+      assign embed_url = source
+      assign embed_url = embed_url | replace: 'https://youtu.be/', 'https://www.youtube.com/embed/' | replace: 'http://youtu.be/', 'https://www.youtube.com/embed/' | replace: 'www.youtu.be/', 'https://www.youtube.com/embed/'
+      assign embed_url = embed_url | replace: 'https://www.youtube.com/watch?v=', 'https://www.youtube.com/embed/' | replace: 'http://www.youtube.com/watch?v=', 'https://www.youtube.com/embed/' | replace: 'youtube.com/watch?v=', 'https://www.youtube.com/embed/' | replace: 'www.youtube.com/watch?v=', 'https://www.youtube.com/embed/'
+      assign embed_url = embed_url | replace: 'watch?v=', 'embed/'
+      assign embed_url = embed_url | replace: 'youtu.be/', 'www.youtube.com/embed/'
+      assign embed_url = embed_url | replace: 'youtube.com/embed//', 'youtube.com/embed/'
+
+      unless embed_url contains 'http'
+        assign embed_url = 'https://www.youtube.com/embed/' | append: embed_url
+      endunless
+
+      if embed_url contains '?'
+        assign embed_url = embed_url | append: '&rel=0&modestbranding=1&playsinline=1&autoplay=1&mute=1'
+      else
+        assign embed_url = embed_url | append: '?rel=0&modestbranding=1&playsinline=1&autoplay=1&mute=1'
+      endif
+    %}
+
+    <div class="background-media-text__video {{ wrapper_class }}">
+      <iframe class="background-media-text__youtube-frame" src="{{ embed_url }}" title="{{ safe_title }}" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+  {% endif %}
+{% endunless %}

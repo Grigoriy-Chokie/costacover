@@ -13820,7 +13820,7 @@ html:has(.drawer.drawer--is-open) .needsclick {
     & .card-list__item-text {
       font-family: 'Playfair Display';
       font-weight: 500;
-      font-size: 24px;
+      font-size: 16px;
       padding: 0 15px;
     }
   }
@@ -13885,7 +13885,7 @@ html:has(.drawer.drawer--is-open) .needsclick {
       }
 
       & .card-list__item-text {
-        font-size: 18px;
+        font-size: 12px;
       }
     }
   }
@@ -14612,6 +14612,7 @@ html:has(.drawer.drawer--is-open) .needsclick {
       text-transform: uppercase;
       padding: 16px 25px;
       transition-delay: unset !important;
+      min-width: 200px;
     }
 
     & .button--secondary {
@@ -14668,7 +14669,7 @@ html:has(.drawer.drawer--is-open) .needsclick {
     }
 
     & .background-media-text__container:has(.background-media-text__video) {
-      padding-top: 100%;
+      padding-top: 35%;
     }
 
     & .background-media-text__video {
@@ -14764,4 +14765,14 @@ html:has(.drawer.drawer--is-open) .needsclick {
       }
     }
   }
+}
+.button--secondary {
+  background-color: transparent!important;
+  border: 1px solid var(--background-media-text-button-color)!important;
+  color: var(--background-media-text-button-color)!important;
+}
+
+.button--secondary:hover {
+  background-color: var(--background-media-text-button-color) !important;
+  color: var(--colorBody) !important;
 }

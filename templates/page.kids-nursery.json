@@ -120,7 +120,7 @@
         "block_wn9HxQ": {
           "type": "block",
           "settings": {
-            "logo": "shopify://shop_images/03_2eb5c468-62d2-4fb7-9693-92e7f24d177e.png",
+            "logo": "shopify://shop_images/Frame_7_e80b1c42-1750-4cfa-8b9b-d83111f41ccd.svg",
             "logo_text": "<p>Non-Toxic Inks</p>"
           }
         },
@@ -134,7 +134,7 @@
         "block_TBTFWj": {
           "type": "block",
           "settings": {
-            "logo": "shopify://shop_images/07.png",
+            "logo": "shopify://shop_images/Frame_13_6b65af33-fcb7-4762-881e-b6bd18c18aa1.svg",
             "logo_text": "<p>Easy To Install & Remove</p>"
           }
         }
@@ -173,7 +173,7 @@
           "type": "card-item",
           "settings": {
             "card_image": "shopify://shop_images/Rectangle_1_2.png",
-            "card_text": "Canvas Vinyl Peel & Stick",
+            "card_text": "<p>Canvas Vinyl <br> Peel & Stick</p>",
             "card_url": ""
           }
         },
@@ -181,7 +181,7 @@
           "type": "card-item",
           "settings": {
             "card_image": "shopify://shop_images/Rectangle_2.png",
-            "card_text": "Smooth Vinyl Peel & Stick",
+            "card_text": "<p>Smooth Vinyl <br> Peel & Stick</p>",
             "card_url": ""
           }
         },
@@ -189,7 +189,7 @@
           "type": "card-item",
           "settings": {
             "card_image": "shopify://shop_images/Rectangle_3.png",
-            "card_text": "Non-Woven Traditional Paper",
+            "card_text": "<p>Non-Woven <br> Traditional Paper</p>",
             "card_url": ""
           }
         },
@@ -197,7 +197,7 @@
           "type": "card-item",
           "settings": {
             "card_image": "shopify://shop_images/Rectangle_4.png",
-            "card_text": "Pre-Pasted Traditional Paper",
+            "card_text": "<p>Pre-Pasted <br> Traditional Paper</p>",
             "card_url": ""
           }
         }
@@ -417,7 +417,7 @@
       "name": "Image with content",
       "settings": {
         "subtitle": "",
-        "title": "Ready to Create a Calm, Safe Nursery?",
+        "title": "<p>Ready to Create a Calm, Safe Nursery?<p>",
         "text": "",
         "button_label": "Shop Collection",
         "button_link": "shopify://collections/kids-wall-mural",
@@ -518,7 +518,7 @@
       "name": "Image with content",
       "settings": {
         "subtitle": "",
-        "title": "Easy & Quick Room Makeover",
+        "title": "<p>Easy & Quick <br> Room Makeover</p>",
         "text": "<p>Transform your child’s room in just a few hours</p>",
         "button_label": "Shop now",
         "button_link": "shopify://collections",
