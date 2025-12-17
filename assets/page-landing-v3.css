@@ -117,14 +117,12 @@ h2 {
     }
 
     & .btn {
-      line-height: 140%;
       font-size: 13px;
       background-color: #876B44;
       border-radius: 100px;
       letter-spacing: 1px;
       font-weight: 700;
       border: 1px solid #876B44 !important;
-      padding: 16px 25px;
       transition: background-color .15s linear, color .15s linear;
     }
 

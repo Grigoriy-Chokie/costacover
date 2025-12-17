@@ -30,6 +30,8 @@
         "button_link_2": "",
         "product": "abstract-beige-arches-wall-mural-am127",
         "product_card_position": "bottom-right",
+        "youtube_desktop": "",
+        "youtube_mobile": "",
         "image": "shopify://shop_images/Group_26_3.png",
         "image_mobile": "shopify://shop_images/Group_25_3.png",
         "image_position_desktop": "absolute",
@@ -173,7 +175,7 @@
           "type": "card-item",
           "settings": {
             "card_image": "shopify://shop_images/Rectangle_1_2.png",
-            "card_text": "<p>Canvas Vinyl <br> Peel & Stick</p>",
+            "card_text": "<p>Canvas Vinyl <br/>Peel & Stick</p>",
             "card_url": ""
           }
         },
@@ -181,7 +183,7 @@
           "type": "card-item",
           "settings": {
             "card_image": "shopify://shop_images/Rectangle_2.png",
-            "card_text": "<p>Smooth Vinyl <br> Peel & Stick</p>",
+            "card_text": "<p>Smooth Vinyl <br/>Peel & Stick</p>",
             "card_url": ""
           }
         },
@@ -189,7 +191,7 @@
           "type": "card-item",
           "settings": {
             "card_image": "shopify://shop_images/Rectangle_3.png",
-            "card_text": "<p>Non-Woven <br> Traditional Paper</p>",
+            "card_text": "<p>Non-Woven <br/>Traditional Paper</p>",
             "card_url": ""
           }
         },
@@ -197,7 +199,7 @@
           "type": "card-item",
           "settings": {
             "card_image": "shopify://shop_images/Rectangle_4.png",
-            "card_text": "<p>Pre-Pasted <br> Traditional Paper</p>",
+            "card_text": "<p>Pre-Pasted <br/>Traditional Paper</p>",
             "card_url": ""
           }
         }
@@ -425,6 +427,8 @@
         "button_link_2": "shopify://pages/contact-us",
         "product": "white-beige-forest-animals-wall-mural-sm018",
         "product_card_position": "bottom-right",
+        "youtube_desktop": "",
+        "youtube_mobile": "",
         "image": "shopify://shop_images/08_-_Kids_interior_scene_copy_1.jpg",
         "image_mobile": "shopify://shop_images/08_-_Kids_interior_scene_copy_2.jpg",
         "image_position_desktop": "absolute",
@@ -518,7 +522,7 @@
       "name": "Image with content",
       "settings": {
         "subtitle": "",
-        "title": "<p>Easy & Quick <br> Room Makeover</p>",
+        "title": "<p>Easy & Quick <br/> Room Makeover</p>",
         "text": "<p>Transform your child’s room in just a few hours</p>",
         "button_label": "Shop now",
         "button_link": "shopify://collections",
@@ -527,6 +531,8 @@
         "product": "pink-balloons-and-cute-animals-self-adhesive-wall-mural-wm065",
         "product_card_position": "top-right",
         "video_desktop": "shopify://files/videos/video 3 family 16x9 Youtube.MOV",
+        "youtube_desktop": "",
+        "youtube_mobile": "",
         "image": "shopify://shop_images/BG_6.png",
         "image_mobile": "shopify://shop_images/Frame_4.png",
         "image_position_desktop": "absolute",

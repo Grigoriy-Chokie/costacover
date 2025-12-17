@@ -13822,6 +13822,10 @@ html:has(.drawer.drawer--is-open) .needsclick {
       font-weight: 500;
       font-size: 16px;
       padding: 0 15px;
+
+      & p {
+        margin: 0;
+      }
     }
   }
 
@@ -14447,6 +14451,7 @@ html:has(.drawer.drawer--is-open) .needsclick {
       width: 100%;
       flex-direction: row;
       align-items: center;
+      height: fit-content;
       
       & .product-card__image {
         width: 35%;
@@ -14610,7 +14615,6 @@ html:has(.drawer.drawer--is-open) .needsclick {
       letter-spacing: 1px;
       border-radius: 100px;
       text-transform: uppercase;
-      padding: 16px 25px;
       transition-delay: unset !important;
       min-width: 200px;
     }
@@ -14703,7 +14707,8 @@ html:has(.drawer.drawer--is-open) .needsclick {
     & .background-media-text__aligner .background-media-text__button-wrapper {
       flex-direction: row;
       justify-content: center;
-      gap: 10px;
+      flex-wrap: wrap;
+      gap: 0px;
 
       & .btn {
         font-size: 11px;
@@ -14751,6 +14756,11 @@ html:has(.drawer.drawer--is-open) .needsclick {
       & .collapsible-trigger {
         font-size: 14px;
         padding: 10px 15px;
+      }
+      
+      & .collapsible-trigger__text {
+        display: block;
+        width: calc(100% - 20px);
       }
 
       & .collapsible-trigger__icon {

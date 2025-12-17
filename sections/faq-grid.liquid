@@ -37,7 +37,7 @@
               <div>
                 <button type="button" class="collapsible-trigger collapsible-trigger--inline collapsible--auto-height text-left" aria-controls="FAQ-content-{{ block.id }}">
                   {%- render 'collapsible-icons-alt', no_circle: true -%}
-                  <span>{{ block.settings.title }}</span>
+                  <span class="collapsible-trigger__text">{{ block.settings.title }}</span>
                 </button>
                 <div id="FAQ-content-{{ block.id }}" class="collapsible-content collapsible-content--all">
                   <div class="collapsible-content__inner collapsible-content__inner--faq rte">
