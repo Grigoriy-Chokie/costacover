@@ -122,7 +122,7 @@
         "block_wn9HxQ": {
           "type": "block",
           "settings": {
-            "logo": "shopify://shop_images/Frame_7_e80b1c42-1750-4cfa-8b9b-d83111f41ccd.svg",
+            "logo": "shopify://shop_images/Frame_7_2_996d7ee2-232c-48fd-9436-e756ee9f921f.svg",
             "logo_text": "<p>Non-Toxic Inks</p>"
           }
         },
@@ -136,7 +136,7 @@
         "block_TBTFWj": {
           "type": "block",
           "settings": {
-            "logo": "shopify://shop_images/Frame_13_6b65af33-fcb7-4762-881e-b6bd18c18aa1.svg",
+            "logo": "shopify://shop_images/Frame_13_1_5c171670-07ac-4c11-aa17-040be5a010a6.svg",
             "logo_text": "<p>Easy To Install & Remove</p>"
           }
         }
@@ -419,7 +419,7 @@
       "name": "Image with content",
       "settings": {
         "subtitle": "",
-        "title": "<p>Ready to Create a Calm, Safe Nursery?<p>",
+        "title": "<p>Ready to Create a Calm, Safe Nursery?</p><p></p>",
         "text": "",
         "button_label": "Shop Collection",
         "button_link": "shopify://collections/kids-wall-mural",

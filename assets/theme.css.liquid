@@ -14432,6 +14432,7 @@ html:has(.drawer.drawer--is-open) .needsclick {
 
     & .image-comparison-custom--mobile {
       display: inline-block;
+      font-size: 11px;
     }
 
     & .image-comparison-custom__wrapper {
@@ -14708,11 +14709,11 @@ html:has(.drawer.drawer--is-open) .needsclick {
       flex-direction: row;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 0px;
+      column-gap: 10px;
 
       & .btn {
         font-size: 11px;
-        padding: 16px 24px !important;
+        padding: 17px 24px !important;
       }
     }
   }
@@ -14757,7 +14758,7 @@ html:has(.drawer.drawer--is-open) .needsclick {
         font-size: 14px;
         padding: 10px 15px;
       }
-      
+
       & .collapsible-trigger__text {
         display: block;
         width: calc(100% - 20px);
@@ -14785,4 +14786,10 @@ html:has(.drawer.drawer--is-open) .needsclick {
 .button--secondary:hover {
   background-color: var(--background-media-text-button-color) !important;
   color: var(--colorBody) !important;
+}
+
+@media (max-width: 768px) {
+  .button {
+    font-size: 11px!important;
+  }
 }
